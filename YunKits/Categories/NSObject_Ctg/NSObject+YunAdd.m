@@ -34,8 +34,8 @@
 
     for (int i = 0; i < mothCout_f; i++) {
         Method temp_f = mothList_f[i];
-        IMP imp_f = method_getImplementation(temp_f);
-        SEL name_f = method_getName(temp_f);
+        //IMP imp_f = method_getImplementation(temp_f);
+        //SEL name_f = method_getName(temp_f);
         const char *name_s = sel_getName(method_getName(temp_f));
         int arguments = method_getNumberOfArguments(temp_f);
         const char *encoding = method_getTypeEncoding(temp_f);

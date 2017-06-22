@@ -9,9 +9,9 @@
 
 + (UIButton *_Nonnull)baseBtnWithTarget:(id _Nullable)target action:(SEL _Nullable)action;
 
-+ (UIButton *_Nonnull)btnWithBgImg:(NSString *)bgImg target:(id _Nullable)target action:(SEL _Nullable)action;
++ (UIButton *_Nonnull)btnWithBgImg:(NSString *_Nonnull)bgImg target:(id _Nullable)target action:(SEL _Nullable)action;
 
-+ (UIButton *_Nonnull)btnWithImg:(NSString *)bgImg scale:(CGFloat)scale target:(id _Nullable)target action:(SEL _Nullable)action;
++ (UIButton *_Nonnull)btnWithImg:(NSString *_Nonnull)bgImg scale:(CGFloat)scale target:(id _Nullable)target action:(SEL _Nullable)action;
 
 + (UIButton *_Nonnull)btnByTitle:(NSString *_Nonnull)title
                       titleColor:(UIColor *_Nonnull)titleColor

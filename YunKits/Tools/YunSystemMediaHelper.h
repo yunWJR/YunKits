@@ -8,12 +8,12 @@
 
 @interface YunSystemMediaHelper : NSObject
 
-+ (void)openSms:(NSString *)phoneNo;
++ (void)openSms:(NSString *__nonnull)phoneNo;
 
-+ (void)openPhone:(NSString *)phoneNo;
++ (void)openPhone:(NSString *__nonnull)phoneNo;
 
-+ (void)openPhone:(NSString *)phoneNo cmp:(void (^ __nullable)(BOOL success))cmp;
++ (void)openPhone:(NSString *__nonnull)phoneNo cmp:(void (^ __nullable)(BOOL success))cmp;
 
-+ (void)openURL:(NSString *)url;
++ (void)openURL:(NSString *__nonnull)url;
 
 @end
