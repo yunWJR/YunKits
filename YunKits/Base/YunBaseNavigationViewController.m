@@ -207,43 +207,43 @@
 #pragma mark - private functions
 
 - (void)setNagBottomLineHide:(BOOL)hide {
-    return;
-    // 去掉nav下划线
-    if ([self.navigationController.navigationBar respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)]) {
-
-        NSArray *list = self.navigationController.navigationBar.subviews;
-
-        for (id obj in list) {
-
-            if ([obj isKindOfClass:[UIImageView class]]) {
-                UIImageView *imageView = (UIImageView *) obj;
-                imageView.hidden = YES;
-            }
-        }
-    }
-
-    return;
-
-    if ([self.navigationController.navigationBar respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)]) {
-        NSArray *list = self.navigationController.navigationBar.subviews;
-        for (id obj in list) {
-            if ([obj isKindOfClass:[UIImageView class]]) {
-                UIImageView *imageView = (UIImageView *) obj;
-                NSArray *list2 = imageView.subviews;
-                if (list2.count > 0) {
-                    for (id obj2 in list2) {
-                        if ([obj2 isKindOfClass:[UIImageView class]]) {
-                            UIImageView *imageView2 = (UIImageView *) obj2;
-                            imageView2.hidden = hide;
-                        }
-                    }
-                }
-                else {
-                    imageView.hidden = hide;
-                }
-            }
-        }
-    }
+    //return;
+    //// 去掉nav下划线
+    //if ([self.navigationController.navigationBar respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)]) {
+    //
+    //    NSArray *list = self.navigationController.navigationBar.subviews;
+    //
+    //    for (id obj in list) {
+    //
+    //        if ([obj isKindOfClass:[UIImageView class]]) {
+    //            UIImageView *imageView = (UIImageView *) obj;
+    //            imageView.hidden = YES;
+    //        }
+    //    }
+    //}
+    //
+    //return;
+    //
+    //if ([self.navigationController.navigationBar respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)]) {
+    //    NSArray *list = self.navigationController.navigationBar.subviews;
+    //    for (id obj in list) {
+    //        if ([obj isKindOfClass:[UIImageView class]]) {
+    //            UIImageView *imageView = (UIImageView *) obj;
+    //            NSArray *list2 = imageView.subviews;
+    //            if (list2.count > 0) {
+    //                for (id obj2 in list2) {
+    //                    if ([obj2 isKindOfClass:[UIImageView class]]) {
+    //                        UIImageView *imageView2 = (UIImageView *) obj2;
+    //                        imageView2.hidden = hide;
+    //                    }
+    //                }
+    //            }
+    //            else {
+    //                imageView.hidden = hide;
+    //            }
+    //        }
+    //    }
+    //}
 }
 
 - (UIImageView *)findHairlineImageViewUnder:(UIView *)view {
