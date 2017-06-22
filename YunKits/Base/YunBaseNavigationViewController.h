@@ -38,6 +38,8 @@
 // 有数据需要更新 // 默认NO
 @property (nonatomic, assign) BOOL forceNoUpdate;
 
+#pragma mark - nag
+
 - (void)setRightBarItemByNormalImg:(NSString *)norImg highLightImg:(NSString *)highImg;
 
 - (void)setRightBarItemName:(NSString *)name font:(UIFont *)font color:(UIColor *)color;
@@ -49,6 +51,8 @@
 - (void)didClickNagLeftItem;
 
 - (void)didClickNagRightItem;
+
+#pragma mark - keyboard
 
 - (void)addKeyboardNotification;
 
