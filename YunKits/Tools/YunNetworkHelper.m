@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "YunNetworkHelper.h"
 #import "AFNetworkReachabilityManager.h"
-#import "YunGlobalDefine.h"
 
 @interface YunNetworkHelper () {
     BOOL _started;

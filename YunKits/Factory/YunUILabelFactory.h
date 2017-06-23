@@ -9,17 +9,29 @@
 
 + (UILabel *_Nonnull)baseLabel;
 
-+ (UILabel *_Nonnull)labelWithText:(NSString *_Nullable)text font:(UIFont *_Nullable)font color:(UIColor *_Nullable)color;
++ (UILabel *_Nonnull)labelWithText:(NSString *_Nullable)text
+                              font:(UIFont *_Nullable)font
+                             color:(UIColor *_Nullable)color;
 
 + (UILabel *_Nonnull)labelWithIconName:(NSString *_Nullable)iconName
                               fontSize:(CGFloat)fontSize
                              textColor:(UIColor *_Nullable)color;
 
-+ (UILabel *_Nonnull)labelWithText:(NSString *_Nullable)text font:(UIFont *_Nullable)font color:(UIColor *_Nullable)color
-                             align:(NSTextAlignment)align lines:(NSInteger)lines adjust:(BOOL)adjust;
++ (UILabel *_Nonnull)labelWithText:(NSString *_Nullable)text
+                              font:(UIFont *_Nullable)font
+                             color:(UIColor *_Nullable)color
+                             align:(NSTextAlignment)align
+                             lines:(NSInteger)lines
+                            adjust:(BOOL)adjust;
 
-+ (UILabel *_Nonnull)labelWithText:(NSString *_Nullable)text font:(UIFont *_Nullable)font color:(UIColor *_Nullable)color
-                             align:(NSTextAlignment)align lines:(NSInteger)lines adjust:(BOOL)adjust
-                            radius:(CGFloat)radius width:(CGFloat)width borderColor:(UIColor *_Nullable)borderColor;
++ (UILabel *_Nonnull)labelWithText:(NSString *_Nullable)text
+                              font:(UIFont *_Nullable)font
+                             color:(UIColor *_Nullable)color
+                             align:(NSTextAlignment)align
+                             lines:(NSInteger)lines
+                            adjust:(BOOL)adjust
+                            radius:(CGFloat)radius
+                             width:(CGFloat)width
+                       borderColor:(UIColor *_Nullable)borderColor;
 
 @end

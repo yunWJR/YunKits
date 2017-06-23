@@ -31,7 +31,7 @@
 
 - (void)setBg:(UIColor *)color height:(CGFloat)height {
     /** 设置背景图片 */
-    UIImage *searchBarBg = [UIImage GetImageWithColor:color andHeight:height];
+    UIImage *searchBarBg = [UIImage GetImageWithColor:color height:height];
     [self setBackgroundImage:searchBarBg];   //这里图片的颜色和导航栏一样
 
     /** 设置背景色 */

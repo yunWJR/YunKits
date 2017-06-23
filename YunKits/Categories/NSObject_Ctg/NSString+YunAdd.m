@@ -8,7 +8,7 @@
 
 @implementation NSString (YunAdd)
 
-- (NSString *)stringWithDefText:(NSString *)text {
+- (NSString *)strByDefCtn:(NSString *)text {
     return [YunValueVerifier isNilOrEmptyStr:self] ? text : self;
 }
 

@@ -7,10 +7,14 @@
 
 @interface UIImage (YunAdd)
 
-+ (UIImage *)GetImageWithColor:(UIColor *)color andHeight:(CGFloat)height;
++ (UIImage *)GetImageWithColor:(UIColor *)color height:(CGFloat)height;
+
++ (UIImage *)GetImageWithColor:(UIColor *)color size:(CGSize)size;
 
 - (UIImage *)resizeWithHeight:(CGFloat)height;
 
 - (UIImage *)resizeWithSize:(NSInteger)size;
+
+- (UIImage *)resizeWithSize:(NSInteger)size height:(CGFloat)height;
 
 @end

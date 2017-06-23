@@ -4,22 +4,12 @@
 //
 
 #import "UITabBar+YunAdd.h"
+#import "UIImage+YunAdd.h"
 
 @implementation UITabBar (YunAdd)
 
 - (void)setBarBgColor:(UIColor *)bgColor {
-    [self setBackgroundImage:[self createImageWithColor:bgColor]];
-}
-
-- (UIImage *)createImageWithColor:(UIColor *)color {
-    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
-    UIGraphicsBeginImageContext(rect.size);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, [color CGColor]);
-    CGContextFillRect(context, rect);
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return image;
+    [self setBackgroundImage:[UIImage GetImageWithColor:bgColor size:CGSizeMake(1.0f, 1.0f)]];
 }
 
 @end

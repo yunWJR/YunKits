@@ -26,8 +26,8 @@
     if (self) {
         _baseFontSize = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline].pointSize;
 
-        double delta = [YunSizeHelper screenWith] - 414.0f;
-        double delta1 = delta / 414.0f * 0.5f;
+        CGFloat delta = [YunSizeHelper screenWith] - 414.0f;
+        CGFloat delta1 = delta / 414.0f * 0.5f;
         _screenScale = 1.2f * (1.0f + delta1); // 当前屏幕相对于6p屏幕的比列大小
     }
 

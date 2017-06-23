@@ -8,11 +8,21 @@
 @interface YunBaseView : UIView
 
 // 控件间距控制
+
+@property (nonatomic, assign) CGFloat allOff;
+
 @property (nonatomic, assign) CGFloat topOff;
+
 @property (nonatomic, assign) CGFloat leftOff;
+
 @property (nonatomic, assign) CGFloat rightOff;
+
 @property (nonatomic, assign) CGFloat bottomOff;
+
+@property (nonatomic, assign) CGFloat allInterval;
+
 @property (nonatomic, assign) CGFloat ctnIntervalV;
+
 @property (nonatomic, assign) CGFloat ctnIntervalH;
 
 + (instancetype)viewWithAllOff:(CGFloat)off andInterval:(CGFloat)interval;

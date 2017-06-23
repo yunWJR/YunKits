@@ -15,11 +15,11 @@
 }
 
 + (instancetype)errorWithCustomMsg:(NSString *)errorMsg andErrorCode:(NSInteger)errorCode {
-    return [[NSError alloc] initWithDomain:@"request" code:errorCode userInfo:@{@"custom_error" : errorMsg}];
+    return [[NSError alloc] initWithDomain:@"error_custom" code:errorCode userInfo:@{CUSTOM_MSG_KEY : errorMsg}];
 }
 
 + (instancetype)errorWithCustomErrorCode:(NSInteger)errorCode {
-    return [[NSError alloc] initWithDomain:@"request" code:errorCode userInfo:@{@"custom_error" : @""}];
+    return [[NSError alloc] initWithDomain:@"error_custom" code:errorCode userInfo:@{CUSTOM_MSG_KEY : @""}];
 }
 
 @end

@@ -7,6 +7,8 @@
 
 @interface YunTableViewFactory : NSObject
 
-+ (UITableView *)createTVC:(id)target classes:(NSArray *)classes ids:(NSArray *)ids;
++ (UITableView *)createTVC:(id)target
+                   classes:(NSArray *)classes
+                       ids:(NSArray *)ids;
 
 @end

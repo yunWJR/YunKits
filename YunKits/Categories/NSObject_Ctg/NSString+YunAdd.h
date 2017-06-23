@@ -7,6 +7,6 @@
 
 @interface NSString (YunAdd)
 
-- (NSString *)stringWithDefText:(NSString *)text;
+- (NSString *)strByDefCtn:(NSString *)text;
 
 @end

@@ -3,17 +3,18 @@
 // Copyright (c) 2016 成都晟堃科技有限责任公司. All rights reserved.
 //
 
+#import <Masonry/Masonry.h>
 #import "YunUIButtonFactory.h"
 #import "YunAttributedStringFactory.h"
 #import "YunGlobalDefine.h"
 #import "YunUIImageViewFactory.h"
-#import "View+MASAdditions.h"
 
 @implementation YunUIButtonFactory
 
 #pragma mark button
 
-+ (UIButton *_Nonnull)baseBtnWithTarget:(id _Nullable)target action:(SEL _Nullable)action {
++ (UIButton *_Nonnull)baseBtnWithTarget:(id _Nullable)target
+                                 action:(SEL _Nullable)action {
     UIButton *btn = [UIButton new];
 
     if (target && action) {
@@ -23,7 +24,9 @@
     return btn;
 }
 
-+ (UIButton *_Nonnull)btnWithBgImg:(NSString *)bgImg target:(id _Nullable)target action:(SEL _Nullable)action {
++ (UIButton *_Nonnull)btnWithBgImg:(NSString *)bgImg
+                            target:(id _Nullable)target
+                            action:(SEL _Nullable)action {
     UIButton *btn = [self baseBtnWithTarget:target action:action];
 
     [btn setBackgroundImage:[UIImage imageNamed:bgImg] forState:UIControlStateNormal];
@@ -31,7 +34,10 @@
     return btn;
 }
 
-+ (UIButton *_Nonnull)btnWithImg:(NSString *)bgImg scale:(CGFloat)scale target:(id _Nullable)target action:(SEL _Nullable)action {
++ (UIButton *_Nonnull)btnWithImg:(NSString *)bgImg
+                           scale:(CGFloat)scale
+                          target:(id _Nullable)target
+                          action:(SEL _Nullable)action {
     UIButton *btn = [self baseBtnWithTarget:target action:action];
 
     UIImageView *imgView = [YunUIImageViewFactory imgViewWithImgName:bgImg];

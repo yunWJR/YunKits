@@ -26,7 +26,7 @@
 
         _hideBottomBar = YES;
 
-        _keybordNotf = NO;
+        _keyboardNotf = NO;
 
         _sideOff = 10;
 
@@ -73,16 +73,13 @@
         }
     }
 
-    _navBarHairlineImageView.hidden = _hideNagBarBtmLine;
-    //if (_hideNagBarBtmLine) {
-    //    [self setNagBottomLineHide:_hideNagBarBtmLine];
-    //}
+    [self setNagBottomLineHideStatus:_hideNagBarBtmLine];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 
-    if (_keybordNotf) {
+    if (_keyboardNotf) {
         [self addKeyboardNotification];
     }
 }
@@ -90,7 +87,7 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
 
-    if (_keybordNotf) {
+    if (_keyboardNotf) {
         [self removeKeyboardNotification];
     }
 
@@ -98,10 +95,7 @@
         [self.navigationController.navigationBar setHidden:NO];
     }
 
-    //if (_hideNagBarBtmLine) {
-    //    [self setNagBottomLineHide:NO];
-    //}
-    _navBarHairlineImageView.hidden = _hideNagBarBtmLine;
+    [self setNagBottomLineHideStatus:_hideNagBarBtmLine];
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -204,46 +198,20 @@
 
 }
 
+#pragma mark - setter getter
+
+- (void)setHideNagBarBtmLine:(BOOL)hideNagBarBtmLine {
+    _hideNagBarBtmLine = hideNagBarBtmLine;
+
+    [self setNagBottomLineHideStatus:_hideNagBarBtmLine];
+}
+
 #pragma mark - private functions
 
-- (void)setNagBottomLineHide:(BOOL)hide {
-    //return;
-    //// 去掉nav下划线
-    //if ([self.navigationController.navigationBar respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)]) {
-    //
-    //    NSArray *list = self.navigationController.navigationBar.subviews;
-    //
-    //    for (id obj in list) {
-    //
-    //        if ([obj isKindOfClass:[UIImageView class]]) {
-    //            UIImageView *imageView = (UIImageView *) obj;
-    //            imageView.hidden = YES;
-    //        }
-    //    }
-    //}
-    //
-    //return;
-    //
-    //if ([self.navigationController.navigationBar respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)]) {
-    //    NSArray *list = self.navigationController.navigationBar.subviews;
-    //    for (id obj in list) {
-    //        if ([obj isKindOfClass:[UIImageView class]]) {
-    //            UIImageView *imageView = (UIImageView *) obj;
-    //            NSArray *list2 = imageView.subviews;
-    //            if (list2.count > 0) {
-    //                for (id obj2 in list2) {
-    //                    if ([obj2 isKindOfClass:[UIImageView class]]) {
-    //                        UIImageView *imageView2 = (UIImageView *) obj2;
-    //                        imageView2.hidden = hide;
-    //                    }
-    //                }
-    //            }
-    //            else {
-    //                imageView.hidden = hide;
-    //            }
-    //        }
-    //    }
-    //}
+- (void)setNagBottomLineHideStatus:(BOOL)hide {
+    if (_navBarHairlineImageView) {
+        _navBarHairlineImageView.hidden = hide;
+    }
 }
 
 - (UIImageView *)findHairlineImageViewUnder:(UIView *)view {

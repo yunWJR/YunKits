@@ -7,8 +7,10 @@
 
 @interface NSObject (YunAdd)
 
-- (NSDictionary *)properties_aps;
+// 获取对象的所有属性
+- (NSDictionary *)getAllProperties;
 
-- (void)printMothList;
+// 对象的所有方法
+- (void)printAllMethod;
 
 @end

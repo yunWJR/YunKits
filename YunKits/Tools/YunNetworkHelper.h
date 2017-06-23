@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#define NETWORK_STATUS_NOTI_STR @"NETWORK_STATUS_NOTI_STR"
+
 @interface YunNetworkHelper : NSObject
 
 @property (nonatomic, copy) void (^didStatusChanged)(BOOL);

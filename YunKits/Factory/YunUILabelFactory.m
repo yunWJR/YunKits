@@ -16,11 +16,15 @@
     return lbl;
 }
 
-+ (UILabel *)labelWithText:(NSString *)text font:(UIFont *)font color:(UIColor *)color {
++ (UILabel *)labelWithText:(NSString *)text
+                      font:(UIFont *)font
+                     color:(UIColor *)color {
     return [self labelWithText:text font:font color:color align:NSTextAlignmentLeft lines:1 adjust:NO];
 }
 
-+ (UILabel *)labelWithText:(NSString *)text font:(UIFont *)font color:(UIColor *)color
++ (UILabel *)labelWithText:(NSString *)text
+                      font:(UIFont *)font
+                     color:(UIColor *)color
                      align:(NSTextAlignment)align lines:(NSInteger)lines adjust:(BOOL)adjust {
     UILabel *lbl = [self baseLabel];
     [lbl setText:text font:font color:color];
@@ -29,9 +33,15 @@
     return lbl;
 }
 
-+ (UILabel *)labelWithText:(NSString *)text font:(UIFont *)font color:(UIColor *)color
-                     align:(NSTextAlignment)align lines:(NSInteger)lines adjust:(BOOL)adjust
-                    radius:(CGFloat)radius width:(CGFloat)width borderColor:(UIColor *)borderColor {
++ (UILabel *)labelWithText:(NSString *)text
+                      font:(UIFont *)font
+                     color:(UIColor *)color
+                     align:(NSTextAlignment)align
+                     lines:(NSInteger)lines
+                    adjust:(BOOL)adjust
+                    radius:(CGFloat)radius
+                     width:(CGFloat)width
+               borderColor:(UIColor *)borderColor {
     UILabel *lbl = [self labelWithText:text font:font color:color
                                  align:align lines:lines adjust:adjust];
 

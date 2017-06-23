@@ -8,7 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1D4D21DCDCE3E2C6D72C6036 /* YunBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D2B1DB011C7103A128854 /* YunBaseNavigationViewController.m */; };
+		1D4D2331A780908D17012D19 /* YunConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D2C28E081EE8EBF4F9E2A /* YunConfig.m */; };
+		1D4D25AC6D3F87C1A9A9BEFF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D2986658711F51DFD064E /* README.md */; };
+		1D4D2897F69C3D308261C160 /* YunAppItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D2CABB7AA47CC5BA752A1 /* YunAppItem.h */; };
 		1D4D2AF8897B34304841FDB1 /* YunBaseNavigationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D2B495659FCDB351B5DAA /* YunBaseNavigationViewController.h */; };
+		1D4D2CFA308566F8BCA14135 /* YunAppItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D216DA33F979EDBF8D744 /* YunAppItem.m */; };
+		1D4D2DEA435FE67A45E268C5 /* YunConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D218E35BBE9F997027576 /* YunConfig.h */; };
 		6659F16E4290FE22A2332161 /* libPods-YunKits.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE9A9013BBAA01B96475858 /* libPods-YunKits.a */; };
 		AEC409C31EFB5C610077F4BA /* YunKits.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC409C11EFB5C610077F4BA /* YunKits.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AEC40A671EFB5E5B0077F4BA /* YunBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC409CC1EFB5E5B0077F4BA /* YunBaseView.h */; };
@@ -68,8 +73,6 @@
 		AEC40A9D1EFB5E5B0077F4BA /* YunUISearchBarFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC40A081EFB5E5B0077F4BA /* YunUISearchBarFactory.m */; };
 		AEC40A9E1EFB5E5B0077F4BA /* YunUIViewFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC40A091EFB5E5B0077F4BA /* YunUIViewFactory.h */; };
 		AEC40A9F1EFB5E5B0077F4BA /* YunUIViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC40A0A1EFB5E5B0077F4BA /* YunUIViewFactory.m */; };
-		AEC40AA01EFB5E5B0077F4BA /* YunAppItem.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC40A0C1EFB5E5B0077F4BA /* YunAppItem.h */; };
-		AEC40AA11EFB5E5B0077F4BA /* YunAppItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC40A0D1EFB5E5B0077F4BA /* YunAppItem.m */; };
 		AEC40AA21EFB5E5B0077F4BA /* YunGlobalDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC40A0E1EFB5E5B0077F4BA /* YunGlobalDefine.h */; };
 		AEC40ADD1EFB5E5B0077F4BA /* CalculationTime.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC40A4F1EFB5E5B0077F4BA /* CalculationTime.h */; };
 		AEC40ADE1EFB5E5B0077F4BA /* CalculationTime.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC40A501EFB5E5B0077F4BA /* CalculationTime.m */; };
@@ -97,8 +100,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D4D216DA33F979EDBF8D744 /* YunAppItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunAppItem.m; sourceTree = "<group>"; };
+		1D4D218E35BBE9F997027576 /* YunConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunConfig.h; sourceTree = "<group>"; };
+		1D4D2986658711F51DFD064E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1D4D2B1DB011C7103A128854 /* YunBaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunBaseNavigationViewController.m; sourceTree = "<group>"; };
 		1D4D2B495659FCDB351B5DAA /* YunBaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunBaseNavigationViewController.h; sourceTree = "<group>"; };
+		1D4D2C28E081EE8EBF4F9E2A /* YunConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunConfig.m; sourceTree = "<group>"; };
+		1D4D2CABB7AA47CC5BA752A1 /* YunAppItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunAppItem.h; sourceTree = "<group>"; };
 		47679CB88DF9DF061053125A /* Pods-YunKits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YunKits.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YunKits/Pods-YunKits.debug.xcconfig"; sourceTree = "<group>"; };
 		AEC409BE1EFB5C610077F4BA /* YunKits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YunKits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC409C11EFB5C610077F4BA /* YunKits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YunKits.h; sourceTree = "<group>"; };
@@ -160,8 +168,6 @@
 		AEC40A081EFB5E5B0077F4BA /* YunUISearchBarFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunUISearchBarFactory.m; sourceTree = "<group>"; };
 		AEC40A091EFB5E5B0077F4BA /* YunUIViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunUIViewFactory.h; sourceTree = "<group>"; };
 		AEC40A0A1EFB5E5B0077F4BA /* YunUIViewFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunUIViewFactory.m; sourceTree = "<group>"; };
-		AEC40A0C1EFB5E5B0077F4BA /* YunAppItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunAppItem.h; sourceTree = "<group>"; };
-		AEC40A0D1EFB5E5B0077F4BA /* YunAppItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunAppItem.m; sourceTree = "<group>"; };
 		AEC40A0E1EFB5E5B0077F4BA /* YunGlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunGlobalDefine.h; sourceTree = "<group>"; };
 		AEC40A4F1EFB5E5B0077F4BA /* CalculationTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculationTime.h; sourceTree = "<group>"; };
 		AEC40A501EFB5E5B0077F4BA /* CalculationTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculationTime.m; sourceTree = "<group>"; };
@@ -210,6 +216,7 @@
 				AEC409BF1EFB5C610077F4BA /* Products */,
 				BC9FD9013585C00E7415EC02 /* Pods */,
 				E2F2CA0BF042E132F89C04FF /* Frameworks */,
+				1D4D2986658711F51DFD064E /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -351,9 +358,9 @@
 		AEC40A0B1EFB5E5B0077F4BA /* Macro */ = {
 			isa = PBXGroup;
 			children = (
-				AEC40A0C1EFB5E5B0077F4BA /* YunAppItem.h */,
-				AEC40A0D1EFB5E5B0077F4BA /* YunAppItem.m */,
 				AEC40A0E1EFB5E5B0077F4BA /* YunGlobalDefine.h */,
+				1D4D2C28E081EE8EBF4F9E2A /* YunConfig.m */,
+				1D4D218E35BBE9F997027576 /* YunConfig.h */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -390,6 +397,8 @@
 				AEC40A621EFB5E5B0077F4BA /* YunValueHelper.m */,
 				AEC40A631EFB5E5B0077F4BA /* YunValueVerifier.h */,
 				AEC40A641EFB5E5B0077F4BA /* YunValueVerifier.m */,
+				1D4D2CABB7AA47CC5BA752A1 /* YunAppItem.h */,
+				1D4D216DA33F979EDBF8D744 /* YunAppItem.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -440,7 +449,6 @@
 				AEC40A771EFB5E5B0077F4BA /* NYXImagesHelper.h in Headers */,
 				AEC40A871EFB5E5B0077F4BA /* UITabBar+YunAdd.h in Headers */,
 				AEC40A751EFB5E5B0077F4BA /* YunDevice.h in Headers */,
-				AEC40AA01EFB5E5B0077F4BA /* YunAppItem.h in Headers */,
 				AEC40A8D1EFB5E5B0077F4BA /* UIView+YunAdd.h in Headers */,
 				AEC40ADD1EFB5E5B0077F4BA /* CalculationTime.h in Headers */,
 				AEC40A9A1EFB5E5B0077F4BA /* YunUILabelFactory.h in Headers */,
@@ -463,6 +471,8 @@
 				AEC40AF11EFB5E5B0077F4BA /* YunValueVerifier.h in Headers */,
 				AEC40A811EFB5E5B0077F4BA /* UILabel+Style.h in Headers */,
 				1D4D2AF8897B34304841FDB1 /* YunBaseNavigationViewController.h in Headers */,
+				1D4D2897F69C3D308261C160 /* YunAppItem.h in Headers */,
+				1D4D2DEA435FE67A45E268C5 /* YunConfig.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,7 +581,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEC40A951EFB5E5B0077F4BA /* YunUIBarButtonItemFactory.m in Sources */,
-				AEC40AA11EFB5E5B0077F4BA /* YunAppItem.m in Sources */,
 				AEC40A901EFB5E5B0077F4BA /* YunAttributedStringFactory.m in Sources */,
 				AEC40A8C1EFB5E5B0077F4BA /* UITextView+YunAdd.m in Sources */,
 				AEC40A7C1EFB5E5B0077F4BA /* UIImage+YunAdd.m in Sources */,
@@ -611,6 +620,9 @@
 				AEC40A7A1EFB5E5B0077F4BA /* UIImage+Resizing.m in Sources */,
 				AEC40AE01EFB5E5B0077F4BA /* ChineseToPinYinTool.m in Sources */,
 				1D4D21DCDCE3E2C6D72C6036 /* YunBaseNavigationViewController.m in Sources */,
+				1D4D25AC6D3F87C1A9A9BEFF /* README.md in Sources */,
+				1D4D2CFA308566F8BCA14135 /* YunAppItem.m in Sources */,
+				1D4D2331A780908D17012D19 /* YunConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -732,6 +744,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yun.YunKits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Debug;
 		};
@@ -752,6 +765,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yun.YunKits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Release;
 		};

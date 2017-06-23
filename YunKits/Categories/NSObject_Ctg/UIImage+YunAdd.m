@@ -8,8 +8,12 @@
 
 @implementation UIImage (YunAdd)
 
-+ (UIImage *)GetImageWithColor:(UIColor *)color andHeight:(CGFloat)height {
-    CGRect r = CGRectMake(0.0f, 0.0f, 1.0f, height);
++ (UIImage *)GetImageWithColor:(UIColor *)color height:(CGFloat)height {
+    return [self GetImageWithColor:color size:CGSizeMake(1.0f, height)];
+}
+
++ (UIImage *)GetImageWithColor:(UIColor *)color size:(CGSize)size {
+    CGRect r = CGRectMake(0.0f, 0.0f, size.width, size.height);
     UIGraphicsBeginImageContext(r.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
 
@@ -34,7 +38,11 @@
 }
 
 - (UIImage *)resizeWithSize:(NSInteger)size {
-    UIImage *newImg = [self resizeWithHeight:1400];
+    return [self resizeWithSize:size height:1080];
+}
+
+- (UIImage *)resizeWithSize:(NSInteger)size height:(CGFloat)height {
+    UIImage *newImg = [self resizeWithHeight:height];
 
     CGFloat compression = 0.5f;
     CGFloat maxCompression = 0.00000001f;

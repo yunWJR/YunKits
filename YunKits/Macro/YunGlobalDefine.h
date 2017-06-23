@@ -30,6 +30,4 @@
 
 #define URGE_IS_SHOW NO
 
-#define NETWORK_STATUS_NOTI_STR @"NETWORK_STATUS_NOTI_STR"
-
 #endif

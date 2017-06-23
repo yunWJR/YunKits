@@ -9,7 +9,6 @@
 #import "UIImageView+YunAdd.h"
 #import "YunGlobalDefine.h"
 #import "YunValueVerifier.h"
-//#import "UIImageView+PlayGIF.h" // todo gif 分离出去
 
 @implementation UIImageView (YunAdd)
 

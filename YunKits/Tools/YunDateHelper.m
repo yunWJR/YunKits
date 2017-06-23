@@ -5,8 +5,9 @@
 
 #import "YunDateHelper.h"
 
-#define YMD_STR @"yyyy-MM-dd"
-#define YMDHM_STR @"yyyy-MM-dd hh:mm"
+static NSString *YMD_Form = @"yyyy-MM-dd";
+
+static NSString *YMDHM_Form = @"yyyy-MM-dd hh:mm";
 
 @implementation YunDateHelper
 
@@ -19,6 +20,26 @@
 
     return instance;
 }
+
+#pragma mark - form
+
++ (NSString *)getYmdForm {
+    return YMD_Form;
+}
+
++ (void)setYmdForm:(NSString *)ymd {
+    YMD_Form = ymd;
+}
+
++ (NSString *)getYmdHmForm {
+    return YMDHM_Form;
+}
+
++ (void)setYmdHmForm:(NSString *)ymdHm {
+    YMDHM_Form = ymdHm;
+}
+
+#pragma mark - public funtions
 
 + (NSDate *)dateByUnixInterval:(long long)unixInterval {
     if (unixInterval <= 0) {
@@ -49,7 +70,14 @@
 
 + (NSString *)dateStrYMDWith:(NSDate *)date {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:YMD_STR];
+    [formatter setDateFormat:YMD_Form];
+
+    return [formatter stringFromDate:date];
+}
+
++ (NSString *)dateStrYMDHMWith:(NSDate *)date {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:YMDHM_Form];
 
     return [formatter stringFromDate:date];
 }
@@ -62,8 +90,8 @@
 }
 
 + (BOOL)isSameDateByYMD:(NSDate *)date1 date2:(NSDate *)date2 {
-    NSString *date1Str = [self dateStrWith:date1 andFormat:YMD_STR];
-    NSString *date2Str = [self dateStrWith:date2 andFormat:YMD_STR];
+    NSString *date1Str = [self dateStrWith:date1 andFormat:YMD_Form];
+    NSString *date2Str = [self dateStrWith:date2 andFormat:YMD_Form];
 
     return [date1Str isEqualToString:date2Str];
 }
@@ -81,14 +109,14 @@
 
 + (NSString *)dateStrYMDWithUnix:(long long)time {
     NSDate *cD = [YunDateHelper dateByUnixInterval:time];
-    NSString *dateStr = [[YunDateHelper instance] getDateStrByYMD:cD];
+    NSString *dateStr = [self dateStrYMDWith:cD];
 
     return dateStr;
 }
 
 + (NSString *)dateStrYMDHMWithUnix:(long long)time {
     NSDate *cD = [YunDateHelper dateByUnixInterval:time];
-    NSString *dateStr = [[YunDateHelper instance] getDateStrByYMDHM:cD];
+    NSString *dateStr = [self dateStrYMDHMWith:cD];
 
     return dateStr;
 }
@@ -155,44 +183,31 @@
     }
 }
 
-- (NSDate *)getDateByYMD:(NSString *)uiDate {
++ (NSDate *)getDateByYMD:(NSString *)dateStr {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:YMD_STR];
-    NSDate *date = [formatter dateFromString:uiDate];
+    [formatter setDateFormat:YMD_Form];
+    NSDate *date = [formatter dateFromString:dateStr];
     return date;
 }
 
-- (long long)getUnixDateByYMD:(NSString *)uiDate {
++ (long long)getUnixDateByYMD:(NSString *)dateStr {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:YMD_STR];
-    NSDate *date = [formatter dateFromString:uiDate];
+    [formatter setDateFormat:YMD_Form];
+    NSDate *date = [formatter dateFromString:dateStr];
     if (date) {
-        return [YunDateHelper unixIntervalByDate:date];
+        return [self unixIntervalByDate:date];
     }
+
     return -1;
 }
 
-- (NSString *)getDateStrByYMD:(NSDate *)date {
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:YMD_STR];
-
-    return [formatter stringFromDate:date];
-}
-
-- (NSString *)getDateStrByYMDHM:(NSDate *)date {
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:YMDHM_STR];
-
-    return [formatter stringFromDate:date];
-}
-
-- (NSString *)featureWeekdayWithDate:(NSString *)featureDate {
++ (NSString *)weekdayNameWithDate:(NSString *)dateYmd {
     // 创建 格式 对象
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     // 设置 日期 格式 可以根据自己的需求 随时调整， 否则计算的结果可能为 nil
-    formatter.dateFormat = YMD_STR;
+    formatter.dateFormat = YMD_Form;
     // 将字符串日期 转换为 NSDate 类型
-    NSDate *endDate = [formatter dateFromString:featureDate];
+    NSDate *endDate = [formatter dateFromString:dateYmd];
     // 判断当前日期 和 未来某个时刻日期 相差的天数
     long days = [self daysFromDate:[NSDate date] toDate:endDate];
     // 将总天数 换算为 以 周 计算（假如 相差10天，其实就是等于 相差 1周零3天，只需要取3天，更加方便计算）
@@ -216,14 +231,15 @@
         default:
             break;
     }
+
     return nil;
 }
 
-- (NSInteger)weekdayWithDate:(NSString *)featureDate {
++ (NSInteger)weekdayWithDate:(NSString *)featureDate {
     // 创建 格式 对象
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     // 设置 日期 格式 可以根据自己的需求 随时调整， 否则计算的结果可能为 nil
-    [formatter setDateFormat:YMD_STR];
+    [formatter setDateFormat:YMD_Form];
     [formatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
 
     // 将字符串日期 转换为 NSDate 类型
@@ -233,7 +249,7 @@
     return [components weekday];
 }
 
-- (NSInteger)weekNoByWeekDay:(NSInteger)weekDay {
++ (NSInteger)weekNoByWeekDay:(NSInteger)weekDay {
     NSInteger weekNum = weekDay - 1;
     if (weekNum == 0) {
         weekNum = 7;
@@ -242,7 +258,7 @@
     return weekNum;
 }
 
-- (NSInteger)daysFromDate:(NSDate *)startDate toDate:(NSDate *)endDate {
++ (NSInteger)daysFromDate:(NSDate *)startDate toDate:(NSDate *)endDate {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     // 话说在真机上需要设置区域，才能正确获取本地日期，天朝代码:zh_CN
     dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
@@ -266,7 +282,7 @@
 }
 
 // 获取当前是星期几
-- (NSInteger)getNowWeekday {
++ (NSInteger)getNowWeekday {
 //    NSDateComponents *comps = [[NSDateComponents alloc] init];
 
 //    NSDate *now = [NSDate date];
@@ -276,7 +292,7 @@
     return [[self getDateComponents:[NSDate date]] weekday];
 }
 
-- (NSDateComponents *)getDateComponents:(NSDate *)date {
++ (NSDateComponents *)getDateComponents:(NSDate *)date {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     [calendar setTimeZone:[[NSTimeZone alloc] initWithName:@"Asia/Shanghai"]];
     NSInteger unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekday |
@@ -286,13 +302,13 @@
     return comps;
 }
 
-- (NSInteger)weekNumForYM:(NSInteger)year month:(NSInteger)month day:(NSInteger)day {
++ (NSInteger)weekNumForYM:(NSInteger)year month:(NSInteger)month day:(NSInteger)day {
     NSInteger weekNUm = 0;
 
     NSInteger matchDay = 6; // 周五 1是周日 2是周一 6是周五
 
     NSDateFormatter *dateFormatter = [NSDateFormatter new];
-    [dateFormatter setDateFormat:YMD_STR];
+    [dateFormatter setDateFormat:YMD_Form];
     NSDate *curDate = [dateFormatter dateFromString:[NSString stringWithFormat:@"%04ld-%02ld-%02ld", (long) year, (long) month, (long) day]];
     NSCalendar *currentCalendar = [NSCalendar currentCalendar];
     NSRange daysRange = [currentCalendar rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:curDate];
@@ -310,20 +326,20 @@
     return weekNUm;
 }
 
-- (NSMutableDictionary *)weekIndexWithDate2:(NSDate *)date {
++ (NSMutableDictionary *)weekIndexWithDate2:(NSDate *)date {
     NSMutableDictionary *rstDic = [NSMutableDictionary new];
-    NSDateComponents *cmp = [[YunDateHelper instance] getDateComponents:date];
+    NSDateComponents *cmp = [self getDateComponents:date];
     NSInteger year = cmp.year;
     NSInteger month = cmp.month;
     NSInteger day = cmp.day;
 
     NSDateFormatter *dateFormatter = [NSDateFormatter new];
-    [dateFormatter setDateFormat:YMD_STR];
+    [dateFormatter setDateFormat:YMD_Form];
     NSDate *firstDay = [dateFormatter dateFromString:[NSString stringWithFormat:@"%04ld-%02ld-01", (long) year, (long) month]];
-    NSDateComponents *fCmp = [[YunDateHelper instance] getDateComponents:firstDay];
+    NSDateComponents *fCmp = [self getDateComponents:firstDay];
     NSInteger fDay = fCmp.day;
 
-    NSInteger firstDayWeekDay = [[YunDateHelper instance] weekdayWithDate:[NSString stringWithFormat:@"%04ld-%02ld-01", (long) year, (long) month]];
+    NSInteger firstDayWeekDay = [self weekdayWithDate:[NSString stringWithFormat:@"%04ld-%02ld-01", (long) year, (long) month]];
 
     NSInteger weekCount = (day - fDay + firstDayWeekDay) / 7;
     NSInteger weekRemain = (day - fDay + firstDayWeekDay) % 7;
@@ -371,9 +387,9 @@
     return rstDic;
 }
 
-- (NSMutableDictionary *)weekIndexWithDate:(NSDate *)date {
++ (NSMutableDictionary *)weekIndexWithDate:(NSDate *)date {
     NSMutableDictionary *rstDic = [NSMutableDictionary new];
-    NSDateComponents *cmp = [[YunDateHelper instance] getDateComponents:date];
+    NSDateComponents *cmp = [self getDateComponents:date];
     NSInteger year = cmp.year;
     NSInteger month = cmp.month;
     NSInteger day = cmp.day;
@@ -381,20 +397,20 @@
     NSInteger weekNum = [self weekNumForYM:year month:month day:day];
 
     NSDateFormatter *dateFormatter = [NSDateFormatter new];
-    [dateFormatter setDateFormat:YMD_STR];
+    [dateFormatter setDateFormat:YMD_Form];
 
     date = [dateFormatter dateFromString:[NSString stringWithFormat:@"%04ld-%02ld-%02ld", (long) year, (long) month, (long) day]];
     NSDate *firstDay = [dateFormatter dateFromString:[NSString stringWithFormat:@"%04ld-%02ld-01", (long) year, (long) month]];
-    NSInteger firstDayWeekDay = [[YunDateHelper instance] weekdayWithDate:[NSString stringWithFormat:@"%04ld-%02ld-01", (long) year, (long) month]];
+    NSInteger firstDayWeekDay = [self weekdayWithDate:[NSString stringWithFormat:@"%04ld-%02ld-01", (long) year, (long) month]];
     NSInteger firstDayWeekNo = [self weekNoByWeekDay:firstDayWeekDay];
     if (firstDayWeekNo == 7 || firstDayWeekNo == 6) { // 第一天是周六或者周日,则后延
-        firstDay = [[YunDateHelper instance] nextDate:firstDay withDays:(8 - firstDayWeekNo)];
+        firstDay = [self nextDate:firstDay withDays:(8 - firstDayWeekNo)];
         firstDayWeekNo = 1;
     }
 
     for (int i = 0; i < weekNum; i++) {
-        NSDate *pDay = [[YunDateHelper instance] preDate:firstDay withDays:(firstDayWeekNo - 1 - i * 7)];
-        NSDate *nDat = [[YunDateHelper instance] nextDate:firstDay withDays:(7 - firstDayWeekNo + i * 7)];
+        NSDate *pDay = [self preDate:firstDay withDays:(firstDayWeekNo - 1 - i * 7)];
+        NSDate *nDat = [self nextDate:firstDay withDays:(7 - firstDayWeekNo + i * 7)];
         if (date.timeIntervalSince1970 < pDay.timeIntervalSince1970 && i == 0) { // 三月最后一天
             NSInteger rstYear = year;
             NSInteger rstMonth = month - 1;
@@ -441,11 +457,11 @@
     return rstDic;
 }
 
-- (NSDate *)preDate:(NSDate *)date withDays:(NSInteger)day {
++ (NSDate *)preDate:(NSDate *)date withDays:(NSInteger)day {
     return [NSDate dateWithTimeInterval:-24 * 60 * 60 * day sinceDate:date];
 }
 
-- (NSDate *)nextDate:(NSDate *)date withDays:(NSInteger)day {
++ (NSDate *)nextDate:(NSDate *)date withDays:(NSInteger)day {
     return [NSDate dateWithTimeInterval:24 * 60 * 60 * day sinceDate:date];//后一天
 }
 

@@ -9,6 +9,18 @@
 
 + (instancetype)instance;
 
+#pragma mark - form
+
++ (NSString *)getYmdForm;
+
++ (void)setYmdForm:(NSString *)ymd;
+
++ (NSString *)getYmdHmForm;
+
++ (void)setYmdHmForm:(NSString *)ymdHm;
+
+#pragma mark - public funtions
+
 + (NSDate *)dateByUnixInterval:(long long)unixInterval;
 
 + (long long)unixIntervalByDate:(NSDate *)date;
@@ -41,26 +53,24 @@
 
 + (NSDate *)getMonthEndDay:(NSDate *)date;
 
-- (NSDate *)getDateByYMD:(NSString *)uiDate;
++ (NSDate *)getDateByYMD:(NSString *)dateStr;
 
-- (long long)getUnixDateByYMD:(NSString *)uiDate;
++ (long long)getUnixDateByYMD:(NSString *)dateStr;
 
-- (NSString *)getDateStrByYMD:(NSDate *)date;
++ (NSString *)weekdayNameWithDate:(NSString *)dateYmd;
 
-- (NSString *)featureWeekdayWithDate:(NSString *)featureDate;
++ (NSInteger)weekdayWithDate:(NSString *)featureDate;
 
-- (NSInteger)weekdayWithDate:(NSString *)featureDate;
++ (NSInteger)daysFromDate:(NSDate *)startDate toDate:(NSDate *)endDate;
 
-- (NSInteger)daysFromDate:(NSDate *)startDate toDate:(NSDate *)endDate;
++ (NSDateComponents *)getDateComponents:(NSDate *)date;
 
-- (NSDateComponents *)getDateComponents:(NSDate *)date;
++ (NSInteger)weekNumForYM:(NSInteger)year month:(NSInteger)month day:(NSInteger)day;
 
-- (NSInteger)weekNumForYM:(NSInteger)year month:(NSInteger)month day:(NSInteger)day;
++ (NSMutableDictionary *)weekIndexWithDate:(NSDate *)date;
 
-- (NSMutableDictionary *)weekIndexWithDate:(NSDate *)date;
++ (NSDate *)preDate:(NSDate *)date withDays:(NSInteger)day;
 
-- (NSDate *)preDate:(NSDate *)date withDays:(NSInteger)day;
-
-- (NSDate *)nextDate:(NSDate *)date withDays:(NSInteger)day;
++ (NSDate *)nextDate:(NSDate *)date withDays:(NSInteger)day;
 
 @end

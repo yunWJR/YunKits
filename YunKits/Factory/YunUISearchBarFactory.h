@@ -16,6 +16,7 @@
                                    target:(id _Nullable)target;
 
 + (UISearchBar *_Nonnull)createBarByFrame:(CGRect)frame
+                                bgImgName:(NSString *_Nullable)bgImgName
                                    phText:(NSString *_Nullable)phText
                                    target:(id _Nullable)target;
 

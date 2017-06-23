@@ -9,7 +9,9 @@
 
 }
 
-+ (UITableView *)createTVC:(id)target classes:(NSArray *)classes ids:(NSArray *)ids {
++ (UITableView *)createTVC:(id)target
+                   classes:(NSArray *)classes
+                       ids:(NSArray *)ids {
     UITableView *tvc = [[UITableView alloc] init];
     tvc.delegate = target;
     tvc.dataSource = target;

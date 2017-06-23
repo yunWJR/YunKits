@@ -12,10 +12,15 @@
 - (instancetype)initWithAllOff:(CGFloat)off andInterval:(CGFloat)interval {
     self = [super init];
     if (self) {
+        self.allOff = off;
+
         self.topOff = off;
         self.leftOff = off;
         self.rightOff = off;
         self.bottomOff = off;
+
+        self.allInterval = interval;
+        
         self.ctnIntervalV = interval;
         self.ctnIntervalH = interval;
     }

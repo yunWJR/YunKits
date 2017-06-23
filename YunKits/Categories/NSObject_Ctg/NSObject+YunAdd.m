@@ -9,7 +9,7 @@
 @implementation NSObject (YunAdd)
 
 /* 获取对象的所有属性 */
-- (NSDictionary *)properties_aps {
+- (NSDictionary *)getAllProperties {
     NSMutableDictionary *props = [NSMutableDictionary dictionary];
 
     unsigned int outCount, i;
@@ -18,8 +18,8 @@
         objc_property_t property = properties[i];
         const char *char_f = property_getName(property);
         NSString *propertyName = [NSString stringWithUTF8String:char_f];
-        id propertyValue = [self valueForKey:(NSString *) propertyName];
-        if (propertyValue) {[props setObject:propertyValue forKey:propertyName];}
+        id propertyValue = [self valueForKey:propertyName];
+        if (propertyValue) {props[propertyName] = propertyValue;}
     }
 
     free(properties);
@@ -28,14 +28,12 @@
 }
 
 /* 获取对象的所有方法 */
-- (void)printMothList {
+- (void)printAllMethod {
     unsigned int mothCout_f = 0;
     Method *mothList_f = class_copyMethodList([self class], &mothCout_f);
 
     for (int i = 0; i < mothCout_f; i++) {
         Method temp_f = mothList_f[i];
-        //IMP imp_f = method_getImplementation(temp_f);
-        //SEL name_f = method_getName(temp_f);
         const char *name_s = sel_getName(method_getName(temp_f));
         int arguments = method_getNumberOfArguments(temp_f);
         const char *encoding = method_getTypeEncoding(temp_f);
