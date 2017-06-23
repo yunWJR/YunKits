@@ -12,6 +12,6 @@
 
 - (void)setAlign:(NSTextAlignment)align lines:(NSInteger)lines adjust:(BOOL)adjust;
 
-- (void)setLayerRadius:(CGFloat)radius width:(CGFloat)width color:(UIColor *)color;
+- (void)setRadius:(CGFloat)radius width:(CGFloat)width color:(UIColor *)color;
 
 @end

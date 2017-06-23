@@ -6,7 +6,7 @@
 #import <UIKit/UIKit.h>
 #import <Masonry/Masonry.h>
 
-@interface YunBaseNavigationViewController : UIViewController
+@interface YunViewController : UIViewController
 
 // 返回视图,nil则返回上一级视图 // 默认nil
 @property (nonatomic, weak) UIViewController *backVC;

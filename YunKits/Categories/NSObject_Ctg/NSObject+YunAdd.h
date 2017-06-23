@@ -11,6 +11,6 @@
 - (NSDictionary *)getAllProperties;
 
 // 对象的所有方法
-- (void)printAllMethod;
+- (void)printAllMethods;
 
 @end

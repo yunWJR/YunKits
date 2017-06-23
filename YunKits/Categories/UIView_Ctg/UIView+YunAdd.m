@@ -57,7 +57,7 @@
     return self.frame.size.height;
 }
 
-- (UIView *)setViewLayerRadius:(CGFloat)radius width:(CGFloat)width color:(UIColor *)color {
+- (UIView *)setViewRadius:(CGFloat)radius width:(CGFloat)width color:(UIColor *)color {
     self.layer.cornerRadius = radius;
     self.layer.masksToBounds = YES;
     self.layer.borderWidth = width;
@@ -80,7 +80,7 @@
     return nil;
 }
 
-- (void)setShadow:(float)opacity color:(UIColor *)color radius:(CGFloat)radius offset:(CGSize)offset {
+- (void)setShadow:(CGFloat)opacity color:(UIColor *)color radius:(CGFloat)radius offset:(CGSize)offset {
     self.layer.shadowOpacity = opacity;// 阴影透明度
     self.layer.shadowColor = color.CGColor;// 阴影的颜色
     self.layer.shadowRadius = radius;// 阴影扩散的范围控制

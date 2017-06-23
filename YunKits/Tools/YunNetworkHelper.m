@@ -19,13 +19,13 @@
 @implementation YunNetworkHelper
 
 + (instancetype)instance {
-    static id sharedInstance = nil;
+    static YunNetworkHelper *sharedInstance = nil;
 
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [[self alloc] init];
 
-        [sharedInstance startMonitoring];
+        [sharedInstance startMonitor];
     });
 
     return sharedInstance;
@@ -38,7 +38,7 @@
     return self;
 }
 
-- (void)startMonitoring {
+- (void)startMonitor {
     // 网络状态检测
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         _started = YES;

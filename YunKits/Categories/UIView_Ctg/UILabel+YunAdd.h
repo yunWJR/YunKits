@@ -10,21 +10,23 @@
 
 @interface UILabel (YunAdd)
 
+// cal
 + (CGFloat)calHeightByWidth:(CGFloat)width text:(NSString *)text font:(UIFont *)font;
 
-+ (CGFloat)calHeightOneLine:(UIFont *)font;
++ (CGFloat)calOneLineHeight:(UIFont *)font;
 
 + (CGFloat)calWidthWithText:(NSString *)text font:(UIFont *)font;
 
+// pro
 - (CGFloat)getTextHeightByWidth:(CGFloat)width;
 
-- (CGFloat)getTextOneLineHeight;
+- (CGFloat)getOneLineHeight;
 
 - (CGFloat)getTextWidth;
 
-- (CGFloat)getTextWidthWithWordCount:(NSInteger)count;
+- (CGFloat)getWidthByWordCount:(NSInteger)count;
 
-- (CGFloat)getTextOneWordWidth;
+- (CGFloat)getOneWordWidth;
 
 - (void)setText:(NSString *)text lineInner:(CGFloat)inner;
 

@@ -7,13 +7,13 @@
 
 @implementation UITextView (YunAdd)
 
-- (float)heightForString:(UITextView *)textView andWidth:(float)width {
-    CGSize sizeToFit = [textView sizeThatFits:CGSizeMake(width, MAXFLOAT)];
+- (CGFloat)heightByWidth:(CGFloat)width {
+    CGSize sizeToFit = [self sizeThatFits:CGSizeMake(width, MAXFLOAT)];
     return sizeToFit.height;
 }
 
-- (float)getCtnHeight {
-    CGSize sizeToFit = [self sizeThatFits:CGSizeMake(sizeToFit.width, MAXFLOAT)];
+- (CGFloat)getCtnHeight {
+    CGSize sizeToFit = [self sizeThatFits:CGSizeMake(self.frame.size.width, MAXFLOAT)];
     return sizeToFit.height;
 }
 

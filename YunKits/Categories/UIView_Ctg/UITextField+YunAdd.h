@@ -9,6 +9,6 @@
 
 - (void)setTextLeftPadding:(CGFloat)leftPadding;
 
-- (void)setBorderColor:(UIColor *)color borderWidth:(CGFloat)width cornerRadius:(CGFloat)radius;
+- (void)setRadius:(CGFloat)radius color:(UIColor *)color width:(CGFloat)width;
 
 @end

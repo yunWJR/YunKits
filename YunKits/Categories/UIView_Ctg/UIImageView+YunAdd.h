@@ -7,10 +7,12 @@
 
 @interface UIImageView (YunAdd)
 
-- (void)setImageURLStr:(NSString *)imgStr;
+- (void)setImgUrlStr:(NSString *)urlStr;
 
-- (void)setImageURLStr:(NSString *)imgStr placeholderImage:(UIImage *)placeholderImage;
+- (void)downLoadImg:(NSString *)imgStr result:(void (^)(NSURL *))rs;
 
-- (void)setAvrImageURLStr:(NSString *)imgStr;
+- (void)setImgUrlStr:(NSString *)urlStr holderImg:(UIImage *)img;
+
+- (void)setAvrImgUrlStr:(NSString *)urlStr;
 
 @end

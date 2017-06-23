@@ -20,7 +20,7 @@
     return label.frame.size.height;
 }
 
-+ (CGFloat)calHeightOneLine:(UIFont *)font {
++ (CGFloat)calOneLineHeight:(UIFont *)font {
     return [self calHeightByWidth:100 text:@"字" font:font];
 }
 
@@ -37,7 +37,7 @@
     return [self getHeightByWidth:width text:self.text font:self.font];
 }
 
-- (CGFloat)getTextOneLineHeight {
+- (CGFloat)getOneLineHeight {
     return [self getHeightByWidth:100 text:@"字" font:self.font];
 }
 
@@ -50,11 +50,11 @@
     return label.frame.size.width;
 }
 
-- (CGFloat)getTextWidthWithWordCount:(NSInteger)count {
-    return [self getTextOneWordWidth] * count;
+- (CGFloat)getWidthByWordCount:(NSInteger)count {
+    return [self getOneWordWidth] * count;
 }
 
-- (CGFloat)getTextOneWordWidth {
+- (CGFloat)getOneWordWidth {
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, CGFLOAT_MAX, 0)];
     label.text = @"字";
     label.font = self.font;

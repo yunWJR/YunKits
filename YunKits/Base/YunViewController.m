@@ -3,15 +3,15 @@
 //  Copyright © 2016年 成都晟堃科技有限责任公司. All rights reserved.
 //
 
-#import "YunBaseNavigationViewController.h"
+#import "YunViewController.h"
 
-@interface YunBaseNavigationViewController () {
+@interface YunViewController () {
     UIImageView *_navBarHairlineImageView;
 }
 
 @end
 
-@implementation YunBaseNavigationViewController
+@implementation YunViewController
 
 - (instancetype)init {
     self = [super init];

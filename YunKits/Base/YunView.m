@@ -3,9 +3,9 @@
 // Copyright (c) 2016 成都晟堃科技有限责任公司. All rights reserved.
 //
 
-#import "YunBaseView.h"
+#import "YunView.h"
 
-@implementation YunBaseView {
+@implementation YunView {
 
 }
 

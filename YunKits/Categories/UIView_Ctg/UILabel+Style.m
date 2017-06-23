@@ -27,7 +27,7 @@
     self.adjustsFontSizeToFitWidth = adjust;
 }
 
-- (void)setLayerRadius:(CGFloat)radius width:(CGFloat)width color:(UIColor *)color {
+- (void)setRadius:(CGFloat)radius width:(CGFloat)width color:(UIColor *)color {
     if (self == nil) {
         return;
     }

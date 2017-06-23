@@ -8,7 +8,7 @@
 
 @interface UISearchBar (YunAdd)
 
-- (void)setSearchBarIconByImage:(NSString *)imgName;
+- (void)setIconByImgName:(NSString *)imgName;
 
 - (void)setRadius:(CGFloat)rd
           bgColor:(UIColor *)bgColor

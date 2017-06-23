@@ -7,8 +7,8 @@
 
 @interface UIButton (YunAdd)
 
-- (CGFloat)getNormalTitleOneLineHeight;
+- (CGFloat)getOneLineHeight;
 
-- (CGFloat)getNormalTitleWidth;
+- (CGFloat)getTitleWidth;
 
 @end

@@ -7,8 +7,8 @@
 
 @interface UITextView (YunAdd)
 
-- (float)heightForString:(UITextView *)textView andWidth:(float)width;
+- (CGFloat)heightByWidth:(CGFloat)width;
 
-- (float)getCtnHeight;
+- (CGFloat)getCtnHeight;
 
 @end

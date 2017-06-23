@@ -4,12 +4,12 @@
 //
 
 #import "YunUILabelFactory.h"
-#import "YunGlobalDefine.h"
 #import "UILabel+Style.h"
+#import "YunConfig.h"
 
 @implementation YunUILabelFactory
 
-+ (UILabel *)baseLabel {
++ (UILabel *)label {
     UILabel *lbl = [UILabel new];
     lbl.lineBreakMode = NSLineBreakByTruncatingTail;
 
@@ -26,7 +26,7 @@
                       font:(UIFont *)font
                      color:(UIColor *)color
                      align:(NSTextAlignment)align lines:(NSInteger)lines adjust:(BOOL)adjust {
-    UILabel *lbl = [self baseLabel];
+    UILabel *lbl = [self label];
     [lbl setText:text font:font color:color];
     [lbl setAlign:align lines:lines adjust:adjust];
 
@@ -45,17 +45,17 @@
     UILabel *lbl = [self labelWithText:text font:font color:color
                                  align:align lines:lines adjust:adjust];
 
-    [lbl setLayerRadius:radius width:width color:borderColor];
+    [lbl setRadius:radius width:width color:borderColor];
 
     return lbl;
 }
 
-+ (UILabel *)labelWithIconName:(NSString *)iconName
-                      fontSize:(CGFloat)fontSize
-                     textColor:(UIColor *)color {
++ (UILabel *)labelWithIcon:(NSString *_Nullable)icon
+                  fontSize:(CGFloat)fontSize
+                 textColor:(UIColor *_Nullable)color {
     UILabel *iconLbl = [UILabel new];
-    iconLbl.font = [UIFont fontWithName:ICON_FONT_NAME size:fontSize];
-    iconLbl.text = iconName;
+    iconLbl.font = [UIFont fontWithName:YunConfig.instance.iconFontName size:fontSize];
+    iconLbl.text = icon;
     iconLbl.textColor = color;
     iconLbl.textAlignment = NSTextAlignmentCenter;
     iconLbl.numberOfLines = 1;

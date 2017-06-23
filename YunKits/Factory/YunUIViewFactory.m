@@ -24,7 +24,7 @@
                 borderColor:(UIColor *)borderColor {
     UIView *view = [self viewWithBgColor:color];
 
-    [view setViewLayerRadius:radius width:width color:borderColor];
+    [view setViewRadius:radius width:width color:borderColor];
 
     return view;
 }

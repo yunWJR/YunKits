@@ -8,7 +8,7 @@
 
 @implementation UISearchBar (YunAdd)
 
-- (void)setSearchBarIconByImage:(NSString *)imgName {
+- (void)setIconByImgName:(NSString *)imgName {
     [self setImage:[UIImage imageNamed:imgName]
   forSearchBarIcon:UISearchBarIconSearch
              state:UIControlStateNormal];

@@ -11,10 +11,10 @@
 
 @interface NSError (YunAdd)
 
-+ (instancetype)errorWithCustomMsg:(NSString *)errorMsg;
++ (instancetype)errorWithCustomMsg:(NSString *)msg;
 
-+ (instancetype)errorWithCustomMsg:(NSString *)errorMsg andErrorCode:(NSInteger)errorCode;
++ (instancetype)errorWithCustomMsg:(NSString *)msg andCode:(NSInteger)code;
 
-+ (instancetype)errorWithCustomErrorCode:(NSInteger)errorCode;
++ (instancetype)errorWithCustomCode:(NSInteger)code;
 
 @end

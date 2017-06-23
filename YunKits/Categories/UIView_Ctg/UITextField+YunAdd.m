@@ -15,7 +15,7 @@
     self.leftView = leftView;
 }
 
-- (void)setBorderColor:(UIColor *)color borderWidth:(CGFloat)width cornerRadius:(CGFloat)radius {
+- (void)setRadius:(CGFloat)radius color:(UIColor *)color width:(CGFloat)width {
     self.borderStyle = UITextBorderStyleNone;
     self.layer.borderColor = color.CGColor;
     self.layer.borderWidth = width;

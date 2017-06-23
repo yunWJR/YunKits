@@ -28,7 +28,7 @@
 }
 
 /* 获取对象的所有方法 */
-- (void)printAllMethod {
+- (void)printAllMethods {
     unsigned int mothCout_f = 0;
     Method *mothList_f = class_copyMethodList([self class], &mothCout_f);
 

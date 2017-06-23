@@ -7,21 +7,21 @@
 
 @interface YunUISearchBarFactory : NSObject
 
-+ (UISearchBar *_Nonnull)createBarWithTarget:(id _Nullable)target;
++ (UISearchBar *_Nonnull)barWithTarget:(id _Nullable)target;
 
-+ (UISearchBar *_Nonnull)createBarByPHText:(NSString *_Nullable)phText
-                                    target:(id _Nullable)target;
++ (UISearchBar *_Nonnull)barWithPhText:(NSString *_Nullable)phText
+                                target:(id _Nullable)target;
 
-+ (UISearchBar *_Nonnull)createBarByFrame:(CGRect)frame
-                                   target:(id _Nullable)target;
++ (UISearchBar *_Nonnull)barWithFrame:(CGRect)frame
+                               target:(id _Nullable)target;
 
-+ (UISearchBar *_Nonnull)createBarByFrame:(CGRect)frame
-                                bgImgName:(NSString *_Nullable)bgImgName
-                                   phText:(NSString *_Nullable)phText
-                                   target:(id _Nullable)target;
-
-+ (UIView *_Nonnull)createViewByFrame:(CGRect)frame
++ (UISearchBar *_Nonnull)barWithFrame:(CGRect)frame
+                            bgImgName:(NSString *_Nullable)bgImgName
                                phText:(NSString *_Nullable)phText
                                target:(id _Nullable)target;
+
++ (UIView *_Nonnull)viewWithFrame:(CGRect)frame
+                           phText:(NSString *_Nullable)phText
+                           target:(id _Nullable)target;
 
 @end

@@ -7,7 +7,7 @@
 
 @interface YunUIImageViewFactory : NSObject
 
-+ (UIImageView *)baseImgView;
++ (UIImageView *)imgView;
 
 + (UIImageView *)imgViewWithImgName:(NSString *)imgName;
 

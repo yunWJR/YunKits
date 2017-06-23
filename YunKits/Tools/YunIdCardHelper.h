@@ -9,6 +9,8 @@
 
 + (BOOL)isValidIdCard:(NSString *)idCard;
 
-- (NSString *)getIdentityCardAge:(NSString *)numberStr;
++ (NSInteger)getIdCardSex:(NSString *)idCard;
+
++ (NSString *)getIdCardAge:(NSString *)idCard;
 
 @end

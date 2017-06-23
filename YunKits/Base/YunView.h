@@ -5,7 +5,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YunBaseView : UIView
+@interface YunView : UIView
 
 // 控件间距控制
 

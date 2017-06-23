@@ -10,16 +10,16 @@
 
 @implementation NSError (YunAdd)
 
-+ (instancetype)errorWithCustomMsg:(NSString *)errorMsg {
-    return [self errorWithCustomMsg:errorMsg andErrorCode:-1];
++ (instancetype)errorWithCustomMsg:(NSString *)msg {
+    return [self errorWithCustomMsg:msg andCode:-1];
 }
 
-+ (instancetype)errorWithCustomMsg:(NSString *)errorMsg andErrorCode:(NSInteger)errorCode {
-    return [[NSError alloc] initWithDomain:@"error_custom" code:errorCode userInfo:@{CUSTOM_MSG_KEY : errorMsg}];
++ (instancetype)errorWithCustomMsg:(NSString *)msg andCode:(NSInteger)code {
+    return [[NSError alloc] initWithDomain:@"error_custom" code:code userInfo:@{CUSTOM_MSG_KEY : msg}];
 }
 
-+ (instancetype)errorWithCustomErrorCode:(NSInteger)errorCode {
-    return [[NSError alloc] initWithDomain:@"error_custom" code:errorCode userInfo:@{CUSTOM_MSG_KEY : @""}];
++ (instancetype)errorWithCustomCode:(NSInteger)code {
+    return [[NSError alloc] initWithDomain:@"error_custom" code:code userInfo:@{CUSTOM_MSG_KEY : @""}];
 }
 
 @end

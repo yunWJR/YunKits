@@ -7,64 +7,64 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <AFNetworking/AFHTTPSessionManager.h>
 #import "UIImageView+YunAdd.h"
-#import "YunGlobalDefine.h"
 #import "YunValueVerifier.h"
+#import "YunConfig.h"
 
 @implementation UIImageView (YunAdd)
 
-- (void)setImageURLStr:(NSString *)imgStr placeholderImage:(UIImage *)placeholderImage {
-    if ([YunValueVerifier isNilOrEmptyStr:imgStr]) {
+- (void)setImgUrlStr:(NSString *)urlStr {
+    UIImage *placeholderImage = [UIImage imageNamed:YunConfig.instance.imgViewHolderImgName];
+
+    if ([YunValueVerifier isNilOrEmptyStr:urlStr]) {
         self.image = placeholderImage;
         return;
     }
 
-    [self sd_setImageWithURL:[NSURL URLWithString:imgStr]
+    [self sd_setImageWithURL:[NSURL URLWithString:urlStr]
             placeholderImage:placeholderImage
                    completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
                        if (!image) {
-                           self.image = [UIImage imageNamed:IMAGE_FAILED_NAME];
+                           self.image = [UIImage imageNamed:YunConfig.instance.imgViewFailedImgName];
+                       }
+                   }];
+
+}
+
+- (void)setImgUrlStr:(NSString *)urlStr holderImg:(UIImage *)img {
+    if ([YunValueVerifier isNilOrEmptyStr:urlStr]) {
+        self.image = img;
+        return;
+    }
+
+    [self sd_setImageWithURL:[NSURL URLWithString:urlStr]
+            placeholderImage:img
+                   completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+                       if (!image) {
+                           self.image = [UIImage imageNamed:YunConfig.instance.imgViewFailedImgName];
                        }
                    }];
 }
 
-- (void)setAvrImageURLStr:(NSString *)imgStr {
-    UIImage *placeholderImage = [UIImage imageNamed:IMAGE_AVr_NAME];
+- (void)setAvrImgUrlStr:(NSString *)urlStr {
+    UIImage *placeholderImage = [UIImage imageNamed:YunConfig.instance.imgViewAvrImgName];
 
-    if ([YunValueVerifier isNilOrEmptyStr:imgStr]) {
+    if ([YunValueVerifier isNilOrEmptyStr:urlStr]) {
         self.image = placeholderImage;
         return;
     }
 
-    [self sd_setImageWithURL:[NSURL URLWithString:imgStr]
+    [self sd_setImageWithURL:[NSURL URLWithString:urlStr]
             placeholderImage:placeholderImage
                    completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
                        if (!image) {
-                           self.image = [UIImage imageNamed:IMAGE_AVr_NAME];
+                           self.image = [UIImage imageNamed:YunConfig.instance.imgViewAvrImgName];
                        }
                    }];
-}
-
-- (void)setImageURLStr:(NSString *)imgStr {
-    UIImage *placeholderImage = [UIImage imageNamed:IMAGE_PLACEHOLDER_NAME];
-
-    if ([YunValueVerifier isNilOrEmptyStr:imgStr]) {
-        self.image = placeholderImage;
-        return;
-    }
-
-    [self sd_setImageWithURL:[NSURL URLWithString:imgStr]
-            placeholderImage:placeholderImage
-                   completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-                       if (!image) {
-                           self.image = [UIImage imageNamed:IMAGE_FAILED_NAME];
-                       }
-                   }];
-
 }
 
 // 执行下载文件的方法,可以监控下载进度
-- (void)downLoadAction:(NSString *)imgStr
-                result:(void (^)(NSURL *))rs {
+- (void)downLoadImg:(NSString *)imgStr
+             result:(void (^)(NSURL *))rs {
     // 1.创建网络管理者
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     // 2.目标地址

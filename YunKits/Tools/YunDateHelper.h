@@ -21,27 +21,51 @@
 
 #pragma mark - public funtions
 
-+ (NSDate *)dateByUnixInterval:(long long)unixInterval;
+#pragma mark - date
 
-+ (long long)unixIntervalByDate:(NSDate *)date;
-
-+ (long long)unixIntervalNow;
-
-+ (NSString *)dateStrWith:(NSDate *)date andFormat:(NSString *)format;
-
-+ (NSString *)dateStrYMDWith:(NSDate *)date;
++ (NSDate *)dateByUnixInterval:(long long)interval;
 
 + (NSDate *)dateWithDateStr:(NSString *)dateStr andFormat:(NSString *)format;
 
-+ (BOOL)isSameDateByYMD:(NSDate *)date1 date2:(NSDate *)date2;
++ (NSDate *)dateByYMDStr:(NSString *)ymd;
+
++ (NSDate *)getMonthBeginDay:(NSDate *)date;
+
++ (NSDate *)getMonthEndDay:(NSDate *)date;
+
++ (NSDate *)preDate:(NSDate *)date withDays:(NSInteger)days;
+
++ (NSDate *)nextDate:(NSDate *)date withDays:(NSInteger)days;
+
+#pragma mark - unix Interval
+
++ (long long)unixIntervalNow;
+
++ (long long)unixIntervalByDate:(NSDate *)date;
+
++ (long long)unixIntervalByYMDStr:(NSString *)ymd;
+
++ (long long)unixIntervalByYMDHMStr:(NSString *)ymdHm;
+
+#pragma mark - date verify
 
 + (BOOL)isToday:(NSDate *)date;
 
 + (BOOL)isSameDate:(NSDate *)date1 date2:(NSDate *)date2 byForm:(NSString *)form;
 
-+ (NSString *)dateStrYMDWithUnix:(long long)time;
++ (BOOL)isSameDateByYMD:(NSDate *)date1 date2:(NSDate *)date2;
 
-+ (NSString *)dateStrYMDHMWithUnix:(long long)time;
+#pragma mark - date Str
+
++ (NSString *)dateStrWith:(NSDate *)date andFormat:(NSString *)format;
+
++ (NSString *)dateStrYMDWith:(NSDate *)ymd;
+
++ (NSString *)dateStrYMDHMWith:(NSDate *)ymdHm;
+
++ (NSString *)dateStrYMDWithUnix:(long long)ymd;
+
++ (NSString *)dateStrYMDHMWithUnix:(long long)ymdHm;
 
 + (NSString *)dateStrWithUnix:(long long)time format:(NSString *)format;
 
@@ -49,28 +73,18 @@
 
 + (NSString *)dateStrWithDate:(NSDate *)date format:(NSString *)format nullText:(NSString *)text;
 
-+ (NSDate *)getMonthBeginDay:(NSDate *)date;
-
-+ (NSDate *)getMonthEndDay:(NSDate *)date;
-
-+ (NSDate *)getDateByYMD:(NSString *)dateStr;
-
-+ (long long)getUnixDateByYMD:(NSString *)dateStr;
-
 + (NSString *)weekdayNameWithDate:(NSString *)dateYmd;
 
-+ (NSInteger)weekdayWithDate:(NSString *)featureDate;
++ (NSInteger)weekdayWithDate:(NSString *)dateYmd;
+
++ (NSInteger)weekNoByWeekDay:(NSInteger)weekDay;
 
 + (NSInteger)daysFromDate:(NSDate *)startDate toDate:(NSDate *)endDate;
 
++ (NSInteger)getNowWeekday;
+
 + (NSDateComponents *)getDateComponents:(NSDate *)date;
 
-+ (NSInteger)weekNumForYM:(NSInteger)year month:(NSInteger)month day:(NSInteger)day;
-
-+ (NSMutableDictionary *)weekIndexWithDate:(NSDate *)date;
-
-+ (NSDate *)preDate:(NSDate *)date withDays:(NSInteger)day;
-
-+ (NSDate *)nextDate:(NSDate *)date withDays:(NSInteger)day;
++ (NSInteger)weekNumForYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day;
 
 @end

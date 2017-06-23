@@ -16,7 +16,7 @@
 
 + (instancetype)instance;
 
-- (void)startMonitoring;
+- (void)startMonitor;
 
 - (void)isNetworkReachable:(void (^)(BOOL))result;
 

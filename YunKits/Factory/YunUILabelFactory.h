@@ -7,15 +7,15 @@
 
 @interface YunUILabelFactory : NSObject
 
-+ (UILabel *_Nonnull)baseLabel;
++ (UILabel *_Nonnull)label;
 
 + (UILabel *_Nonnull)labelWithText:(NSString *_Nullable)text
                               font:(UIFont *_Nullable)font
                              color:(UIColor *_Nullable)color;
 
-+ (UILabel *_Nonnull)labelWithIconName:(NSString *_Nullable)iconName
-                              fontSize:(CGFloat)fontSize
-                             textColor:(UIColor *_Nullable)color;
++ (UILabel *_Nonnull)labelWithIcon:(NSString *_Nullable)icon
+                          fontSize:(CGFloat)fontSize
+                         textColor:(UIColor *_Nullable)color;
 
 + (UILabel *_Nonnull)labelWithText:(NSString *_Nullable)text
                               font:(UIFont *_Nullable)font

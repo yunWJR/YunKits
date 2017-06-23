@@ -6,15 +6,15 @@
 #import <Masonry/Masonry.h>
 #import "YunUIButtonFactory.h"
 #import "YunAttributedStringFactory.h"
-#import "YunGlobalDefine.h"
 #import "YunUIImageViewFactory.h"
+#import "YunConfig.h"
 
 @implementation YunUIButtonFactory
 
 #pragma mark button
 
-+ (UIButton *_Nonnull)baseBtnWithTarget:(id _Nullable)target
-                                 action:(SEL _Nullable)action {
++ (UIButton *_Nonnull)btnWithTarget:(id _Nullable)target
+                             action:(SEL _Nullable)action {
     UIButton *btn = [UIButton new];
 
     if (target && action) {
@@ -27,7 +27,7 @@
 + (UIButton *_Nonnull)btnWithBgImg:(NSString *)bgImg
                             target:(id _Nullable)target
                             action:(SEL _Nullable)action {
-    UIButton *btn = [self baseBtnWithTarget:target action:action];
+    UIButton *btn = [self btnWithTarget:target action:action];
 
     [btn setBackgroundImage:[UIImage imageNamed:bgImg] forState:UIControlStateNormal];
 
@@ -38,7 +38,7 @@
                            scale:(CGFloat)scale
                           target:(id _Nullable)target
                           action:(SEL _Nullable)action {
-    UIButton *btn = [self baseBtnWithTarget:target action:action];
+    UIButton *btn = [self btnWithTarget:target action:action];
 
     UIImageView *imgView = [YunUIImageViewFactory imgViewWithImgName:bgImg];
     [btn addSubview:imgView];
@@ -52,15 +52,15 @@
     return btn;
 }
 
-+ (UIButton *)btnByTitle:(NSString *_Nonnull)title
-              titleColor:(UIColor *_Nonnull)titleColor
-               titleFont:(UIFont *_Nonnull)titleFont
-                 bgColor:(UIColor *_Nonnull)bgColor
-                  radius:(CGFloat)radius
-                  border:(CGFloat)border
-             borderColor:(UIColor *_Nullable)borderColor
-                  target:(id _Nullable)target
-                  action:(SEL _Nullable)action {
++ (UIButton *)btnWithTitle:(NSString *_Nonnull)title
+                titleColor:(UIColor *_Nonnull)titleColor
+                 titleFont:(UIFont *_Nonnull)titleFont
+                   bgColor:(UIColor *_Nonnull)bgColor
+                    radius:(CGFloat)radius
+                    border:(CGFloat)border
+               borderColor:(UIColor *_Nullable)borderColor
+                    target:(id _Nullable)target
+                    action:(SEL _Nullable)action {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
 
     btn.backgroundColor = bgColor;
@@ -81,11 +81,11 @@
     return btn;
 }
 
-+ (UIButton *)btnByTitle:(NSString *_Nonnull)title
-               titleFont:(UIFont *_Nonnull)titleFont
-              titleColor:(UIColor *_Nonnull)titleColor
-                  target:(id _Nullable)target
-                  action:(SEL _Nullable)action {
++ (UIButton *)btnWithTitle:(NSString *_Nonnull)title
+                 titleFont:(UIFont *_Nonnull)titleFont
+                titleColor:(UIColor *_Nonnull)titleColor
+                    target:(id _Nullable)target
+                    action:(SEL _Nullable)action {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
 
     [btn setTitle:title forState:UIControlStateNormal];
@@ -99,15 +99,15 @@
     return btn;
 }
 
-+ (UIButton *)btnByIconName:(NSString *_Nonnull)icon
-                   fontSize:(CGFloat)fontSize
-                      color:(UIColor *_Nonnull)color
-                     target:(id _Nullable)target
-                     action:(SEL _Nullable)action {
++ (UIButton *)btnWithIconName:(NSString *_Nonnull)icon
+                     fontSize:(CGFloat)fontSize
+                        color:(UIColor *_Nonnull)color
+                       target:(id _Nullable)target
+                       action:(SEL _Nullable)action {
     UIButton *btn = [UIButton new];
     [btn setTitle:icon forState:UIControlStateNormal];
     [btn setTitleColor:color forState:UIControlStateNormal];
-    btn.titleLabel.font = [UIFont fontWithName:ICON_FONT_NAME size:fontSize];
+    btn.titleLabel.font = [UIFont fontWithName:YunConfig.instance.iconFontName size:fontSize];
 
     if (target && action) {
         [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
@@ -116,17 +116,17 @@
     return btn;
 }
 
-+ (UIButton *)btnByIconName:(NSString *_Nonnull)icon
-                 hlIconName:(NSString *_Nonnull)hlIcon
-                   fontSize:(CGFloat)fontSize
-                      color:(UIColor *_Nonnull)color
-                     target:(id _Nullable)target
-                     action:(SEL _Nullable)action {
++ (UIButton *)btnWithIconName:(NSString *_Nonnull)icon
+                   hlIconName:(NSString *_Nonnull)hlIcon
+                     fontSize:(CGFloat)fontSize
+                        color:(UIColor *_Nonnull)color
+                       target:(id _Nullable)target
+                       action:(SEL _Nullable)action {
     UIButton *btn = [UIButton new];
     [btn setTitle:icon forState:UIControlStateNormal];
     [btn setTitle:hlIcon forState:UIControlStateHighlighted];
     [btn setTitleColor:color forState:UIControlStateNormal];
-    btn.titleLabel.font = [UIFont fontWithName:ICON_FONT_NAME size:fontSize];
+    btn.titleLabel.font = [UIFont fontWithName:YunConfig.instance.iconFontName size:fontSize];
 
     if (target && action) {
         [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
@@ -135,24 +135,24 @@
     return btn;
 }
 
-+ (UIButton *)btnByIconName:(NSString *_Nonnull)icon
-                   iconSize:(CGFloat)iconSize
-                  iconColor:(UIColor *_Nonnull)iconColor
-                      title:(NSString *_Nonnull)title
-              titleFontSize:(UIFont *_Nonnull)titleFont
-                 titleColor:(UIColor *_Nonnull)titleColor
-                     isHori:(BOOL)isHori
-                     target:(id _Nullable)target
-                     action:(SEL _Nullable)action {
++ (UIButton *)btnWithIconName:(NSString *_Nonnull)icon
+                     iconSize:(CGFloat)iconSize
+                    iconColor:(UIColor *_Nonnull)iconColor
+                        title:(NSString *_Nonnull)title
+                titleFontSize:(UIFont *_Nonnull)titleFont
+                   titleColor:(UIColor *_Nonnull)titleColor
+                       isHori:(BOOL)isHori
+                       target:(id _Nullable)target
+                       action:(SEL _Nullable)action {
     UIButton *funBtn = [UIButton new];
 
-    NSMutableAttributedString *atStr = [YunAttributedStringFactory createAStrWith:icon
-                                                                        iconColor:iconColor
-                                                                         iconSize:iconSize
-                                                                            title:title
-                                                                       titleColor:titleColor
-                                                                        titleFont:titleFont
-                                                                           isHori:isHori];
+    NSMutableAttributedString *atStr = [YunAttributedStringFactory aStrWithIcon:icon
+                                                                      iconColor:iconColor
+                                                                       iconSize:iconSize
+                                                                          title:title
+                                                                     titleColor:titleColor
+                                                                      titleFont:titleFont
+                                                                         isHori:isHori];
 
     [funBtn setAttributedTitle:atStr forState:UIControlStateNormal];
 

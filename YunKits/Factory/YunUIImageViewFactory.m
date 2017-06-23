@@ -6,13 +6,13 @@
 #import "YunUIImageViewFactory.h"
 #import "YunValueVerifier.h"
 #import "UIView+YunAdd.h"
-#import "YunGlobalDefine.h"
+#import "YunConfig.h"
 
 @implementation YunUIImageViewFactory
 
-+ (UIImageView *)baseImgView {
++ (UIImageView *)imgView {
     UIImageView *imgView = [[UIImageView alloc] init];
-    imgView.contentMode = IMAGE_DEF_CTN_MODE; // 默认的显示模式
+    imgView.contentMode = YunConfig.instance.imgViewDefCtnMode; // 默认的显示模式
     imgView.clipsToBounds = YES;
 
     imgView.backgroundColor = [UIColor clearColor];
@@ -21,7 +21,7 @@
 }
 
 + (UIImageView *)imgViewWithImgName:(NSString *)imgName {
-    UIImageView *imgView = [self baseImgView];
+    UIImageView *imgView = [self imgView];
 
     if (![YunValueVerifier isNilOrEmptyStr:imgName]) {
         imgView.image = [UIImage imageNamed:imgName];
@@ -36,7 +36,7 @@
                         borderColor:(UIColor *)borderColor {
     UIImageView *imgView = [self imgViewWithImgName:imgName];
 
-    [imgView setViewLayerRadius:radius width:width color:borderColor];
+    [imgView setViewRadius:radius width:width color:borderColor];
 
     return imgView;
 }

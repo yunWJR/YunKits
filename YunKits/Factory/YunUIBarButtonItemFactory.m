@@ -7,10 +7,10 @@
 
 @implementation YunUIBarButtonItemFactory
 
-+ (UIBarButtonItem *)createItemByFrame:(CGRect)frame
-                                 image:(NSString *_Nullable)image
-                                target:(id _Nullable)target
-                                action:(SEL _Nullable)action {
++ (UIBarButtonItem *)itemWithFrame:(CGRect)frame
+                             image:(NSString *_Nullable)image
+                            target:(id _Nullable)target
+                            action:(SEL _Nullable)action {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = frame;
     [button setBackgroundImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
@@ -20,10 +20,10 @@
     return btnItem;
 }
 
-+ (UIBarButtonItem *)createItemByImage:(NSString *_Nullable)image
-                                target:(id _Nullable)target
-                                action:(SEL _Nullable)action {
-    return [self createItemByFrame:CGRectMake(15, 12, 26, 26) image:image target:target action:action];
++ (UIBarButtonItem *)itemWithImage:(NSString *_Nullable)image
+                            target:(id _Nullable)target
+                            action:(SEL _Nullable)action {
+    return [self itemWithFrame:CGRectMake(15, 12, 26, 26) image:image target:target action:action];
 }
 
 @end

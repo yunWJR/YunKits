@@ -88,19 +88,19 @@
     }
 }
 
-- (NSString *)birthdayStrFromIdentityCard:(NSString *)numberStr {
++ (NSString *)birthdayStrFromIdentityCard:(NSString *)idCard {
     NSMutableString *result = [NSMutableString stringWithCapacity:0];
     NSString *year = nil;
     NSString *month = nil;
 
     BOOL isAllNumber = YES;
     NSString *day = nil;
-    if ([numberStr length] < 14) {
+    if ([idCard length] < 14) {
         return result;
     }
 
     //**截取前14位
-    NSString *fontNumer = [numberStr substringWithRange:NSMakeRange(0, 13)];
+    NSString *fontNumer = [idCard substringWithRange:NSMakeRange(0, 13)];
 
     //**检测前14位否全都是数字;
     const char *str = [fontNumer UTF8String];
@@ -115,9 +115,9 @@
         return result;
     }
 
-    year = [numberStr substringWithRange:NSMakeRange(6, 4)];
-    month = [numberStr substringWithRange:NSMakeRange(10, 2)];
-    day = [numberStr substringWithRange:NSMakeRange(12, 2)];
+    year = [idCard substringWithRange:NSMakeRange(6, 4)];
+    month = [idCard substringWithRange:NSMakeRange(10, 2)];
+    day = [idCard substringWithRange:NSMakeRange(12, 2)];
 
     [result appendString:year];
     [result appendString:@"-"];
@@ -128,22 +128,22 @@
 }
 
 //根据身份证号性别
-- (NSString *)getIdentityCardSex:(NSString *)numberStr {
-    int sexInt = [[numberStr substringWithRange:NSMakeRange(16, 1)] intValue];
++ (NSInteger)getIdCardSex:(NSString *)idCard {
+    int sexInt = [[idCard substringWithRange:NSMakeRange(16, 1)] intValue];
 
     if (sexInt % 2 != 0) {
-        return @"1";
+        return 1;
     }
     else {
-        return @"2";
+        return 2;
     }
 }
 
 //根据省份证号获取年龄
-- (NSString *)getIdentityCardAge:(NSString *)numberStr {
++ (NSString *)getIdCardAge:(NSString *)idCard {
     NSDateFormatter *formatterTow = [[NSDateFormatter alloc] init];
     [formatterTow setDateFormat:@"yyyy-MM-dd"];
-    NSString *dateStr = [self birthdayStrFromIdentityCard:numberStr];
+    NSString *dateStr = [self birthdayStrFromIdentityCard:idCard];
     NSDate *bsyDate = [formatterTow dateFromString:dateStr];
 
     NSTimeInterval dateDiff = [bsyDate timeIntervalSinceNow];

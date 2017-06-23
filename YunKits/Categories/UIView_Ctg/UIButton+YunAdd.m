@@ -7,7 +7,7 @@
 
 @implementation UIButton (YunAdd)
 
-- (CGFloat)getNormalTitleOneLineHeight {
+- (CGFloat)getOneLineHeight {
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 0)];
     label.text = @"A";
     label.font = self.titleLabel.font;
@@ -17,7 +17,7 @@
     return label.frame.size.height;
 }
 
-- (CGFloat)getNormalTitleWidth {
+- (CGFloat)getTitleWidth {
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, CGFLOAT_MAX, 0)];
     label.text = [self titleForState:UIControlStateNormal];
     label.font = self.titleLabel.font;
