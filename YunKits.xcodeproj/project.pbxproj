@@ -78,10 +78,10 @@
 		AEC40A9E1EFB5E5B0077F4BA /* YunUIViewFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC40A091EFB5E5B0077F4BA /* YunUIViewFactory.h */; };
 		AEC40A9F1EFB5E5B0077F4BA /* YunUIViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC40A0A1EFB5E5B0077F4BA /* YunUIViewFactory.m */; };
 		AEC40AA21EFB5E5B0077F4BA /* YunGlobalDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC40A0E1EFB5E5B0077F4BA /* YunGlobalDefine.h */; };
-		AEC40ADD1EFB5E5B0077F4BA /* CalculationTime.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC40A4F1EFB5E5B0077F4BA /* CalculationTime.h */; };
-		AEC40ADE1EFB5E5B0077F4BA /* CalculationTime.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC40A501EFB5E5B0077F4BA /* CalculationTime.m */; };
-		AEC40ADF1EFB5E5B0077F4BA /* ChineseToPinYinTool.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC40A511EFB5E5B0077F4BA /* ChineseToPinYinTool.h */; };
-		AEC40AE01EFB5E5B0077F4BA /* ChineseToPinYinTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC40A521EFB5E5B0077F4BA /* ChineseToPinYinTool.m */; };
+		AEC40ADD1EFB5E5B0077F4BA /* YunCalTime.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC40A4F1EFB5E5B0077F4BA /* YunCalTime.h */; };
+		AEC40ADE1EFB5E5B0077F4BA /* YunCalTime.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC40A501EFB5E5B0077F4BA /* YunCalTime.m */; };
+		AEC40ADF1EFB5E5B0077F4BA /* YunPinYinTool.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC40A511EFB5E5B0077F4BA /* YunPinYinTool.h */; };
+		AEC40AE01EFB5E5B0077F4BA /* YunPinYinTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC40A521EFB5E5B0077F4BA /* YunPinYinTool.m */; };
 		AEC40AE11EFB5E5B0077F4BA /* YunDateHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC40A531EFB5E5B0077F4BA /* YunDateHelper.h */; };
 		AEC40AE21EFB5E5B0077F4BA /* YunDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC40A541EFB5E5B0077F4BA /* YunDateHelper.m */; };
 		AEC40AE31EFB5E5B0077F4BA /* YunIdCardHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC40A551EFB5E5B0077F4BA /* YunIdCardHelper.h */; };
@@ -177,10 +177,10 @@
 		AEC40A091EFB5E5B0077F4BA /* YunUIViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunUIViewFactory.h; sourceTree = "<group>"; };
 		AEC40A0A1EFB5E5B0077F4BA /* YunUIViewFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunUIViewFactory.m; sourceTree = "<group>"; };
 		AEC40A0E1EFB5E5B0077F4BA /* YunGlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunGlobalDefine.h; sourceTree = "<group>"; };
-		AEC40A4F1EFB5E5B0077F4BA /* CalculationTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculationTime.h; sourceTree = "<group>"; };
-		AEC40A501EFB5E5B0077F4BA /* CalculationTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculationTime.m; sourceTree = "<group>"; };
-		AEC40A511EFB5E5B0077F4BA /* ChineseToPinYinTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinYinTool.h; sourceTree = "<group>"; };
-		AEC40A521EFB5E5B0077F4BA /* ChineseToPinYinTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinYinTool.m; sourceTree = "<group>"; };
+		AEC40A4F1EFB5E5B0077F4BA /* YunCalTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunCalTime.h; sourceTree = "<group>"; };
+		AEC40A501EFB5E5B0077F4BA /* YunCalTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunCalTime.m; sourceTree = "<group>"; };
+		AEC40A511EFB5E5B0077F4BA /* YunPinYinTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunPinYinTool.h; sourceTree = "<group>"; };
+		AEC40A521EFB5E5B0077F4BA /* YunPinYinTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunPinYinTool.m; sourceTree = "<group>"; };
 		AEC40A531EFB5E5B0077F4BA /* YunDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunDateHelper.h; sourceTree = "<group>"; };
 		AEC40A541EFB5E5B0077F4BA /* YunDateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunDateHelper.m; sourceTree = "<group>"; };
 		AEC40A551EFB5E5B0077F4BA /* YunIdCardHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunIdCardHelper.h; sourceTree = "<group>"; };
@@ -383,10 +383,10 @@
 		AEC40A4E1EFB5E5B0077F4BA /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				AEC40A4F1EFB5E5B0077F4BA /* CalculationTime.h */,
-				AEC40A501EFB5E5B0077F4BA /* CalculationTime.m */,
-				AEC40A511EFB5E5B0077F4BA /* ChineseToPinYinTool.h */,
-				AEC40A521EFB5E5B0077F4BA /* ChineseToPinYinTool.m */,
+				AEC40A4F1EFB5E5B0077F4BA /* YunCalTime.h */,
+				AEC40A501EFB5E5B0077F4BA /* YunCalTime.m */,
+				AEC40A511EFB5E5B0077F4BA /* YunPinYinTool.h */,
+				AEC40A521EFB5E5B0077F4BA /* YunPinYinTool.m */,
 				AEC40A531EFB5E5B0077F4BA /* YunDateHelper.h */,
 				AEC40A541EFB5E5B0077F4BA /* YunDateHelper.m */,
 				AEC40A551EFB5E5B0077F4BA /* YunIdCardHelper.h */,
@@ -446,7 +446,7 @@
 				AEC40A8F1EFB5E5B0077F4BA /* YunAttributedStringFactory.h in Headers */,
 				AEC40A9E1EFB5E5B0077F4BA /* YunUIViewFactory.h in Headers */,
 				AEC40A671EFB5E5B0077F4BA /* YunView.h in Headers */,
-				AEC40ADF1EFB5E5B0077F4BA /* ChineseToPinYinTool.h in Headers */,
+				AEC40ADF1EFB5E5B0077F4BA /* YunPinYinTool.h in Headers */,
 				AEC40A891EFB5E5B0077F4BA /* UITextField+YunAdd.h in Headers */,
 				AEC40AED1EFB5E5B0077F4BA /* YunTheme.h in Headers */,
 				AEC40A7D1EFB5E5B0077F4BA /* UIButton+YunAdd.h in Headers */,
@@ -462,7 +462,7 @@
 				AEC40A871EFB5E5B0077F4BA /* UITabBar+YunAdd.h in Headers */,
 				AEC40A751EFB5E5B0077F4BA /* YunDevice.h in Headers */,
 				AEC40A8D1EFB5E5B0077F4BA /* UIView+YunAdd.h in Headers */,
-				AEC40ADD1EFB5E5B0077F4BA /* CalculationTime.h in Headers */,
+				AEC40ADD1EFB5E5B0077F4BA /* YunCalTime.h in Headers */,
 				AEC40A9A1EFB5E5B0077F4BA /* YunUILabelFactory.h in Headers */,
 				AEC40A711EFB5E5B0077F4BA /* UIColor+YunAdd.h in Headers */,
 				AEC40AE11EFB5E5B0077F4BA /* YunDateHelper.h in Headers */,
@@ -620,7 +620,7 @@
 				AEC40A701EFB5E5B0077F4BA /* NSString+YunAdd.m in Sources */,
 				AEC40A6E1EFB5E5B0077F4BA /* NSObject+YunAdd.m in Sources */,
 				AEC40A741EFB5E5B0077F4BA /* UIImage+Device.m in Sources */,
-				AEC40ADE1EFB5E5B0077F4BA /* CalculationTime.m in Sources */,
+				AEC40ADE1EFB5E5B0077F4BA /* YunCalTime.m in Sources */,
 				AEC40AEA1EFB5E5B0077F4BA /* YunSystemInfo.m in Sources */,
 				AEC40AF01EFB5E5B0077F4BA /* YunValueHelper.m in Sources */,
 				AEC40AF21EFB5E5B0077F4BA /* YunValueVerifier.m in Sources */,
@@ -632,7 +632,7 @@
 				AEC40A8A1EFB5E5B0077F4BA /* UITextField+YunAdd.m in Sources */,
 				AEC40A761EFB5E5B0077F4BA /* YunDevice.m in Sources */,
 				AEC40A7A1EFB5E5B0077F4BA /* UIImage+Resizing.m in Sources */,
-				AEC40AE01EFB5E5B0077F4BA /* ChineseToPinYinTool.m in Sources */,
+				AEC40AE01EFB5E5B0077F4BA /* YunPinYinTool.m in Sources */,
 				1D4D21DCDCE3E2C6D72C6036 /* YunViewController.m in Sources */,
 				1D4D25AC6D3F87C1A9A9BEFF /* README.md in Sources */,
 				1D4D2CFA308566F8BCA14135 /* YunAppItem.m in Sources */,
