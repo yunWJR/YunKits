@@ -20,7 +20,7 @@ PODS:
   - SDWebImage/Core (4.0.0)
 
 DEPENDENCIES:
-  - AFNetworking (~> 3.0)
+  - AFNetworking
   - Masonry
   - SDWebImage
 
@@ -29,6 +29,6 @@ SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 00d6c1e4b68140d48bff9265c877b3c1e82cc274
+PODFILE CHECKSUM: 73c5e3c4aba3ecf22e34934d3e1ed0b18f3a293d
 
 COCOAPODS: 1.2.1
