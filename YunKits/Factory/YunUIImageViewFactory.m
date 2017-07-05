@@ -7,6 +7,8 @@
 #import "YunValueVerifier.h"
 #import "UIView+YunAdd.h"
 #import "YunConfig.h"
+#import "YunUILabelFactory.h"
+#import "Masonry.h"
 
 @implementation YunUIImageViewFactory
 
@@ -37,6 +39,25 @@
     UIImageView *imgView = [self imgViewWithImgName:imgName];
 
     [imgView setViewRadius:radius width:width color:borderColor];
+
+    return imgView;
+}
+
++ (UIImageView *)imgViewWithIconName:(NSString *)iconName size:(CGFloat)size color:(UIColor *)color {
+    UIImageView *imgView = [self imgView];
+
+    UILabel *iconLbl = [YunUILabelFactory labelWithIcon:iconName
+                                               fontSize:size
+                                              textColor:color];
+    iconLbl.tag = YunConfig.instance.iconViewTag;
+
+    [imgView addSubview:iconLbl];
+
+    [iconLbl mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.equalTo(imgView);
+        make.top.equalTo(imgView);
+        make.left.equalTo(imgView);
+    }];
 
     return imgView;
 }

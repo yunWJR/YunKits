@@ -16,4 +16,8 @@
                               width:(CGFloat)width
                         borderColor:(UIColor *)borderColor;
 
++ (UIImageView *)imgViewWithIconName:(NSString *)iconName
+                                size:(CGFloat)size
+                               color:(UIColor *)color;
+
 @end

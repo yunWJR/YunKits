@@ -62,6 +62,19 @@
                    }];
 }
 
+- (BOOL)setIconName:(NSString *)iconName size:(CGFloat)size color:(UIColor *)color {
+    UILabel *iconLbl = [self viewWithTag:YunConfig.instance.iconViewTag];
+    if (iconLbl) {
+        iconLbl.font = [UIFont fontWithName:YunConfig.instance.iconFontName size:size];
+        iconLbl.text = iconName;
+        iconLbl.textColor = color;
+
+        return YES;
+    }
+
+    return NO;
+}
+
 // 执行下载文件的方法,可以监控下载进度
 - (void)downLoadImg:(NSString *)imgStr
              result:(void (^)(NSURL *))rs {
