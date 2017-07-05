@@ -9,6 +9,10 @@
 
 + (UIImageView *)imgView;
 
++ (UIImageView *)imgViewWithImgName:(NSString *)imgName mode:(UIViewContentMode)mode;
+
++ (UIImageView *)imgViewWithImgNameIconMode:(NSString *)imgName;
+
 + (UIImageView *)imgViewWithImgName:(NSString *)imgName;
 
 + (UIImageView *)imgViewWithImgName:(NSString *)imgName

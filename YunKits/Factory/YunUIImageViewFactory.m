@@ -22,10 +22,28 @@
     return imgView;
 }
 
++ (UIImageView *)imgViewWithImgName:(NSString *)imgName mode:(UIViewContentMode)mode {
+    UIImageView *imgView = [[UIImageView alloc] init];
+    imgView.contentMode = mode;
+    imgView.clipsToBounds = YES;
+
+    imgView.backgroundColor = [UIColor clearColor];
+
+    if ([YunValueVerifier isValidStr:imgName]) {
+        imgView.image = [UIImage imageNamed:imgName];
+    }
+
+    return imgView;
+}
+
++ (UIImageView *)imgViewWithImgNameIconMode:(NSString *)imgName {
+    return [self imgViewWithImgName:imgName mode:UIViewContentModeScaleAspectFit];
+}
+
 + (UIImageView *)imgViewWithImgName:(NSString *)imgName {
     UIImageView *imgView = [self imgView];
 
-    if (![YunValueVerifier isNilOrEmptyStr:imgName]) {
+    if ([YunValueVerifier isValidStr:imgName]) {
         imgView.image = [UIImage imageNamed:imgName];
     }
 
