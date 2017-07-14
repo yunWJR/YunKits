@@ -11,8 +11,8 @@
 @implementation YunUIBarButtonItemFactory
 
 + (UIBarButtonItem *)itemWithFrame:(CGRect)btnFrame
-                             image:(NSString *_Nullable)image
-                         imgHeight:(CGFloat)imgH
+                               img:(NSString *_Nullable)image
+                              imgH:(CGFloat)imgH
                             target:(id _Nullable)target
                             action:(SEL _Nullable)action {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -34,13 +34,13 @@
     return btnItem;
 }
 
-+ (UIBarButtonItem *)itemWithImage:(NSString *_Nullable)image
-                         imgHeight:(CGFloat)imgHeight
-                            target:(id _Nullable)target
-                            action:(SEL _Nullable)action {
++ (UIBarButtonItem *)itemWithImg:(NSString *_Nullable)image
+                            imgH:(CGFloat)imgHeight
+                          target:(id _Nullable)target
+                          action:(SEL _Nullable)action {
     CGRect btn = CGRectMake(0, 0, YunSizeHelper.navigationBarHeight, YunSizeHelper.navigationBarHeight);
 
-    return [self itemWithFrame:btn image:image imgHeight:imgHeight target:target action:action];
+    return [self itemWithFrame:btn img:image imgH:imgHeight target:target action:action];
 }
 
 @end

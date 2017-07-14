@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D4D210B006F21B6BCC58850 /* YunKeyBoardHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D28449046C0A07FFE9FF3 /* YunKeyBoardHelper.m */; };
 		1D4D21DCDCE3E2C6D72C6036 /* YunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D2B1DB011C7103A128854 /* YunViewController.m */; };
 		1D4D2241954B20AE14C65510 /* YunVideoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D28728E6315FB7C3C9BC6 /* YunVideoHelper.m */; };
+		1D4D22C890CD39952AF1AE9C /* YunUITabBarItemFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D26FE195AF452DF875321 /* YunUITabBarItemFactory.m */; };
 		1D4D2331A780908D17012D19 /* YunConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D2C28E081EE8EBF4F9E2A /* YunConfig.m */; };
 		1D4D25AC6D3F87C1A9A9BEFF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D2986658711F51DFD064E /* README.md */; };
 		1D4D282ABEBDBB2384246DF7 /* YunUITextFieldFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D28A550B7E0B59EBD9F2A /* YunUITextFieldFactory.m */; };
@@ -17,9 +19,13 @@
 		1D4D294383F31A93CD8867DE /* YunUITextFieldFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D2E8BD3FA3150D3713108 /* YunUITextFieldFactory.h */; };
 		1D4D29DCDE30D06D03EBB8EA /* YunImageHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D254CD751B579F1D19B36 /* YunImageHelper.h */; };
 		1D4D2AF8897B34304841FDB1 /* YunViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D2B495659FCDB351B5DAA /* YunViewController.h */; };
+		1D4D2B9C14A78E8E955160F6 /* YunUITabBarItemFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D2309F728542D3D1894FD /* YunUITabBarItemFactory.h */; };
 		1D4D2CFA308566F8BCA14135 /* YunAppItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D216DA33F979EDBF8D744 /* YunAppItem.m */; };
+		1D4D2D3B27D7307C03463FE6 /* YunKeyBoardHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D21198136E75EFEA38FB0 /* YunKeyBoardHelper.h */; };
 		1D4D2DA898D84844EADDF1E1 /* YunImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D228311555E11B154BC2C /* YunImageHelper.m */; };
 		1D4D2DEA435FE67A45E268C5 /* YunConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D218E35BBE9F997027576 /* YunConfig.h */; };
+		1D4D2EF22AB5BBF4F5D61DBB /* YunRgxHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D26C0175C9041834F72FF /* YunRgxHelper.m */; };
+		1D4D2F96EF8EEED1DCAC24D6 /* YunRgxHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D2EFFC28A57964FBF0417 /* YunRgxHelper.h */; };
 		6659F16E4290FE22A2332161 /* libPods-YunKits.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE9A9013BBAA01B96475858 /* libPods-YunKits.a */; };
 		AEC409C31EFB5C610077F4BA /* YunKits.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC409C11EFB5C610077F4BA /* YunKits.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AEC40A671EFB5E5B0077F4BA /* YunView.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC409CC1EFB5E5B0077F4BA /* YunView.h */; };
@@ -106,11 +112,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D4D21198136E75EFEA38FB0 /* YunKeyBoardHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunKeyBoardHelper.h; sourceTree = "<group>"; };
 		1D4D216DA33F979EDBF8D744 /* YunAppItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunAppItem.m; sourceTree = "<group>"; };
 		1D4D218E35BBE9F997027576 /* YunConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunConfig.h; sourceTree = "<group>"; };
 		1D4D228311555E11B154BC2C /* YunImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunImageHelper.m; sourceTree = "<group>"; };
+		1D4D2309F728542D3D1894FD /* YunUITabBarItemFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunUITabBarItemFactory.h; sourceTree = "<group>"; };
 		1D4D254CD751B579F1D19B36 /* YunImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunImageHelper.h; sourceTree = "<group>"; };
 		1D4D255456826EEFA7647223 /* YunVideoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunVideoHelper.h; sourceTree = "<group>"; };
+		1D4D26C0175C9041834F72FF /* YunRgxHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunRgxHelper.m; sourceTree = "<group>"; };
+		1D4D26FE195AF452DF875321 /* YunUITabBarItemFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunUITabBarItemFactory.m; sourceTree = "<group>"; };
+		1D4D28449046C0A07FFE9FF3 /* YunKeyBoardHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunKeyBoardHelper.m; sourceTree = "<group>"; };
 		1D4D28728E6315FB7C3C9BC6 /* YunVideoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunVideoHelper.m; sourceTree = "<group>"; };
 		1D4D28A550B7E0B59EBD9F2A /* YunUITextFieldFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunUITextFieldFactory.m; sourceTree = "<group>"; };
 		1D4D2986658711F51DFD064E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -119,6 +130,7 @@
 		1D4D2C28E081EE8EBF4F9E2A /* YunConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunConfig.m; sourceTree = "<group>"; };
 		1D4D2CABB7AA47CC5BA752A1 /* YunAppItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunAppItem.h; sourceTree = "<group>"; };
 		1D4D2E8BD3FA3150D3713108 /* YunUITextFieldFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunUITextFieldFactory.h; sourceTree = "<group>"; };
+		1D4D2EFFC28A57964FBF0417 /* YunRgxHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunRgxHelper.h; sourceTree = "<group>"; };
 		47679CB88DF9DF061053125A /* Pods-YunKits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YunKits.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YunKits/Pods-YunKits.debug.xcconfig"; sourceTree = "<group>"; };
 		AEC409BE1EFB5C610077F4BA /* YunKits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YunKits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC409C11EFB5C610077F4BA /* YunKits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YunKits.h; sourceTree = "<group>"; };
@@ -365,6 +377,8 @@
 				AEC40A0A1EFB5E5B0077F4BA /* YunUIViewFactory.m */,
 				1D4D28A550B7E0B59EBD9F2A /* YunUITextFieldFactory.m */,
 				1D4D2E8BD3FA3150D3713108 /* YunUITextFieldFactory.h */,
+				1D4D26FE195AF452DF875321 /* YunUITabBarItemFactory.m */,
+				1D4D2309F728542D3D1894FD /* YunUITabBarItemFactory.h */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -417,6 +431,10 @@
 				1D4D255456826EEFA7647223 /* YunVideoHelper.h */,
 				1D4D228311555E11B154BC2C /* YunImageHelper.m */,
 				1D4D254CD751B579F1D19B36 /* YunImageHelper.h */,
+				1D4D21198136E75EFEA38FB0 /* YunKeyBoardHelper.h */,
+				1D4D28449046C0A07FFE9FF3 /* YunKeyBoardHelper.m */,
+				1D4D2EFFC28A57964FBF0417 /* YunRgxHelper.h */,
+				1D4D26C0175C9041834F72FF /* YunRgxHelper.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -494,6 +512,9 @@
 				1D4D28A2969F6DAA08EB5DC3 /* YunVideoHelper.h in Headers */,
 				1D4D29DCDE30D06D03EBB8EA /* YunImageHelper.h in Headers */,
 				1D4D294383F31A93CD8867DE /* YunUITextFieldFactory.h in Headers */,
+				1D4D2B9C14A78E8E955160F6 /* YunUITabBarItemFactory.h in Headers */,
+				1D4D2D3B27D7307C03463FE6 /* YunKeyBoardHelper.h in Headers */,
+				1D4D2F96EF8EEED1DCAC24D6 /* YunRgxHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,6 +668,9 @@
 				1D4D2241954B20AE14C65510 /* YunVideoHelper.m in Sources */,
 				1D4D2DA898D84844EADDF1E1 /* YunImageHelper.m in Sources */,
 				1D4D282ABEBDBB2384246DF7 /* YunUITextFieldFactory.m in Sources */,
+				1D4D22C890CD39952AF1AE9C /* YunUITabBarItemFactory.m in Sources */,
+				1D4D210B006F21B6BCC58850 /* YunKeyBoardHelper.m in Sources */,
+				1D4D2EF22AB5BBF4F5D61DBB /* YunRgxHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

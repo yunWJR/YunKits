@@ -12,3 +12,4 @@
 #import "YunUIViewFactory.h"
 #import "YunUITableViewFactory.h"
 #import "YunUITextFieldFactory.h"
+#import "YunUITabBarItemFactory.h"

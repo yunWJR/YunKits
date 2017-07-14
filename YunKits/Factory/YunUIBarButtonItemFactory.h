@@ -8,13 +8,14 @@
 @interface YunUIBarButtonItemFactory : NSObject
 
 + (UIBarButtonItem *_Nonnull)itemWithFrame:(CGRect)btnFrame
-                                     image:(NSString *_Nullable)image
-                                 imgHeight:(CGFloat)imgH
+                                       img:(NSString *_Nullable)image
+                                      imgH:(CGFloat)imgH
                                     target:(id _Nullable)target
                                     action:(SEL _Nullable)action;
 
-+ (UIBarButtonItem *_Nonnull)itemWithImage:(NSString *_Nullable)image
-                                 imgHeight:(CGFloat)imgHeight
-                                    target:(id _Nullable)target
-                                    action:(SEL _Nullable)action;
++ (UIBarButtonItem *_Nonnull)itemWithImg:(NSString *_Nullable)image
+                                    imgH:(CGFloat)imgHeight
+                                  target:(id _Nullable)target
+                                  action:(SEL _Nullable)action;
+
 @end
