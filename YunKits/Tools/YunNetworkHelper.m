@@ -61,14 +61,14 @@
 - (void)isNetworkReachable:(void (^)(BOOL))result {
     result([AFNetworkReachabilityManager sharedManager].isReachable);
 
-    return;
-    dispatch_async(dispatch_queue_create("background", 0), ^{
-        while (true) { // 死循环
-            if (_started) {break;}
-        }
-
-        result([AFNetworkReachabilityManager sharedManager].isReachable);
-    });
+    //return;
+    //dispatch_async(dispatch_queue_create("background", 0), ^{
+    //    while (true) { // todo 死循环
+    //        if (_started) {break;}
+    //    }
+    //
+    //    result([AFNetworkReachabilityManager sharedManager].isReachable);
+    //});
 }
 
 - (BOOL)isNetworkAvailable {
