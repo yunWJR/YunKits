@@ -13,7 +13,9 @@
                               font:(UIFont *_Nullable)font
                              color:(UIColor *_Nullable)color;
 
-+ (UILabel *)labelWithMulText:(NSString *)text font:(UIFont *)font color:(UIColor *)color;
++ (UILabel *_Nonnull)labelWithMulText:(NSString *_Nullable)text
+                                 font:(UIFont *_Nullable)font
+                                color:(UIColor *_Nullable)color;
 
 + (UILabel *_Nonnull)labelWithIcon:(NSString *_Nullable)icon
                           fontSize:(CGFloat)fontSize

@@ -26,8 +26,6 @@
 
         _hideBottomBar = YES;
 
-        _keyboardNtf = NO;
-
         _sideOff = 10;
 
         _firstLoad = YES;
