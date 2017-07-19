@@ -78,18 +78,10 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-
-    if (_keyboardNtf) {
-        [self addKeyboardNotification];
-    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-
-    if (_keyboardNtf) {
-        [self removeKeyboardNotification];
-    }
 
     if (_hideNagBar) {
         [self.navigationController.navigationBar setHidden:NO];
@@ -238,31 +230,6 @@
         }
     }
     return nil;
-}
-
-#pragma mark - UIKeyboard Notification
-
-- (void)addKeyboardNotification {
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWillShow:)
-                                                 name:UIKeyboardWillShowNotification
-                                               object:nil];
-
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWillHide:)
-                                                 name:UIKeyboardWillHideNotification
-                                               object:nil];
-}
-
-- (void)removeKeyboardNotification {
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
-}
-
-- (void)keyboardWillShow:(NSNotification *)ntf {
-}
-
-- (void)keyboardWillHide:(NSNotification *)ntf {
 }
 
 #pragma mark - protocol
