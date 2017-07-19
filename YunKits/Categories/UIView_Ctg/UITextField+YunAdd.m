@@ -49,4 +49,8 @@
     self.attributedPlaceholder = at;
 }
 
+- (void)addTextChangedNoti:(id)tg action:(SEL)action {
+    [self addTarget:tg action:action forControlEvents:UIControlEventEditingChanged];
+}
+
 @end

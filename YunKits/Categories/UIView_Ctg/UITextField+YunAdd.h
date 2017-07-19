@@ -15,4 +15,6 @@
 
 - (void)setPhText:(NSString *)text tAl:(NSTextAlignment)tAl font:(UIFont *)font color:(UIColor *)color;
 
+- (void)addTextChangedNoti:(id)tg action:(SEL)action;
+
 @end
