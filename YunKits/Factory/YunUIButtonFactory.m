@@ -8,6 +8,7 @@
 #import "YunAttributedStringFactory.h"
 #import "YunUIImageViewFactory.h"
 #import "YunConfig.h"
+#import "UIImage+YunAdd.h"
 
 @implementation YunUIButtonFactory
 
@@ -165,6 +166,13 @@
     }
 
     return funBtn;
+}
+
++ (UIButton *)setDefHlColor:(UIButton *)btn {
+    [btn setBackgroundImage:[UIImage imgWithColor:YunConfig.instance.btnDefHlColor]
+                   forState:UIControlStateHighlighted];
+
+    return btn;
 }
 
 @end

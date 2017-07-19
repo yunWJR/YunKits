@@ -63,7 +63,7 @@
 }
 
 - (BOOL)setIconName:(NSString *)iconName size:(CGFloat)size color:(UIColor *)color {
-    UILabel *iconLbl = [self viewWithTag:YunConfig.instance.iconViewTag];
+    UILabel *iconLbl = [self viewWithTag:YunConfig.instance.iconViewTagInImgView];
     if (iconLbl) {
         iconLbl.font = [UIFont fontWithName:YunConfig.instance.iconFontName size:size];
         iconLbl.text = iconName;

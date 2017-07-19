@@ -38,7 +38,9 @@
 
         _isApnsDevMode = NO;
 
-        _iconViewTag = 99999;
+        _iconViewTagInImgView = 99999;
+
+        _btnDefHlColor = [UIColor lightGrayColor];
     }
 
     return self;
