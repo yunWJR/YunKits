@@ -4,6 +4,7 @@
 //
 
 #import "UIButton+YunAdd.h"
+#import "UIImage+YunAdd.h"
 
 @implementation UIButton (YunAdd)
 
@@ -30,5 +31,11 @@
 - (void)disableHl {
     self.adjustsImageWhenHighlighted = NO;
 }
+
+- (void)setHlColor:(UIColor *)color {
+    [self setBackgroundImage:[UIImage imgWithColor:color]
+                    forState:UIControlStateHighlighted];
+}
+
 
 @end
