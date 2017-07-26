@@ -37,6 +37,9 @@
 @property (nonatomic, strong) UIColor *btnDefHlColor;
 
 // NO
+@property (nonatomic, assign) BOOL btnHasHlColor;
+
+// NO
 @property (nonatomic, assign) BOOL isDebugMode;
 
 // NO
