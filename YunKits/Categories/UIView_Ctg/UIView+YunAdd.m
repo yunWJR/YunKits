@@ -72,6 +72,14 @@
     [self setViewRadius:radius width:0 color:nil];
 }
 
+- (void)setViewDiameter:(CGFloat)dia width:(CGFloat)width color:(UIColor *)color {
+    [self setViewRadius:dia * 0.5f width:width color:color];
+}
+
+- (void)setViewDiameter:(CGFloat)dia {
+    [self setViewRadius:dia * 0.5f width:0 color:nil];
+}
+
 - (UIViewController *)superViewController {
     for (UIView *next = [self superview]; next; next = next.superview) {
         UIResponder *nextResponder = [next nextResponder];
