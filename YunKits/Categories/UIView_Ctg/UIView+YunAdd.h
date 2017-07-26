@@ -19,6 +19,8 @@
 
 - (void)setViewRadius:(CGFloat)radius width:(CGFloat)width color:(UIColor *)color;
 
+- (void)setViewRadius:(CGFloat)radius;
+
 - (void)setShadow:(CGFloat)opacity color:(UIColor *)color radius:(CGFloat)radius offset:(CGSize)offset;
 
 - (void)removeAllSubView;
