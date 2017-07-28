@@ -9,7 +9,7 @@
 
 + (YunConfig *)instance;
 
-// iconfont
+// icon font
 @property (nonatomic, copy) NSString *iconFontName;
 
 // img_def_holder
@@ -44,5 +44,17 @@
 
 // NO
 @property (nonatomic, assign) BOOL isApnsDevMode;
+
+// yyyy-MM
+@property (nonatomic, copy) NSString *dateFmYm;
+
+// yyyy-MM-dd
+@property (nonatomic, copy) NSString *dateFmYmd;
+
+// yyyy-MM-dd hh:mm
+@property (nonatomic, copy) NSString *dateFmYmdHm;
+
+// hh:mm
+@property (nonatomic, copy) NSString *dateFmHm;
 
 @end

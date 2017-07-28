@@ -9,7 +9,8 @@
 
 - (void)setTextLeftPadding:(CGFloat)leftPadding;
 
-- (void)setRadius:(CGFloat)radius color:(UIColor *)color width:(CGFloat)width;
+- (void)setRadius:(CGFloat)radius color:(UIColor *)color width:(CGFloat)width
+__deprecated_msg("已过期, 请使用setViewRadius");
 
 - (void)setPhColor:(UIColor *)phColor phFont:(UIFont *)phFont;
 

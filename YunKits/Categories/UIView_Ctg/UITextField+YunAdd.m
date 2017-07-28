@@ -4,6 +4,7 @@
 //
 
 #import "UITextField+YunAdd.h"
+#import "UIView+YunAdd.h"
 
 @implementation UITextField (YunAdd)
 
@@ -16,10 +17,7 @@
 }
 
 - (void)setRadius:(CGFloat)radius color:(UIColor *)color width:(CGFloat)width {
-    self.borderStyle = UITextBorderStyleNone;
-    self.layer.borderColor = color.CGColor;
-    self.layer.borderWidth = width;
-    self.layer.cornerRadius = radius;
+    [self setViewRadius:radius width:width color:color];
 }
 
 - (void)setPhColor:(UIColor *)phColor phFont:(UIFont *)phFont {
