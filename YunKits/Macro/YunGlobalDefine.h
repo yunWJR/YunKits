@@ -22,8 +22,14 @@
 // 在主线程上运行
 #define DP_MAIN_THREAD(mainQueueBlock) dispatch_async(dispatch_get_main_queue(), mainQueueBlock);
 
-// 开启异步线程
+// 开启异步线程 GLOBLE
 #define DP_GLOBLE_QUEUE_DEF(globalQueueBlock) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), globalQueueBlocl);
+
+// 延迟执行 GLOBLE
+#define DP_AFTER_GLOBLE_QUEUE_DEF(interval, cmpBlock) dispatch_after(dispatch_time(DISPATCH_TIME_NOW, interval * NSEC_PER_SEC),dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),cmpBlock);
+
+// 延迟执行 主线程
+#define DP_AFTER_MAIN_QUEUE(interval, cmpBlock) dispatch_after(dispatch_time(DISPATCH_TIME_NOW, interval * NSEC_PER_SEC),dispatch_get_main_queue(),cmpBlock);
 
 // 通知
 #define NOTIF_ADD(n, f)   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(f) name:n object:nil]
