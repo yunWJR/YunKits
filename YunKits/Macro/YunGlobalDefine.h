@@ -6,6 +6,12 @@
 #ifndef YunMacro_YunGlobalDefine_h
 #define YunMacro_YunGlobalDefine_h
 
+#ifdef DEBUG
+#define YunLog(fmt, ...) NSLog((@"[文件名:%s]\n" "[函数名:%s]\n" "[行号:%d] \n" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define YunLog(...);
+#endif
+
 // weak self
 #define WEAK_SELF typeof(self) __weak weakSelf = self;
 
@@ -38,5 +44,7 @@
 
 // format
 #define FORMAT(f, ...)    [NSString stringWithFormat:f, ## __VA_ARGS__]
+
+#define FORMAT_DT(f, ...) FORMAT(@"\n[文件名: %s]\n" "[函数名: %s]\n" "[行 号: %d] \n" "[内 容: %@]", __FILE__, __FUNCTION__, __LINE__, [NSString stringWithFormat:f, ## __VA_ARGS__])
 
 #endif
