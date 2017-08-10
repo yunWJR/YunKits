@@ -57,4 +57,16 @@
 // hh:mm
 @property (nonatomic, copy) NSString *dateFmHm;
 
+// yyyy-MM
+@property (nonatomic, copy) NSString *dateFmYm_Server;
+
+// yyyy-MM-dd
+@property (nonatomic, copy) NSString *dateFmYmd_Server;
+
+// yyyy-MM-dd hh:mm
+@property (nonatomic, copy) NSString *dateFmYmdHm_Server;
+
+// hh:mm
+@property (nonatomic, copy) NSString *dateFmHm_Server;
+
 @end

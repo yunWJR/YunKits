@@ -10,7 +10,6 @@
 #import "sys/utsname.h"
 
 @implementation YunAppItem {
-
 }
 
 + (UIWindow *)appWindow {
