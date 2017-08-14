@@ -51,6 +51,8 @@
         _dateFmHm_Server = @"hh:mm";
 
         _btnDefHlColor = [UIColor lightGrayColor];
+
+        _imgViewBg = [UIColor clearColor];
     }
 
     return self;

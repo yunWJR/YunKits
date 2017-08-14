@@ -9,6 +9,9 @@
 
 + (YunConfig *)instance;
 
+// app
+@property (nonatomic, copy) NSString *appId;
+
 // icon font
 @property (nonatomic, copy) NSString *iconFontName;
 
@@ -68,5 +71,11 @@
 
 // hh:mm
 @property (nonatomic, copy) NSString *dateFmHm_Server;
+
+// def service phone
+@property (nonatomic, copy) NSString *servicePhone;
+
+// def imgview bg
+@property (nonatomic, strong) UIColor *imgViewBg;
 
 @end

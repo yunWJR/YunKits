@@ -11,13 +11,27 @@
     NSString *newUrl = [urlStr stringByAddingPercentEncodingWithAllowedCharacters:
                                        [NSCharacterSet URLQueryAllowedCharacterSet]];
     NSURL *url = [NSURL URLWithString:newUrl];
+
     return url;
+}
+
++ (NSString *)urlStrWithStr:(NSString *)urlStr {
+    NSURL *url = [self urlWithStr:urlStr];
+
+    return [url absoluteString];
 }
 
 + (NSURL *)urlWithStr:(NSString *)urlStr set:(NSCharacterSet *)set {
     NSString *newUrl = [urlStr stringByAddingPercentEncodingWithAllowedCharacters:set];
     NSURL *url = [NSURL URLWithString:newUrl];
+
     return url;
+}
+
++ (NSString *)urlStrWithStr:(NSString *)urlStr set:(NSCharacterSet *)set {
+    NSURL *url = [self urlWithStr:urlStr set:set];
+
+    return [url absoluteString];
 }
 
 @end

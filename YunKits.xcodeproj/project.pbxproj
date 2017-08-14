@@ -19,7 +19,9 @@
 		1D4D294383F31A93CD8867DE /* YunUITextFieldFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D2E8BD3FA3150D3713108 /* YunUITextFieldFactory.h */; };
 		1D4D29DCDE30D06D03EBB8EA /* YunImageHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D254CD751B579F1D19B36 /* YunImageHelper.h */; };
 		1D4D2AF8897B34304841FDB1 /* YunViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D2B495659FCDB351B5DAA /* YunViewController.h */; };
+		1D4D2B10831496858E530AAB /* UIViewYunAddHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D206ECED163D337FC9C62 /* UIViewYunAddHeader.h */; };
 		1D4D2B9C14A78E8E955160F6 /* YunUITabBarItemFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D2309F728542D3D1894FD /* YunUITabBarItemFactory.h */; };
+		1D4D2BBF2E8435F1B0C25F67 /* NSObjectYunAddHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D20B88DB8EB25B140689C /* NSObjectYunAddHeader.h */; };
 		1D4D2BE2337EC4F8F8BBCFCE /* NSURL+YunAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D20F207ECBF46FA1D41EC /* NSURL+YunAdd.m */; };
 		1D4D2C7B115BF7BBEBAA058F /* NSURL+YunAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D23A10D2FE3D966FA6AE0 /* NSURL+YunAdd.h */; };
 		1D4D2CFA308566F8BCA14135 /* YunAppItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D216DA33F979EDBF8D744 /* YunAppItem.m */; };
@@ -114,6 +116,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D4D206ECED163D337FC9C62 /* UIViewYunAddHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewYunAddHeader.h; sourceTree = "<group>"; };
+		1D4D20B88DB8EB25B140689C /* NSObjectYunAddHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectYunAddHeader.h; sourceTree = "<group>"; };
 		1D4D20F207ECBF46FA1D41EC /* NSURL+YunAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+YunAdd.m"; sourceTree = "<group>"; };
 		1D4D21198136E75EFEA38FB0 /* YunKeyBoardHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunKeyBoardHelper.h; sourceTree = "<group>"; };
 		1D4D216DA33F979EDBF8D744 /* YunAppItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunAppItem.m; sourceTree = "<group>"; };
@@ -310,6 +314,7 @@
 				AEC409E51EFB5E5B0077F4BA /* UIImage+YunAdd.m */,
 				1D4D20F207ECBF46FA1D41EC /* NSURL+YunAdd.m */,
 				1D4D23A10D2FE3D966FA6AE0 /* NSURL+YunAdd.h */,
+				1D4D20B88DB8EB25B140689C /* NSObjectYunAddHeader.h */,
 			);
 			path = NSObject_Ctg;
 			sourceTree = "<group>";
@@ -357,6 +362,7 @@
 				AEC409F61EFB5E5B0077F4BA /* UITextView+YunAdd.m */,
 				AEC409F71EFB5E5B0077F4BA /* UIView+YunAdd.h */,
 				AEC409F81EFB5E5B0077F4BA /* UIView+YunAdd.m */,
+				1D4D206ECED163D337FC9C62 /* UIViewYunAddHeader.h */,
 			);
 			path = UIView_Ctg;
 			sourceTree = "<group>";
@@ -522,6 +528,8 @@
 				1D4D2D3B27D7307C03463FE6 /* YunKeyBoardHelper.h in Headers */,
 				1D4D2F96EF8EEED1DCAC24D6 /* YunRgxHelper.h in Headers */,
 				1D4D2C7B115BF7BBEBAA058F /* NSURL+YunAdd.h in Headers */,
+				1D4D2B10831496858E530AAB /* UIViewYunAddHeader.h in Headers */,
+				1D4D2BBF2E8435F1B0C25F67 /* NSObjectYunAddHeader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

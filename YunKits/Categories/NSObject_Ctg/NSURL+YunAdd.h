@@ -9,6 +9,10 @@
 
 + (NSURL *)urlWithStr:(NSString *)urlStr;
 
++ (NSString *)urlStrWithStr:(NSString *)urlStr;
+
 + (NSURL *)urlWithStr:(NSString *)urlStr set:(NSCharacterSet *)set;
+
++ (NSString *)urlStrWithStr:(NSString *)urlStr set:(NSCharacterSet *)set;
 
 @end
