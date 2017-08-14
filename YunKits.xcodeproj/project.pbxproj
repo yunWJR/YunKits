@@ -20,6 +20,8 @@
 		1D4D29DCDE30D06D03EBB8EA /* YunImageHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D254CD751B579F1D19B36 /* YunImageHelper.h */; };
 		1D4D2AF8897B34304841FDB1 /* YunViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D2B495659FCDB351B5DAA /* YunViewController.h */; };
 		1D4D2B9C14A78E8E955160F6 /* YunUITabBarItemFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D2309F728542D3D1894FD /* YunUITabBarItemFactory.h */; };
+		1D4D2BE2337EC4F8F8BBCFCE /* NSURL+YunAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D20F207ECBF46FA1D41EC /* NSURL+YunAdd.m */; };
+		1D4D2C7B115BF7BBEBAA058F /* NSURL+YunAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D23A10D2FE3D966FA6AE0 /* NSURL+YunAdd.h */; };
 		1D4D2CFA308566F8BCA14135 /* YunAppItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D216DA33F979EDBF8D744 /* YunAppItem.m */; };
 		1D4D2D3B27D7307C03463FE6 /* YunKeyBoardHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D21198136E75EFEA38FB0 /* YunKeyBoardHelper.h */; };
 		1D4D2DA898D84844EADDF1E1 /* YunImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D228311555E11B154BC2C /* YunImageHelper.m */; };
@@ -112,11 +114,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D4D20F207ECBF46FA1D41EC /* NSURL+YunAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+YunAdd.m"; sourceTree = "<group>"; };
 		1D4D21198136E75EFEA38FB0 /* YunKeyBoardHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunKeyBoardHelper.h; sourceTree = "<group>"; };
 		1D4D216DA33F979EDBF8D744 /* YunAppItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunAppItem.m; sourceTree = "<group>"; };
 		1D4D218E35BBE9F997027576 /* YunConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunConfig.h; sourceTree = "<group>"; };
 		1D4D228311555E11B154BC2C /* YunImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunImageHelper.m; sourceTree = "<group>"; };
 		1D4D2309F728542D3D1894FD /* YunUITabBarItemFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunUITabBarItemFactory.h; sourceTree = "<group>"; };
+		1D4D23A10D2FE3D966FA6AE0 /* NSURL+YunAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+YunAdd.h"; sourceTree = "<group>"; };
 		1D4D254CD751B579F1D19B36 /* YunImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunImageHelper.h; sourceTree = "<group>"; };
 		1D4D255456826EEFA7647223 /* YunVideoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunVideoHelper.h; sourceTree = "<group>"; };
 		1D4D26C0175C9041834F72FF /* YunRgxHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunRgxHelper.m; sourceTree = "<group>"; };
@@ -304,6 +308,8 @@
 				AEC409DF1EFB5E5B0077F4BA /* UIImage+Resize */,
 				AEC409E41EFB5E5B0077F4BA /* UIImage+YunAdd.h */,
 				AEC409E51EFB5E5B0077F4BA /* UIImage+YunAdd.m */,
+				1D4D20F207ECBF46FA1D41EC /* NSURL+YunAdd.m */,
+				1D4D23A10D2FE3D966FA6AE0 /* NSURL+YunAdd.h */,
 			);
 			path = NSObject_Ctg;
 			sourceTree = "<group>";
@@ -515,6 +521,7 @@
 				1D4D2B9C14A78E8E955160F6 /* YunUITabBarItemFactory.h in Headers */,
 				1D4D2D3B27D7307C03463FE6 /* YunKeyBoardHelper.h in Headers */,
 				1D4D2F96EF8EEED1DCAC24D6 /* YunRgxHelper.h in Headers */,
+				1D4D2C7B115BF7BBEBAA058F /* NSURL+YunAdd.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,6 +678,7 @@
 				1D4D22C890CD39952AF1AE9C /* YunUITabBarItemFactory.m in Sources */,
 				1D4D210B006F21B6BCC58850 /* YunKeyBoardHelper.m in Sources */,
 				1D4D2EF22AB5BBF4F5D61DBB /* YunRgxHelper.m in Sources */,
+				1D4D2BE2337EC4F8F8BBCFCE /* NSURL+YunAdd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
