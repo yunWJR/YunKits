@@ -48,6 +48,9 @@
 // NO
 @property (nonatomic, assign) BOOL isApnsDevMode;
 
+// NO
+@property (nonatomic, assign) BOOL isLogMode;
+
 // yyyy-MM
 @property (nonatomic, copy) NSString *dateFmYm;
 
