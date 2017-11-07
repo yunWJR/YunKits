@@ -96,6 +96,11 @@
 #pragma mark - handles
 
 - (void)didClickNagLeftItem {
+    if (self.isModalVc) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+        return;
+    }
+
     if (_backVC) {
         [self.navigationController popToViewController:_backVC animated:YES];
     }

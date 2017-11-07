@@ -42,6 +42,9 @@
 
 @property (nonatomic, strong) UIBarButtonItem *rightNagItem;
 
+// 是否为模态
+@property (nonatomic, assign) BOOL isModalVc;
+
 #pragma mark - nag
 
 - (void)setRightBarItemByNormalImg:(NSString *)norImg highLightImg:(NSString *)highImg;
