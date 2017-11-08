@@ -57,9 +57,11 @@
     [super viewWillAppear:animated];
 
     if (_hideNagBar) {
-        [self.navigationController.navigationBar setHidden:YES];
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
     }
     else {
+        [self.navigationController setNavigationBarHidden:NO animated:YES];
+
         if (_hideNagBarBackItem) {
             UIBarButtonItem *btnItem = [[UIBarButtonItem alloc] initWithCustomView:[UIButton new]];
 
@@ -83,7 +85,10 @@
     [super viewWillDisappear:animated];
 
     if (_hideNagBar) {
-        [self.navigationController.navigationBar setHidden:NO];
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+    }
+    else {
+        [self.navigationController setNavigationBarHidden:NO animated:YES];
     }
 
     [self setNagBottomLineHideStatus:_hideNagBarBtmLine];
