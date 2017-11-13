@@ -31,13 +31,13 @@
 
 #pragma mark - unix Interval
 
-+ (long long)unixIntervalNow;
++ (NSTimeInterval)unixIntervalNow;
 
-+ (long long)unixIntervalByDate:(NSDate *)date;
++ (NSTimeInterval)unixIntervalByDate:(NSDate *)date;
 
-+ (long long)unixIntervalByYMDStr:(NSString *)ymd;
++ (NSTimeInterval)unixIntervalByYMDStr:(NSString *)ymd;
 
-+ (long long)unixIntervalByYMDHMStr:(NSString *)ymdHm;
++ (NSTimeInterval)unixIntervalByYMDHMStr:(NSString *)ymdHm;
 
 #pragma mark - date verify
 
