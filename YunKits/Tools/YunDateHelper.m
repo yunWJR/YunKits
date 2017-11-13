@@ -99,19 +99,19 @@
 
 #pragma mark - unix Interval
 
-+ (NSTimeInterval)unixIntervalNow {
-    return [[NSDate date] timeIntervalSince1970] * 1000;
++ (long long)unixIntervalNow {
+    return (long long) [[NSDate date] timeIntervalSince1970] * 1000;
 }
 
-+ (NSTimeInterval)unixIntervalByDate:(NSDate *)date {
++ (long long)unixIntervalByDate:(NSDate *)date {
     if (date == nil) {
         return 0;
     }
 
-    return [date timeIntervalSince1970] * 1000;
+    return (long long) [date timeIntervalSince1970] * 1000;
 }
 
-+ (NSTimeInterval)unixIntervalByYMDStr:(NSString *)ymd {
++ (long long)unixIntervalByYMDStr:(NSString *)ymd {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:self.Ymd_Form];
     NSDate *date = [formatter dateFromString:ymd];
@@ -122,7 +122,7 @@
     return -1;
 }
 
-+ (NSTimeInterval)unixIntervalByYMDHMStr:(NSString *)ymdHm {
++ (long long)unixIntervalByYMDHMStr:(NSString *)ymdHm {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:self.YmdHm_Form];
     NSDate *date = [formatter dateFromString:ymdHm];
