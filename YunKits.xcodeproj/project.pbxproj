@@ -16,10 +16,12 @@
 		1D4D2331A780908D17012D19 /* YunConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D2C28E081EE8EBF4F9E2A /* YunConfig.m */; };
 		1D4D24051FEA7D2E36143829 /* UIViewController+Nag.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D2D468B4E6BEE05E4879C /* UIViewController+Nag.h */; };
 		1D4D24792925452EA6D1EB2A /* UIFont+YunAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D2B10BB2651B8F2CE0253 /* UIFont+YunAdd.m */; };
+		1D4D27351DEF531E3AD95B28 /* YunVersionCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D2778C17FA6C80B93F68B /* YunVersionCheck.m */; };
 		1D4D282ABEBDBB2384246DF7 /* YunUITextFieldFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D28A550B7E0B59EBD9F2A /* YunUITextFieldFactory.m */; };
 		1D4D2897F69C3D308261C160 /* YunAppItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D2CABB7AA47CC5BA752A1 /* YunAppItem.h */; };
 		1D4D28A2969F6DAA08EB5DC3 /* YunVideoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D255456826EEFA7647223 /* YunVideoHelper.h */; };
 		1D4D294383F31A93CD8867DE /* YunUITextFieldFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D2E8BD3FA3150D3713108 /* YunUITextFieldFactory.h */; };
+		1D4D296BED3B12736CE2F3E2 /* YunVersionCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D2AE4A0D1409D50C7B10D /* YunVersionCheck.h */; };
 		1D4D29B4C9FADA56E9A196C3 /* UIViewController+Nag.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D29F1330E5AB6FC8928B0 /* UIViewController+Nag.m */; };
 		1D4D29DCDE30D06D03EBB8EA /* YunImageHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D254CD751B579F1D19B36 /* YunImageHelper.h */; };
 		1D4D2AD0BB95B9103B7C37F3 /* YunNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D2119ACCF7CFF87F9CBC6 /* YunNavigationController.m */; };
@@ -139,11 +141,13 @@
 		1D4D25787FD0CF59726C02DA /* UIFont+YunAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+YunAdd.h"; sourceTree = "<group>"; };
 		1D4D26C0175C9041834F72FF /* YunRgxHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunRgxHelper.m; sourceTree = "<group>"; };
 		1D4D26FE195AF452DF875321 /* YunUITabBarItemFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunUITabBarItemFactory.m; sourceTree = "<group>"; };
+		1D4D2778C17FA6C80B93F68B /* YunVersionCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunVersionCheck.m; sourceTree = "<group>"; };
 		1D4D28449046C0A07FFE9FF3 /* YunKeyBoardHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunKeyBoardHelper.m; sourceTree = "<group>"; };
 		1D4D28728E6315FB7C3C9BC6 /* YunVideoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunVideoHelper.m; sourceTree = "<group>"; };
 		1D4D28A550B7E0B59EBD9F2A /* YunUITextFieldFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunUITextFieldFactory.m; sourceTree = "<group>"; };
 		1D4D2986658711F51DFD064E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1D4D29F1330E5AB6FC8928B0 /* UIViewController+Nag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Nag.m"; sourceTree = "<group>"; };
+		1D4D2AE4A0D1409D50C7B10D /* YunVersionCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunVersionCheck.h; sourceTree = "<group>"; };
 		1D4D2B10BB2651B8F2CE0253 /* UIFont+YunAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+YunAdd.m"; sourceTree = "<group>"; };
 		1D4D2B1DB011C7103A128854 /* YunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunViewController.m; sourceTree = "<group>"; };
 		1D4D2B495659FCDB351B5DAA /* YunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunViewController.h; sourceTree = "<group>"; };
@@ -470,6 +474,8 @@
 				1D4D26C0175C9041834F72FF /* YunRgxHelper.m */,
 				1D4D22252F7797834A5158F1 /* YunSystemHelper.m */,
 				1D4D2F23CAFD3BE073D78F56 /* YunSystemHelper.h */,
+				1D4D2778C17FA6C80B93F68B /* YunVersionCheck.m */,
+				1D4D2AE4A0D1409D50C7B10D /* YunVersionCheck.h */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -557,6 +563,7 @@
 				1D4D24051FEA7D2E36143829 /* UIViewController+Nag.h in Headers */,
 				1D4D21671C2D624905407F3E /* YunSystemHelper.h in Headers */,
 				1D4D2BA07A76FB9C6DD61992 /* YunNavigationController.h in Headers */,
+				1D4D296BED3B12736CE2F3E2 /* YunVersionCheck.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,6 +727,7 @@
 				1D4D29B4C9FADA56E9A196C3 /* UIViewController+Nag.m in Sources */,
 				1D4D22DE2FC54DD1E38DFF71 /* YunSystemHelper.m in Sources */,
 				1D4D2AD0BB95B9103B7C37F3 /* YunNavigationController.m in Sources */,
+				1D4D27351DEF531E3AD95B28 /* YunVersionCheck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
