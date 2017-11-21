@@ -14,13 +14,13 @@
 @implementation UIImageView (YunAdd)
 
 - (void)setImgUrlStr:(NSString *)urlStr {
-    UIImage *phImg = nil;
+    UIImage *phImg = [UIImage imageNamed:YunConfig.instance.imgViewHolderImgName];
     if (self.image == nil) {
-        phImg = [UIImage imageNamed:YunConfig.instance.imgViewHolderImgName];
         self.image = phImg;
     }
 
     if ([YunValueVerifier isNilOrEmptyStr:urlStr]) {
+        self.image = phImg;
         return;
     }
 
@@ -40,6 +40,7 @@
     }
 
     if ([YunValueVerifier isNilOrEmptyStr:urlStr]) {
+        self.image = phImg;
         return;
     }
 
@@ -53,13 +54,13 @@
 }
 
 - (void)setAvrImgUrlStr:(NSString *)urlStr {
-    UIImage *phImg = nil;
+    UIImage *phImg = [UIImage imageNamed:YunConfig.instance.imgViewAvrImgName];
     if (self.image == nil) {
-        phImg = [UIImage imageNamed:YunConfig.instance.imgViewAvrImgName];
         self.image = phImg;
     }
 
     if ([YunValueVerifier isNilOrEmptyStr:urlStr]) {
+        self.image = phImg;
         return;
     }
 
