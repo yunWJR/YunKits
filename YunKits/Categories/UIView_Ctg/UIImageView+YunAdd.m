@@ -3,13 +3,13 @@
 // Copyright (c) 2016 成都晟堃科技有限责任公司. All rights reserved.
 //
 
+#import "YunValueVerifier.h"
 #import <SDWebImage/SDImageCache.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <AFNetworking/AFHTTPSessionManager.h>
 #import "UIImageView+YunAdd.h"
 #import "NSURL+YunAdd.h"
 #import "YunConfig.h"
-#import "YunValueVerifier.h"
 
 @implementation UIImageView (YunAdd)
 
@@ -25,13 +25,12 @@
     }
 
     [self sd_setImageWithURL:[NSURL urlWithStr:urlStr]
-            placeholderImage:phImg
+            placeholderImage:self.image
                    completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
                        if (!image) {
                            self.image = [UIImage imageNamed:YunConfig.instance.imgViewFailedImgName];
                        }
                    }];
-
 }
 
 - (void)setImgUrlStr:(NSString *)urlStr holderImg:(UIImage *)phImg {
@@ -45,7 +44,7 @@
     }
 
     [self sd_setImageWithURL:[NSURL urlWithStr:urlStr]
-            placeholderImage:phImg
+            placeholderImage:self.image
                    completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
                        if (!image) {
                            self.image = [UIImage imageNamed:YunConfig.instance.imgViewFailedImgName];
@@ -65,7 +64,7 @@
     }
 
     [self sd_setImageWithURL:[NSURL urlWithStr:urlStr]
-            placeholderImage:phImg
+            placeholderImage:self.image
                    completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
                        if (!image) {
                            self.image = [UIImage imageNamed:YunConfig.instance.imgViewAvrImgName];
