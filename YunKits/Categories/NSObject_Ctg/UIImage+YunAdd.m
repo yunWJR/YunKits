@@ -8,6 +8,13 @@
 
 @implementation UIImage (YunAdd)
 
++ (UIImage *)imgOfOrg:(NSString *)img {
+    UIImage *itemImg = [UIImage imageNamed:img];
+    itemImg = [itemImg imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+
+    return itemImg;
+}
+
 + (UIImage *)imgWithColor:(UIColor *)color {
     return [self imgWithColor:color size:CGSizeMake(1.0f, 1.0f)];
 }

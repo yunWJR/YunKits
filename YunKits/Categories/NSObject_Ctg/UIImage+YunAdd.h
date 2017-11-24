@@ -7,6 +7,8 @@
 
 @interface UIImage (YunAdd)
 
++ (UIImage *)imgOfOrg:(NSString *)img;
+
 + (UIImage *)imgWithColor:(UIColor *)color;
 
 + (UIImage *)imgWithColor:(UIColor *)color height:(CGFloat)height;
