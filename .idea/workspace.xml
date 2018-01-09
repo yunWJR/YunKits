@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="444f5441-0da2-4a5f-a4ae-da46d754ad90" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/UIImage+YunAdd.h" afterPath="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/UIImage+YunAdd.h" />
-      <change beforePath="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/UIImage+YunAdd.m" afterPath="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/UIImage+YunAdd.m" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -79,8 +77,8 @@
       <file leaf-file-name="UIImage+YunAdd.m" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/UIImage+YunAdd.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+            <state relative-caret-position="359">
+              <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -509,14 +507,7 @@
       <workItem from="1515465250574" duration="329000" />
       <workItem from="1515465609990" duration="312000" />
       <workItem from="1515467820515" duration="56000" />
-      <workItem from="1515467942125" duration="400000" />
-    </task>
-    <task id="LOCAL-00019" summary="fix api">
-      <created>1501727468369</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1501727468370</updated>
+      <workItem from="1515467942125" duration="463000" />
     </task>
     <task id="LOCAL-00020" summary="fix api">
       <created>1501729134688</created>
@@ -854,11 +845,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512005407789</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="add resize image">
+      <created>1515468401399</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1515468401400</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88064000" />
+    <option name="totallyTimeSpent" value="88127000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -948,7 +946,8 @@
     <MESSAGE value="add api" />
     <MESSAGE value="add prop" />
     <MESSAGE value="add YunVcHelper" />
-    <option name="LAST_COMMIT_MESSAGE" value="add YunVcHelper" />
+    <MESSAGE value="add resize image" />
+    <option name="LAST_COMMIT_MESSAGE" value="add resize image" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1315,8 +1314,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/UIImage+YunAdd.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        <state relative-caret-position="359">
+          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding />
         </state>
       </provider>
