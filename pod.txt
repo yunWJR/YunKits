@@ -1,0 +1,2 @@
+cd /Volumes/mac_data/2-项目/00-YunKits
+pod trunk push YunKits.podspec --allow-warnings
