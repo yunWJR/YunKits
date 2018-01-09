@@ -19,6 +19,8 @@
 
 - (UIImage *)resizeWithHeight:(CGFloat)height;
 
+- (UIImage *)resizeWithMaxSide:(CGFloat)side;
+
 - (UIImage *)resizeWithSize:(NSInteger)size;
 
 - (UIImage *)resizeWithMaxSize:(NSInteger)size;

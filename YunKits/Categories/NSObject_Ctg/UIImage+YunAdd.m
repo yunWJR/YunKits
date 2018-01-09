@@ -60,6 +60,30 @@
     return newImg;
 }
 
+- (UIImage *)resizeWithMaxSide:(CGFloat)side {
+    CGFloat w = CGImageGetWidth(self.CGImage);
+    CGFloat h = CGImageGetHeight(self.CGImage);
+
+    if ((side > w) && (side > h)) {
+        return self;
+    }
+
+    if (w > h) {
+        CGFloat newH = h * side / w;
+
+        UIImage *newImg = [self scaleToFitSize:CGSizeMake(side, newH)];
+
+        return newImg;
+    }
+    else {
+        CGFloat newW = w * side / h;
+
+        UIImage *newImg = [self scaleToFitSize:CGSizeMake(newW, side)];
+
+        return newImg;
+    }
+}
+
 // kb
 - (UIImage *)resizeWithSize:(NSInteger)size {
     return [self resizeWithMaxSize:size * 1024];

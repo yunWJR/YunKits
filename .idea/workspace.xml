@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="444f5441-0da2-4a5f-a4ae-da46d754ad90" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/YunKits/Factory/YunUITableViewFactory.m" afterPath="$PROJECT_DIR$/YunKits/Factory/YunUITableViewFactory.m" />
+      <change beforePath="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/UIImage+YunAdd.h" afterPath="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/UIImage+YunAdd.h" />
+      <change beforePath="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/UIImage+YunAdd.m" afterPath="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/UIImage+YunAdd.m" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,7 +13,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_1152b35bec267c271f8442c8f0034f849b9745fc" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="MASViewConstraint.m" pinned="false" current-in-tab="false">
@@ -65,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UIImage+YunAdd.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UIImage+YunAdd.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/UIImage+YunAdd.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+            <state relative-caret-position="356">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -78,9 +79,11 @@
       <file leaf-file-name="UIImage+YunAdd.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/UIImage+YunAdd.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="69" column="22" lean-forward="false" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="33">
+              <caret line="151" column="30" lean-forward="true" selection-start-line="151" selection-start-column="30" selection-end-line="151" selection-end-column="30" />
+              <folding>
+                <element signature="e#1751#2267#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,7 +98,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="YunUITableViewFactory.m" pinned="false" current-in-tab="true">
+      <file leaf-file-name="YunUITableViewFactory.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/YunKits/Factory/YunUITableViewFactory.m">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="412">
@@ -202,9 +205,9 @@
         <option value="$PROJECT_DIR$/YunKits/Tools/YunVcHelper.h" />
         <option value="$PROJECT_DIR$/YunKits/Tools/YunVcHelper.m" />
         <option value="$PROJECT_DIR$/Podfile" />
-        <option value="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/UIImage+YunAdd.h" />
-        <option value="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/UIImage+YunAdd.m" />
         <option value="$PROJECT_DIR$/YunKits/Factory/YunUITableViewFactory.m" />
+        <option value="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/UIImage+YunAdd.m" />
+        <option value="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/UIImage+YunAdd.h" />
       </list>
     </option>
   </component>
@@ -279,7 +282,15 @@
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="YunKits" type="1d218c8b:XcodeProjectNode" />
               <item name="YunKits" type="fcab9f18:XcodeViewNode" />
-              <item name="Factory" type="fcab9f18:XcodeViewNode" />
+              <item name="Categories" type="fcab9f18:XcodeViewNode" />
+              <item name="NSObject_Ctg" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="YunKits" type="1d218c8b:XcodeProjectNode" />
+              <item name="YunKits" type="fcab9f18:XcodeViewNode" />
+              <item name="Categories" type="fcab9f18:XcodeViewNode" />
+              <item name="UIView_Ctg" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
@@ -505,14 +516,8 @@
       <workItem from="1515465609990" duration="312000" />
       <workItem from="1515467820515" duration="56000" />
       <workItem from="1515467942125" duration="1114000" />
-      <workItem from="1515471436340" duration="32000" />
-    </task>
-    <task id="LOCAL-00020" summary="fix api">
-      <created>1501729134688</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1501729134688</updated>
+      <workItem from="1515471436340" duration="117000" />
+      <workItem from="1515485105615" duration="48000" />
     </task>
     <task id="LOCAL-00021" summary="fix api">
       <created>1501729757892</created>
@@ -850,11 +855,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515468401400</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="change tv">
+      <created>1515471472795</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1515471472795</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88810000" />
+    <option name="totallyTimeSpent" value="88943000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -945,7 +957,8 @@
     <MESSAGE value="add prop" />
     <MESSAGE value="add YunVcHelper" />
     <MESSAGE value="add resize image" />
-    <option name="LAST_COMMIT_MESSAGE" value="add resize image" />
+    <MESSAGE value="change tv" />
+    <option name="LAST_COMMIT_MESSAGE" value="change tv" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1294,26 +1307,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/UIImage+YunAdd.h">
+    <entry file="file://$PROJECT_DIR$/YunKits/Factory/YunUITableViewFactory.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        <state relative-caret-position="412">
+          <caret line="38" column="54" lean-forward="false" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/UIImage+YunAdd.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="69" column="22" lean-forward="false" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="33">
+          <caret line="151" column="30" lean-forward="true" selection-start-line="151" selection-start-column="30" selection-end-line="151" selection-end-column="30" />
+          <folding>
+            <element signature="e#1751#2267#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/YunKits/Factory/YunUITableViewFactory.m">
+    <entry file="file://$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/UIImage+YunAdd.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="38" column="54" lean-forward="false" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+        <state relative-caret-position="356">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
