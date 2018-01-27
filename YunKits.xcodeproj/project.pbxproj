@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		167A9CDB297CD94C12CE7A43 /* YunKits.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 167A9E4232DADA6CAE3142DC /* YunKits.podspec */; };
 		1D4D2038FE8F2DDAF957B0FB /* YunURLHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D240504ABB75A9FE3E546 /* YunURLHelper.h */; };
 		1D4D210B006F21B6BCC58850 /* YunKeyBoardHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D28449046C0A07FFE9FF3 /* YunKeyBoardHelper.m */; };
 		1D4D21671C2D624905407F3E /* YunSystemHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D2F23CAFD3BE073D78F56 /* YunSystemHelper.h */; };
@@ -127,6 +128,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		167A9E4232DADA6CAE3142DC /* YunKits.podspec */ = {isa = PBXFileReference; lastKnownFileType = file.podspec; path = YunKits.podspec; sourceTree = "<group>"; };
 		1D4D206ECED163D337FC9C62 /* UIViewYunAddHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewYunAddHeader.h; sourceTree = "<group>"; };
 		1D4D20B88DB8EB25B140689C /* NSObjectYunAddHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectYunAddHeader.h; sourceTree = "<group>"; };
 		1D4D20F207ECBF46FA1D41EC /* NSURL+YunAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+YunAdd.m"; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				BC9FD9013585C00E7415EC02 /* Pods */,
 				E2F2CA0BF042E132F89C04FF /* Frameworks */,
 				1D4D2986658711F51DFD064E /* README.md */,
+				167A9E4232DADA6CAE3142DC /* YunKits.podspec */,
 			);
 			sourceTree = "<group>";
 		};
@@ -635,6 +638,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				167A9CDB297CD94C12CE7A43 /* YunKits.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
