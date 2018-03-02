@@ -8,14 +8,17 @@
 
 @implementation NSObject (YunAdd)
 
+// 深度复制
 - (id)yunDeepCopy {
     id obj = nil;
+
     @try {
         obj = [NSKeyedUnarchiver unarchiveObjectWithData:[NSKeyedArchiver archivedDataWithRootObject:self]];
     }
     @catch (NSException *exception) {
         NSLog(@"%@", exception);
     }
+
     return obj;
 }
 

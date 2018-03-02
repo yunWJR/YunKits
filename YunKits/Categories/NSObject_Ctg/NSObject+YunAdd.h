@@ -7,6 +7,7 @@
 
 @interface NSObject (YunAdd)
 
+// 深度复制
 - (id)yunDeepCopy;
 
 // 获取对象的所有属性

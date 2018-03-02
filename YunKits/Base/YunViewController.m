@@ -125,8 +125,8 @@
 
 #pragma mark - public functions
 
-- (void)setRightBarItemByNormalImg:(NSString *)norImg highLightImg:(NSString *)highImg {
-    UIBarButtonItem *rBtnItem = [self createBarItemByImg:norImg action:@selector(didClickNagRightItem)];
+- (void)setRightBarItemByImg:(NSString *)img {
+    UIBarButtonItem *rBtnItem = [self createBarItemByImg:img action:@selector(didClickNagRightItem)];
 
     self.navigationItem.rightBarButtonItem = rBtnItem;
 

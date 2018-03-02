@@ -17,4 +17,6 @@
 
 + (instancetype)errorWithCustomCode:(NSInteger)code;
 
+- (NSString *)getErrorMsg;
+
 @end

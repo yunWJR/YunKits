@@ -24,4 +24,8 @@
     return [[NSError alloc] initWithDomain:@"error_custom" code:code userInfo:@{CUSTOM_MSG_KEY : @""}];
 }
 
+- (NSString *)getErrorMsg {
+    return self.userInfo[CUSTOM_MSG_KEY];
+}
+
 @end

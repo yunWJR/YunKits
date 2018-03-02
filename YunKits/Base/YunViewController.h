@@ -11,9 +11,6 @@
 // 返回视图,nil则返回上一级视图 // 默认nil
 @property (nonatomic, weak) YunViewController *backVC;
 
-// 是否为模态Vc
-@property (nonatomic, assign) BOOL isModalVc;
-
 // 导航栏隐藏属性 // 默认NO
 @property (nonatomic, assign) BOOL hideNagBar;
 
@@ -23,11 +20,13 @@
 // 导航栏底部线条隐藏属性 // 默认NO
 @property (nonatomic, assign) BOOL hideNagBarBtmLine;
 
+// leftNagItem
 @property (nonatomic, strong) UIBarButtonItem *leftNagItem;
 
+// rightNagItem
 @property (nonatomic, strong) UIBarButtonItem *rightNagItem;
 
-// bottom bar隐藏属性 // 默认YES
+// bottom bar隐藏属性 // 默认YES, table bar需要设置成 NO
 @property (nonatomic, assign) BOOL hideBottomBar;
 
 // 控件间距 // 默认0
@@ -42,15 +41,18 @@
 // 有数据需要更新 // 默认NO
 @property (nonatomic, assign) BOOL needUpdateData; // 使用后设为NO
 
-// 有数据需要更新 // 默认NO
+// 有数据需要强制更新 // 默认NO
 @property (nonatomic, assign) BOOL forceNoUpdate;
 
 // 是否Appear
 @property (nonatomic, assign) BOOL isAppear;
 
+// 是否为模态Vc
+@property (nonatomic, assign) BOOL isModalVc;
+
 #pragma mark - nag
 
-- (void)setRightBarItemByNormalImg:(NSString *)norImg highLightImg:(NSString *)highImg;
+- (void)setRightBarItemByImg:(NSString *)img;
 
 - (void)setRightBarItemName:(NSString *)name font:(UIFont *)font color:(UIColor *)color;
 
