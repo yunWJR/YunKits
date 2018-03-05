@@ -181,7 +181,7 @@ void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWidth, fl
 }
 
 - (NSInteger)imgLgFactor {
-    return 1000;
+    return 1024; // 1000?
 }
 
 @end
