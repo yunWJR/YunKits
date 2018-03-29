@@ -1,8 +1,8 @@
 //
 //  UILabel+YunAdd.h
 //
-//  Created by yun on 16/5/8.
-//  Copyright © 2016年 成都晟堃科技有限责任公司. All rights reserved.
+// Created by yun on 16/5/8.
+// Copyright (c) 2017 yun. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
