@@ -8,8 +8,7 @@
 
 @interface YunView : UIView
 
-// 控件间距控制
-
+// 边距定义，都是属性变量，用于布局的时候。
 @property (nonatomic, assign) CGFloat allOff;
 
 @property (nonatomic, assign) CGFloat sideOff;
@@ -22,6 +21,7 @@
 
 @property (nonatomic, assign) CGFloat bottomOff;
 
+// 内容间距，都是属性变量，用于布局的时候。
 @property (nonatomic, assign) CGFloat allInterval;
 
 @property (nonatomic, assign) CGFloat ctnIntervalV;

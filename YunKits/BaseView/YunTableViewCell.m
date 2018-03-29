@@ -52,6 +52,7 @@
     _ctnIntervalV = _allSideOff;
 }
 
+// cell 高度设置
 - (void)setItemHeight:(NSString *)itemId height:(CGFloat)height {
     if ([YunValueVerifier isInvalidStr:itemId]) {return;}
 

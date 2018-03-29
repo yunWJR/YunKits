@@ -1,7 +1,27 @@
 # YunKits
-yun's kits for iOS
 
-for objective-c
+**YunKits is a base frameword for iOS writed by objective-c.**
 
-platform:8.0
+- Platform:  iOS 9.0 and later
+
+# Components
+
+- BaseView 
+
+- Categories
+
+- Factory
+
+- Macro
+
+- Tools
+
+> You can user YunConfig.h to change default config.
+
+# Installation
+
+Use the cocoaPods
+
+> `pod 'YunKits'`
+
 

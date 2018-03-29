@@ -289,7 +289,7 @@
 		AEC409C01EFB5C610077F4BA /* YunKits */ = {
 			isa = PBXGroup;
 			children = (
-				AEC409C91EFB5E5B0077F4BA /* Base */,
+				AEC409C91EFB5E5B0077F4BA /* BaseView */,
 				AEC409D01EFB5E5B0077F4BA /* Categories */,
 				AEC409F91EFB5E5B0077F4BA /* Factory */,
 				AEC40A0B1EFB5E5B0077F4BA /* Macro */,
@@ -301,7 +301,7 @@
 			path = YunKits;
 			sourceTree = "<group>";
 		};
-		AEC409C91EFB5E5B0077F4BA /* Base */ = {
+		AEC409C91EFB5E5B0077F4BA /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
 				AEC409CC1EFB5E5B0077F4BA /* YunView.h */,
@@ -311,7 +311,7 @@
 				1D4D2B495659FCDB351B5DAA /* YunViewController.h */,
 				1D4D2B1DB011C7103A128854 /* YunViewController.m */,
 			);
-			path = Base;
+			path = BaseView;
 			sourceTree = "<group>";
 		};
 		AEC409D01EFB5E5B0077F4BA /* Categories */ = {

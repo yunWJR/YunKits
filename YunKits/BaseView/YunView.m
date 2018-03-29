@@ -6,7 +6,6 @@
 #import "YunView.h"
 
 @implementation YunView {
-
 }
 
 - (instancetype)initWithAllOff:(CGFloat)off andInterval:(CGFloat)interval {
