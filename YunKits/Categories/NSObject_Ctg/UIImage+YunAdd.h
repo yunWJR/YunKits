@@ -26,7 +26,7 @@
 - (NSInteger)imgSize
 __deprecated_msg("已过期, 请使用imgLength");
 
-// kb
+// kb 估计值，有一点误差
 - (NSInteger)imgLength;
 
 - (UIImage *)resizeWithSize:(NSInteger)size

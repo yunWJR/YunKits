@@ -7,6 +7,7 @@
 
 #import "UILabel+YunAdd.h"
 #import "YunConfig.h"
+#import "YunValueVerifier.h"
 
 @implementation UILabel (YunAdd)
 
@@ -84,7 +85,7 @@
 }
 
 - (void)setText:(NSString *)text lineInner:(CGFloat)inner {
-    if (self == nil || text == nil) {
+    if ([YunValueVerifier isInvalidStr:text]) {
         return;
     }
 

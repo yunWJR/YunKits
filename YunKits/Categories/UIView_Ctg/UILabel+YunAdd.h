@@ -31,7 +31,7 @@
 
 - (CGFloat)getOneWordWidth;
 
-// at 形式
+// attr 形式
 - (void)setText:(NSString *)text lineInner:(CGFloat)inner;
 
 @end

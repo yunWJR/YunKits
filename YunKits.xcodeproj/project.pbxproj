@@ -56,10 +56,6 @@
 		AEC40A701EFB5E5B0077F4BA /* NSString+YunAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC409D71EFB5E5B0077F4BA /* NSString+YunAdd.m */; };
 		AEC40A711EFB5E5B0077F4BA /* UIColor+YunAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC409D81EFB5E5B0077F4BA /* UIColor+YunAdd.h */; };
 		AEC40A721EFB5E5B0077F4BA /* UIColor+YunAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC409D91EFB5E5B0077F4BA /* UIColor+YunAdd.m */; };
-		AEC40A731EFB5E5B0077F4BA /* UIImage+Device.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC409DB1EFB5E5B0077F4BA /* UIImage+Device.h */; };
-		AEC40A741EFB5E5B0077F4BA /* UIImage+Device.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC409DC1EFB5E5B0077F4BA /* UIImage+Device.m */; };
-		AEC40A751EFB5E5B0077F4BA /* YunDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC409DD1EFB5E5B0077F4BA /* YunDevice.h */; };
-		AEC40A761EFB5E5B0077F4BA /* YunDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC409DE1EFB5E5B0077F4BA /* YunDevice.m */; };
 		AEC40A771EFB5E5B0077F4BA /* NYXImagesHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC409E01EFB5E5B0077F4BA /* NYXImagesHelper.h */; };
 		AEC40A781EFB5E5B0077F4BA /* NYXImagesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC409E11EFB5E5B0077F4BA /* NYXImagesHelper.m */; };
 		AEC40A791EFB5E5B0077F4BA /* UIImage+Resizing.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC409E21EFB5E5B0077F4BA /* UIImage+Resizing.h */; };
@@ -180,10 +176,6 @@
 		AEC409D71EFB5E5B0077F4BA /* NSString+YunAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YunAdd.m"; sourceTree = "<group>"; };
 		AEC409D81EFB5E5B0077F4BA /* UIColor+YunAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YunAdd.h"; sourceTree = "<group>"; };
 		AEC409D91EFB5E5B0077F4BA /* UIColor+YunAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YunAdd.m"; sourceTree = "<group>"; };
-		AEC409DB1EFB5E5B0077F4BA /* UIImage+Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Device.h"; sourceTree = "<group>"; };
-		AEC409DC1EFB5E5B0077F4BA /* UIImage+Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Device.m"; sourceTree = "<group>"; };
-		AEC409DD1EFB5E5B0077F4BA /* YunDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunDevice.h; sourceTree = "<group>"; };
-		AEC409DE1EFB5E5B0077F4BA /* YunDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunDevice.m; sourceTree = "<group>"; };
 		AEC409E01EFB5E5B0077F4BA /* NYXImagesHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYXImagesHelper.h; sourceTree = "<group>"; };
 		AEC409E11EFB5E5B0077F4BA /* NYXImagesHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYXImagesHelper.m; sourceTree = "<group>"; };
 		AEC409E21EFB5E5B0077F4BA /* UIImage+Resizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resizing.h"; sourceTree = "<group>"; };
@@ -334,7 +326,6 @@
 				AEC409D71EFB5E5B0077F4BA /* NSString+YunAdd.m */,
 				AEC409D81EFB5E5B0077F4BA /* UIColor+YunAdd.h */,
 				AEC409D91EFB5E5B0077F4BA /* UIColor+YunAdd.m */,
-				AEC409DA1EFB5E5B0077F4BA /* UIImage+Device */,
 				AEC409DF1EFB5E5B0077F4BA /* UIImage+Resize */,
 				AEC409E41EFB5E5B0077F4BA /* UIImage+YunAdd.h */,
 				AEC409E51EFB5E5B0077F4BA /* UIImage+YunAdd.m */,
@@ -345,17 +336,6 @@
 				1D4D25787FD0CF59726C02DA /* UIFont+YunAdd.h */,
 			);
 			path = NSObject_Ctg;
-			sourceTree = "<group>";
-		};
-		AEC409DA1EFB5E5B0077F4BA /* UIImage+Device */ = {
-			isa = PBXGroup;
-			children = (
-				AEC409DB1EFB5E5B0077F4BA /* UIImage+Device.h */,
-				AEC409DC1EFB5E5B0077F4BA /* UIImage+Device.m */,
-				AEC409DD1EFB5E5B0077F4BA /* YunDevice.h */,
-				AEC409DE1EFB5E5B0077F4BA /* YunDevice.m */,
-			);
-			path = "UIImage+Device";
 			sourceTree = "<group>";
 		};
 		AEC409DF1EFB5E5B0077F4BA /* UIImage+Resize */ = {
@@ -534,7 +514,6 @@
 				AEC40AE71EFB5E5B0077F4BA /* YunSizeHelper.h in Headers */,
 				AEC40A771EFB5E5B0077F4BA /* NYXImagesHelper.h in Headers */,
 				AEC40A871EFB5E5B0077F4BA /* UITabBar+YunAdd.h in Headers */,
-				AEC40A751EFB5E5B0077F4BA /* YunDevice.h in Headers */,
 				AEC40A8D1EFB5E5B0077F4BA /* UIView+YunAdd.h in Headers */,
 				AEC40ADD1EFB5E5B0077F4BA /* YunCalTime.h in Headers */,
 				AEC40A9A1EFB5E5B0077F4BA /* YunUILabelFactory.h in Headers */,
@@ -552,7 +531,6 @@
 				AEC40A7F1EFB5E5B0077F4BA /* UIImageView+YunAdd.h in Headers */,
 				AEC40A831EFB5E5B0077F4BA /* UILabel+YunAdd.h in Headers */,
 				AEC40A7B1EFB5E5B0077F4BA /* UIImage+YunAdd.h in Headers */,
-				AEC40A731EFB5E5B0077F4BA /* UIImage+Device.h in Headers */,
 				AEC40A791EFB5E5B0077F4BA /* UIImage+Resizing.h in Headers */,
 				AEC40AF11EFB5E5B0077F4BA /* YunValueVerifier.h in Headers */,
 				AEC40A811EFB5E5B0077F4BA /* UILabel+Style.h in Headers */,
@@ -710,7 +688,6 @@
 				AEC40A781EFB5E5B0077F4BA /* NYXImagesHelper.m in Sources */,
 				AEC40A701EFB5E5B0077F4BA /* NSString+YunAdd.m in Sources */,
 				AEC40A6E1EFB5E5B0077F4BA /* NSObject+YunAdd.m in Sources */,
-				AEC40A741EFB5E5B0077F4BA /* UIImage+Device.m in Sources */,
 				AEC40ADE1EFB5E5B0077F4BA /* YunCalTime.m in Sources */,
 				AEC40AEA1EFB5E5B0077F4BA /* YunAppInfo.m in Sources */,
 				AEC40AF01EFB5E5B0077F4BA /* YunValueHelper.m in Sources */,
@@ -721,7 +698,6 @@
 				AEC40AE41EFB5E5B0077F4BA /* YunIdCardHelper.m in Sources */,
 				AEC40A861EFB5E5B0077F4BA /* UISearchBar+YunAdd.m in Sources */,
 				AEC40A8A1EFB5E5B0077F4BA /* UITextField+YunAdd.m in Sources */,
-				AEC40A761EFB5E5B0077F4BA /* YunDevice.m in Sources */,
 				AEC40A7A1EFB5E5B0077F4BA /* UIImage+Resizing.m in Sources */,
 				AEC40AE01EFB5E5B0077F4BA /* YunPinYinTool.m in Sources */,
 				1D4D21DCDCE3E2C6D72C6036 /* YunViewController.m in Sources */,

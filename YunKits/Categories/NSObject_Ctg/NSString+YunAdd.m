@@ -25,7 +25,6 @@
     }
 
     //声明一个临时字符串,记录截取之后的字符串
-
     NSString *subStr = self;
     while (range.location != NSNotFound) {
         //只要进入循环就要count++
