@@ -4,6 +4,16 @@
 
 - Platform:  iOS 9.0 and later
 
+# Require
+
+- YunKits
+
+- AFNetworking
+
+- Masonry
+
+- SDWebImage
+
 # Components
 
 - BaseView 
@@ -16,12 +26,10 @@
 
 - Tools
 
-> You can user YunConfig.h to change default config.
+> You can user YunConfig.h to change default config.
 
 # Installation
 
 Use the cocoaPods
 
 > `pod 'YunKits'`
-
-

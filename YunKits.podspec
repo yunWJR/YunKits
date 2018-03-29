@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YunKits"
-  s.version      = "0.0.40"
+  s.version      = "0.0.41"
   s.summary      = "yun's kits for iOS."
 
   # This description is used to generate tags and improve search results.
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "YunKits/YunKits.h", "YunKits/Base/*.{h,m}", "YunKits/Categories/**/*.{h,m}", "YunKits/Categories/**/**/*.{h,m}", "YunKits/Factory/*.{h,m}", "YunKits/Macro/*.{h,m}", "YunKits/Tools/*.{h,m}"
+  s.source_files  = "YunKits/YunKits.h", "YunKits/BaseView/*.{h,m}", "YunKits/Categories/**/*.{h,m}", "YunKits/Categories/**/**/*.{h,m}", "YunKits/Factory/*.{h,m}", "YunKits/Macro/*.{h,m}", "YunKits/Tools/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "YunKits/YunKits.h"
