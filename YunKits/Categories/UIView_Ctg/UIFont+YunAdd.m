@@ -4,16 +4,15 @@
 //
 
 #import "UIFont+YunAdd.h"
-#import "YunConfig.h"
 
 @implementation UIFont (YunAdd)
 
-+ (CGFloat)lineItvOfSize:(CGFloat)size {
-    return size * YunConfig.instance.fontBlankCoefficient;
+- (CGFloat)lineItv {
+    return (self.lineHeight - self.pointSize);
 }
 
-- (CGFloat)lineItv {
-    return [UIFont lineItvOfSize:self.pointSize];
+- (CGFloat)lineTopOff {
+    return self.lineItv * 0.5f;
 }
 
 @end
