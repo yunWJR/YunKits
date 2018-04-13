@@ -42,7 +42,6 @@
     [[AFNetworkReachabilityManager sharedManager]
                                    setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
                                        _started = YES;
-                                       NSLog(@"Reachability: %@", AFStringFromNetworkReachabilityStatus(status));
 
                                        if (_didStatusChanged) {
                                            _didStatusChanged(self.isNetworkAvailable);
@@ -58,16 +57,9 @@
 }
 
 - (void)isNetworkReachable:(void (^)(BOOL))result {
-    result([AFNetworkReachabilityManager sharedManager].isReachable);
-
-    //return;
-    //dispatch_async(dispatch_queue_create("background", 0), ^{
-    //    while (true) { // todo 死循环
-    //        if (_started) {break;}
-    //    }
-    //
-    //    result([AFNetworkReachabilityManager sharedManager].isReachable);
-    //});
+    if (result) {
+        result(self.isNetworkAvailable);
+    }
 }
 
 - (BOOL)isNetworkAvailable {
