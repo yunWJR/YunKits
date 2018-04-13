@@ -6,6 +6,7 @@
 // Copyright (c) 2017 yun. All rights reserved.
 //
 
+#import "YunGlobalDefine.h"
 #import "YunNetworkHelper.h"
 #import "AFNetworkReachabilityManager.h"
 
@@ -39,21 +40,27 @@
 
 - (void)startMonitor {
     // 网络状态检测
+    WEAK_SELF
     [[AFNetworkReachabilityManager sharedManager]
                                    setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-                                       _started = YES;
-
-                                       if (_didStatusChanged) {
-                                           _didStatusChanged(self.isNetworkAvailable);
-                                       }
-
-                                       [[NSNotificationCenter defaultCenter]
-                                                              postNotificationName:NETWORK_STATUS_NOTI_STR
-                                                                            object:nil
-                                                                          userInfo:@{@"status" : @(self.isNetworkAvailable)}];
+                                       [weakSelf handleStatusChanged:status];
                                    }];
 
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+}
+
+- (void)handleStatusChanged:(AFNetworkReachabilityStatus)status {
+    _started = YES;
+    NSLog(@"Reachability: %@", AFStringFromNetworkReachabilityStatus(status));
+
+    if (_didStatusChanged) {
+        _didStatusChanged(self.isNetworkAvailable);
+    }
+
+    [[NSNotificationCenter defaultCenter]
+                           postNotificationName:NETWORK_STATUS_NOTI_STR
+                                         object:nil
+                                       userInfo:@{@"status" : @(self.isNetworkAvailable)}];
 }
 
 - (void)isNetworkReachable:(void (^)(BOOL))result {
