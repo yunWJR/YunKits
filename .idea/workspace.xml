@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="444f5441-0da2-4a5f-a4ae-da46d754ad90" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YunKits/BaseView/YunViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/BaseView/YunViewController.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YunKits/Tools/YunSizeHelper.h" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/Tools/YunSizeHelper.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YunKits/Tools/YunSizeHelper.m" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/Tools/YunSizeHelper.m" afterDir="false" />
-    </list>
+    <list default="true" id="444f5441-0da2-4a5f-a4ae-da46d754ad90" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +15,8 @@
       <file leaf-file-name="YunViewController.m" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/YunKits/BaseView/YunViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+            <state relative-caret-position="287">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
@@ -153,8 +148,8 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="311" />
-    <option name="y" value="39" />
+    <option name="x" value="202" />
+    <option name="y" value="23" />
     <option name="width" value="1780" />
     <option name="height" value="983" />
   </component>
@@ -432,14 +427,7 @@
       <workItem from="1523929864196" duration="50000" />
       <workItem from="1523930440717" duration="3304000" />
       <workItem from="1523934715958" duration="2000" />
-      <workItem from="1523942843268" duration="3591000" />
-    </task>
-    <task id="LOCAL-00038" summary="fix api">
-      <created>1504843733109</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1504843733109</updated>
+      <workItem from="1523942843268" duration="3677000" />
     </task>
     <task id="LOCAL-00039" summary="add api">
       <created>1505215690842</created>
@@ -777,11 +765,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523933975529</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="reform code">
+      <created>1523952250657</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1523952250657</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122991000" />
+    <option name="totallyTimeSpent" value="123077000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -793,7 +788,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="311" y="39" width="1780" height="983" extended-state="0" />
+    <frame x="202" y="23" width="1780" height="983" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="2" />
@@ -1094,8 +1089,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/YunKits/BaseView/YunViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+        <state relative-caret-position="287">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
         </state>
       </provider>
     </entry>
