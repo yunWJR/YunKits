@@ -42,9 +42,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-
     // 自动校准滚动视图的嵌入视图,对加载到 self.view 的第一个 view(UIScrollView)起作用
-    [self setAutomaticallyAdjustsScrollViewInsets:NO];
+    if (@available(iOS 11.0, *)) {
+    }
+    else {
+        // iOS11 废除
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
 
     // view不延伸（包括，状态栏、导航栏）
     [self setEdgesForExtendedLayout:UIRectEdgeNone];
