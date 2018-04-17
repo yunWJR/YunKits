@@ -15,6 +15,11 @@
 
 - (void)setImgUrlStr:(NSString *)urlStr {
     UIImage *phImg = [UIImage imageNamed:YunConfig.instance.imgViewHolderImgName];
+
+    [self setImgUrlStr:urlStr holderImg:phImg];
+}
+
+- (void)setImgUrlStr:(NSString *)urlStr holderImg:(UIImage *)phImg {
     if (self.image == nil) {
         self.image = phImg;
     }
@@ -42,25 +47,6 @@
                            if (fImg) {
                                self.image = fImg;
                            }
-                       }
-                   }];
-}
-
-- (void)setImgUrlStr:(NSString *)urlStr holderImg:(UIImage *)phImg {
-    if (self.image == nil) {
-        self.image = phImg;
-    }
-
-    if ([YunValueVerifier isNilOrEmptyStr:urlStr]) {
-        self.image = phImg;
-        return;
-    }
-
-    [self sd_setImageWithURL:[NSURL urlWithStr:urlStr]
-            placeholderImage:self.image
-                   completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-                       if (!image) {
-                           self.image = [UIImage imageNamed:YunConfig.instance.imgViewFailedImgName];
                        }
                    }];
 }

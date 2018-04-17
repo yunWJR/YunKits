@@ -8,6 +8,8 @@
 #import <UIKit/UIKit.h>
 #import "NSError+YunAdd.h"
 
+const NSString *yun_error_custom_msg_key = @"yun_error_custom_msg_key";
+
 @implementation NSError (YunAdd)
 
 + (instancetype)errorWithCustomMsg:(NSString *)msg {
@@ -17,15 +19,15 @@
 + (instancetype)errorWithCustomMsg:(NSString *)msg andCode:(NSInteger)code {
     if (msg == nil) {msg = @"no_error_msg";}
 
-    return [[NSError alloc] initWithDomain:@"error_custom" code:code userInfo:@{CUSTOM_MSG_KEY : msg}];
+    return [[NSError alloc] initWithDomain:@"error_custom" code:code userInfo:@{yun_error_custom_msg_key : msg}];
 }
 
 + (instancetype)errorWithCustomCode:(NSInteger)code {
-    return [[NSError alloc] initWithDomain:@"error_custom" code:code userInfo:@{CUSTOM_MSG_KEY : @""}];
+    return [[NSError alloc] initWithDomain:@"error_custom" code:code userInfo:@{yun_error_custom_msg_key : @""}];
 }
 
 - (NSString *)getErrorMsg {
-    return self.userInfo[CUSTOM_MSG_KEY];
+    return self.userInfo[yun_error_custom_msg_key];
 }
 
 @end
