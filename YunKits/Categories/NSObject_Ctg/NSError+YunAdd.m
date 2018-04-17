@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 #import "NSError+YunAdd.h"
 
-const NSString *yun_error_custom_msg_key = @"yun_error_custom_msg_key";
+NSString *const yun_error_custom_msg_key = @"yun_error_custom_msg_key";
 
 @implementation NSError (YunAdd)
 

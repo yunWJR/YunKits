@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="444f5441-0da2-4a5f-a4ae-da46d754ad90" name="Default" comment="" />
+    <list default="true" id="444f5441-0da2-4a5f-a4ae-da46d754ad90" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSError+YunAdd.h" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSError+YunAdd.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSError+YunAdd.m" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSError+YunAdd.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YunKits/Tools/YunNetworkHelper.h" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/Tools/YunNetworkHelper.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YunKits/Tools/YunNetworkHelper.m" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/Tools/YunNetworkHelper.m" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,8 +17,44 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_12206484e7323519acc20b4c31043a0b582e05a1" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="YunViewController.m" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="NSError+YunAdd.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSError+YunAdd.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NSError+YunAdd.m" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSError+YunAdd.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YunNetworkHelper.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/YunKits/Tools/YunNetworkHelper.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YunNetworkHelper.m" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/YunKits/Tools/YunNetworkHelper.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YunViewController.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/YunKits/BaseView/YunViewController.m">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="287">
@@ -123,8 +165,6 @@
         <option value="$PROJECT_DIR$/YunKits/Tools/YunAppItem.h" />
         <option value="$PROJECT_DIR$/YunKits/Macro/YunConfig.h" />
         <option value="$PROJECT_DIR$/YunKits/Macro/YunConfig.m" />
-        <option value="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSError+YunAdd.h" />
-        <option value="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSError+YunAdd.m" />
         <option value="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSObject+YunAdd.m" />
         <option value="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSURL+YunAdd.m" />
         <option value="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSURL+YunAdd.h" />
@@ -133,10 +173,12 @@
         <option value="$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UISearchBar+YunAdd.m" />
         <option value="$PROJECT_DIR$/YunKits/Tools/YunKeyBoardHelper.h" />
         <option value="$PROJECT_DIR$/YunKits/Tools/YunKeyBoardHelper.m" />
-        <option value="$PROJECT_DIR$/YunKits/Tools/YunNetworkHelper.m" />
-        <option value="$PROJECT_DIR$/YunKits/Tools/YunNetworkHelper.h" />
         <option value="$PROJECT_DIR$/YunKits/Tools/YunSizeHelper.m" />
         <option value="$PROJECT_DIR$/YunKits/BaseView/YunViewController.m" />
+        <option value="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSError+YunAdd.h" />
+        <option value="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSError+YunAdd.m" />
+        <option value="$PROJECT_DIR$/YunKits/Tools/YunNetworkHelper.m" />
+        <option value="$PROJECT_DIR$/YunKits/Tools/YunNetworkHelper.h" />
       </list>
     </option>
   </component>
@@ -148,7 +190,7 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="202" />
+    <option name="x" value="89" />
     <option name="y" value="23" />
     <option name="width" value="1780" />
     <option name="height" value="983" />
@@ -196,12 +238,31 @@
               <item name="YunKits" type="fcab9f18:XcodeViewNode" />
               <item name="BaseView" type="fcab9f18:XcodeViewNode" />
             </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="YunKits" type="1d218c8b:XcodeProjectNode" />
+              <item name="YunKits" type="fcab9f18:XcodeViewNode" />
+              <item name="Categories" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="YunKits" type="1d218c8b:XcodeProjectNode" />
+              <item name="YunKits" type="fcab9f18:XcodeViewNode" />
+              <item name="Categories" type="fcab9f18:XcodeViewNode" />
+              <item name="NSObject_Ctg" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="YunKits" type="1d218c8b:XcodeProjectNode" />
+              <item name="YunKits" type="fcab9f18:XcodeViewNode" />
+              <item name="Tools" type="fcab9f18:XcodeViewNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Cidr.FilesView" />
       <pane id="Scope" />
+      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -427,7 +488,8 @@
       <workItem from="1523929864196" duration="50000" />
       <workItem from="1523930440717" duration="3304000" />
       <workItem from="1523934715958" duration="2000" />
-      <workItem from="1523942843268" duration="3677000" />
+      <workItem from="1523942843268" duration="3883000" />
+      <workItem from="1523955294958" duration="57000" />
     </task>
     <task id="LOCAL-00039" summary="add api">
       <created>1505215690842</created>
@@ -776,7 +838,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123077000" />
+    <option name="totallyTimeSpent" value="123340000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -788,16 +850,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="202" y="23" width="1780" height="983" extended-state="0" />
+    <frame x="89" y="23" width="1780" height="983" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25925925" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25925925" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.497669" weight="0.32993197" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5287749" side_tool="true" weight="0.30867052" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.8165242" visible="true" weight="0.28092486" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.8165242" visible="true" weight="0.33526012" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.2193087" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49067983" weight="0.3283237" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -806,10 +868,10 @@
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info id="DB Browser" order="3" weight="0.32927573" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.56011397" visible="true" weight="0.47861272" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.56011397" visible="true" weight="0.47861272" />
+      <window_info id="DB Browser" order="3" weight="0.32927573" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.47122508" visible="true" weight="0.30867052" />
@@ -878,6 +940,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="reform code" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/YunKits/BaseView/YunViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UITextView+YunAdd.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -1001,20 +1070,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/YunKits/Tools/YunNetworkHelper.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="51" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YunKits/Tools/YunNetworkHelper.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/YunKits/Tools/YunSystemHelper.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-613" />
@@ -1057,12 +1112,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/YunKits/Tools/YunSystemHelper.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YunKits/Tools/YunAppInfo.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/YunKits/Tools/YunAppItem.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-119" />
@@ -1091,6 +1140,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSError+YunAdd.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSError+YunAdd.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YunKits/Tools/YunNetworkHelper.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YunKits/Tools/YunNetworkHelper.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>

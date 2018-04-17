@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-extern const NSString *yun_error_custom_msg_key;
+extern NSString *const yun_error_custom_msg_key;
 
 @interface NSError (YunAdd)
 
