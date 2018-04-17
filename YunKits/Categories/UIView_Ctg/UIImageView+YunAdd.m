@@ -7,9 +7,9 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <AFNetworking/AFHTTPSessionManager.h>
 #import "UIImageView+YunAdd.h"
-#import "NSURL+YunAdd.h"
 #import "YunConfig.h"
 #import "YunValueVerifier.h"
+#import "NSURL+YunAdd.h"
 
 @implementation UIImageView (YunAdd)
 
@@ -27,19 +27,21 @@
     [self sd_setImageWithURL:[NSURL urlWithStr:urlStr]
             placeholderImage:self.image
                    completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-                       if (error) {
+                       if (error || !image) {
+                           UIImage *fImg = nil;
+
                            if (error.code == -999) {
                                // 资源丢失
-                               UIImage *lostImg = [UIImage imageNamed:YunConfig.instance.imgViewLostImgName];
-                               if (lostImg) {
-                                   self.image = lostImg;
-                               }
+                               fImg = [UIImage imageNamed:YunConfig.instance.imgViewLostImgName];
                            }
-                       }
 
-                       if (!image) {
-                           UIImage *defImg = [UIImage imageNamed:YunConfig.instance.imgViewFailedImgName];
-                           self.image = defImg;
+                           if (!fImg) {
+                               fImg = [UIImage imageNamed:YunConfig.instance.imgViewFailedImgName];
+                           }
+
+                           if (fImg) {
+                               self.image = fImg;
+                           }
                        }
                    }];
 }

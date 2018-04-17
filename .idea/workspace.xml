@@ -4,8 +4,6 @@
     <list default="true" id="444f5441-0da2-4a5f-a4ae-da46d754ad90" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImageView+YunAdd.m" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImageView+YunAdd.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YunKits/Macro/YunConfig.h" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/Macro/YunConfig.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YunKits/Macro/YunConfig.m" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/Macro/YunConfig.m" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +18,11 @@
       <file leaf-file-name="UIImageView+YunAdd.m" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImageView+YunAdd.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            <state relative-caret-position="1634">
+              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+              <folding>
+                <element signature="e#85#120#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,7 +155,7 @@
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
     <option name="x" value="35" />
-    <option name="y" value="82" />
+    <option name="y" value="23" />
     <option name="width" value="1780" />
     <option name="height" value="983" />
   </component>
@@ -179,6 +180,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Cidr.FilesView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -218,8 +221,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -441,14 +442,8 @@
       <workItem from="1523602488883" duration="79000" />
       <workItem from="1523612136036" duration="60000" />
       <workItem from="1523866109927" duration="185000" />
-      <workItem from="1523929148758" duration="181000" />
-    </task>
-    <task id="LOCAL-00035" summary="fix api">
-      <created>1504840666188</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1504840666188</updated>
+      <workItem from="1523929148758" duration="709000" />
+      <workItem from="1523929864196" duration="25000" />
     </task>
     <task id="LOCAL-00036" summary="fix api">
       <created>1504840990911</created>
@@ -786,11 +781,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523612172014</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="add lost img">
+      <created>1523929337129</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1523929337129</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115516000" />
+    <option name="totallyTimeSpent" value="116069000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -802,7 +804,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="168" width="1780" height="983" extended-state="0" />
+    <frame x="35" y="23" width="1780" height="983" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="2" />
@@ -820,13 +822,13 @@
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info id="DB Browser" order="3" weight="0.32927573" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.56011397" visible="true" weight="0.47861272" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="DB Browser" order="3" weight="0.32927573" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.47122508" visible="true" weight="0.30867052" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.56011397" visible="true" weight="0.47861272" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -864,7 +866,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add btnHasHlColor" />
     <MESSAGE value="fix def ph img" />
     <MESSAGE value="fix nil" />
     <MESSAGE value="fix nag hide" />
@@ -889,16 +890,14 @@
     <MESSAGE value="add setter" />
     <MESSAGE value="add api" />
     <MESSAGE value="change api" />
-    <option name="LAST_COMMIT_MESSAGE" value="change api" />
+    <MESSAGE value="add lost img" />
+    <option name="LAST_COMMIT_MESSAGE" value="add lost img" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/YunKits/Tools/YunNetworkHelper.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
           <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#124#151#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -920,9 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
           <caret line="45" column="51" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
-          <folding>
-            <element signature="e#124#151#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1225,9 +1221,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-          <folding>
-            <element signature="e#124#151#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1247,8 +1240,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImageView+YunAdd.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="1634">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+          <folding>
+            <element signature="e#85#120#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
