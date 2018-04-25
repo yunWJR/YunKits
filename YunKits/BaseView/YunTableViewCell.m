@@ -28,7 +28,7 @@
 }
 
 - (instancetype)initWithConfig {
-    //self = [super init];
+    //self = [super init]; // 不需调用[super init];
     if (self) {
         _heightDic = [NSMutableDictionary new];
     }
