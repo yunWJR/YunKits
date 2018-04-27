@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="444f5441-0da2-4a5f-a4ae-da46d754ad90" name="Default" comment="reform code">
+    <list default="true" id="444f5441-0da2-4a5f-a4ae-da46d754ad90" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YunKits/BaseView/YunViewController.h" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/BaseView/YunViewController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YunKits/BaseView/YunViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/BaseView/YunViewController.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSError+YunAdd.m" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSError+YunAdd.m" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -202,7 +199,7 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="135" />
+    <option name="x" value="74" />
     <option name="y" value="23" />
     <option name="width" value="1780" />
     <option name="height" value="983" />
@@ -532,14 +529,7 @@
       <workItem from="1524635090655" duration="947000" />
       <workItem from="1524644406846" duration="1639000" />
       <workItem from="1524647545755" duration="23000" />
-      <workItem from="1524732576399" duration="198000" />
-    </task>
-    <task id="LOCAL-00043" summary="add api">
-      <created>1505802109643</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1505802109643</updated>
+      <workItem from="1524732576399" duration="218000" />
     </task>
     <task id="LOCAL-00044" summary="add api">
       <created>1506069036453</created>
@@ -877,11 +867,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524644459814</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="reform code">
+      <created>1524732780504</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1524732780504</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136079000" />
+    <option name="totallyTimeSpent" value="136099000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -893,7 +890,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="135" y="23" width="1780" height="983" extended-state="0" />
+    <frame x="74" y="23" width="1780" height="983" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="2" />
