@@ -7,7 +7,6 @@
 #import "UIImage+Resizing.h"
 #import "YunValueHelper.h"
 #import "YunConfig.h"
-#import "YunGlobalDefine.h"
 
 @implementation UIImage (YunAdd)
 
@@ -533,9 +532,9 @@ void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWidth, fl
     NSData *imgD = UIImageJPEGRepresentation(img, cmp);
 
     if (YunConfig.instance.isLogMode) {
-        NSLog(FORMAT(@"\n-------||--YunImageCmp:Size-->%@ kb<--   cmp-->%@<--",
-                     [YunValueHelper intStr:imgD.length / self.imgLgFactor],
-                     [YunValueHelper floatStr:cmp]));
+        NSLog(@"\n-------||--YunImageCmp:Size-->%@ kb<--   cmp-->%@<--",
+              [YunValueHelper intStr:imgD.length / self.imgLgFactor],
+              [YunValueHelper floatStr:cmp]);
     }
 
     return imgD;
@@ -543,19 +542,19 @@ void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWidth, fl
 
 - (void)logCmpMsg:(NSData *)data desLg:(NSInteger)length {
     if (YunConfig.instance.isLogMode) {
-        NSLog(FORMAT(@"\n-------YunImageCmp:rst_length-->%@ kb<--   src_length-->%@<--",
-                     [YunValueHelper intStr:data.length / self.imgLgFactor],
-                     [YunValueHelper intStr:length]));
+        NSLog(@"\n-------YunImageCmp:rst_length-->%@ kb<--   src_length-->%@<--",
+              [YunValueHelper intStr:data.length / self.imgLgFactor],
+              [YunValueHelper intStr:length]);
     }
 }
 
 - (void)logOrgSize:(CGSize)orgSize size:(CGSize)size {
     if (YunConfig.instance.isLogMode) {
-        NSLog(FORMAT(@"\n-------&&--YunImageCmp:rst_size-->%@:%@<--   org_size-->%@:%@<--",
-                     [YunValueHelper floatStr:size.width],
-                     [YunValueHelper floatStr:size.height],
-                     [YunValueHelper floatStr:orgSize.width],
-                     [YunValueHelper floatStr:orgSize.height]));
+        NSLog(@"\n-------&&--YunImageCmp:rst_size-->%@:%@<--   org_size-->%@:%@<--",
+              [YunValueHelper floatStr:size.width],
+              [YunValueHelper floatStr:size.height],
+              [YunValueHelper floatStr:orgSize.width],
+              [YunValueHelper floatStr:orgSize.height]);
     }
 }
 

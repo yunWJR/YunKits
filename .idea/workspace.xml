@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="444f5441-0da2-4a5f-a4ae-da46d754ad90" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImage+YunAdd.h" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImage+YunAdd.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImage+YunAdd.m" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImage+YunAdd.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YunKits/Macro/YunConfig.h" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/Macro/YunConfig.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YunKits/Macro/YunConfig.m" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/Macro/YunConfig.m" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,14 +12,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_1152b35bec267c271f8442c8f0034f849b9745fc" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="UIImage+YunAdd.h" pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="UIImage+YunAdd.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImage+YunAdd.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
+            <state relative-caret-position="352">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
@@ -30,36 +27,40 @@
       <file leaf-file-name="UIImage+YunAdd.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImage+YunAdd.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="557" column="63" selection-start-line="557" selection-start-column="63" selection-end-line="557" selection-end-column="63" />
+            <state relative-caret-position="357">
+              <caret line="242" column="19" selection-start-line="242" selection-start-column="19" selection-end-line="242" selection-end-column="19" />
               <folding>
+                <element signature="e#0#2#0" />
                 <element signature="e#87#113#0" expanded="true" />
-                <element signature="e#313#425#0" />
-                <element signature="e#427#564#0" />
-                <element signature="e#566#1118#0" />
-                <element signature="e#1120#1414#0" />
-                <element signature="e#1439#2200#0" />
-                <element signature="e#2202#3033#0" />
-                <element signature="e#3218#3479#0" />
+                <element signature="e#2169#3000#0" />
+                <element signature="e#4036#4139#0" />
+                <element signature="e#4141#4639#0" />
+                <element signature="e#4641#5803#0" />
+                <element signature="e#5805#6230#0" />
+                <element signature="e#6232#6557#0" />
+                <element signature="e#6573#6672#0" />
+                <element signature="e#6674#7602#0" />
+                <element signature="e#7604#7782#0" />
+                <element signature="e#7784#9399#0" />
+                <element signature="e#9401#10309#0" />
+                <element signature="e#10311#11557#0" />
+                <element signature="e#11559#12559#0" />
+                <element signature="e#12584#12681#0" />
+                <element signature="e#12683#12785#0" />
+                <element signature="e#12787#12922#0" />
+                <element signature="e#12924#13061#0" />
+                <element signature="e#13063#13117#0" />
+                <element signature="e#13119#13393#0" />
+                <element signature="e#13395#13438#0" />
+                <element signature="e#13440#13479#0" />
+                <element signature="e#13505#13580#0" />
+                <element signature="e#13582#13968#0" />
+                <element signature="e#13970#14297#0" />
+                <element signature="e#14299#14739#0" />
+                <element signature="e#14741#15576#0" />
+                <element signature="e#15578#15715#0" />
+                <element signature="e#15717#16142#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YunConfig.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/YunKits/Macro/YunConfig.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="109" column="4" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YunConfig.m" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/YunKits/Macro/YunConfig.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="71" column="25" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -177,9 +178,9 @@
         <option value="$PROJECT_DIR$/YunKits/BaseView/YunViewController.h" />
         <option value="$PROJECT_DIR$/YunKits/BaseView/YunViewController.m" />
         <option value="$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImage+YunAdd.h" />
-        <option value="$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImage+YunAdd.m" />
         <option value="$PROJECT_DIR$/YunKits/Macro/YunConfig.h" />
         <option value="$PROJECT_DIR$/YunKits/Macro/YunConfig.m" />
+        <option value="$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImage+YunAdd.m" />
       </list>
     </option>
   </component>
@@ -191,7 +192,7 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="339" />
+    <option name="x" value="140" />
     <option name="y" value="23" />
     <option name="width" value="1780" />
     <option name="height" value="983" />
@@ -228,23 +229,12 @@
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="YunKits" type="1d218c8b:XcodeProjectNode" />
             </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="YunKits" type="1d218c8b:XcodeProjectNode" />
-              <item name="YunKits" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="YunKits" type="1d218c8b:XcodeProjectNode" />
-              <item name="YunKits" type="fcab9f18:XcodeViewNode" />
-              <item name="Categories" type="fcab9f18:XcodeViewNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Cidr.FilesView" />
       <pane id="Scope" />
+      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -488,14 +478,8 @@
       <workItem from="1524797248579" duration="7000" />
       <workItem from="1524819681120" duration="42000" />
       <workItem from="1525334417607" duration="1083000" />
-      <workItem from="1525339954691" duration="133000" />
-    </task>
-    <task id="LOCAL-00045" summary="add api">
-      <created>1506070379747</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1506070379747</updated>
+      <workItem from="1525339954691" duration="145000" />
+      <workItem from="1525410673349" duration="140000" />
     </task>
     <task id="LOCAL-00046" summary="add api">
       <created>1506072789708</created>
@@ -833,11 +817,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524795480817</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="add img cmp">
+      <created>1525340097314</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1525340097315</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137601000" />
+    <option name="totallyTimeSpent" value="137753000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -849,28 +840,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="339" y="23" width="1780" height="983" extended-state="0" />
+    <frame x="140" y="23" width="1780" height="983" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16353276" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.497669" weight="0.32993197" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.56011397" visible="true" weight="0.046242774" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5287749" side_tool="true" weight="0.30867052" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.8165242" weight="0.33410406" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.8165242" visible="true" weight="0.33410406" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.2193087" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49067983" weight="0.3283237" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Code comment" order="12" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info id="DB Browser" order="3" weight="0.32927573" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.56011397" visible="true" weight="0.47861272" />
+      <window_info id="DB Browser" order="3" weight="0.32927573" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.47122508" visible="true" weight="0.20578034" />
@@ -911,7 +902,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fix nag hide" />
     <MESSAGE value="fix api" />
     <MESSAGE value="back api" />
     <MESSAGE value="add ver check" />
@@ -936,7 +926,8 @@
     <MESSAGE value="add NSTimer+YunAdd" />
     <MESSAGE value="reform code" />
     <MESSAGE value="0.0.45" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.0.45" />
+    <MESSAGE value="add img cmp" />
+    <option name="LAST_COMMIT_MESSAGE" value="add img cmp" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSError+YunAdd.m">
@@ -1252,41 +1243,63 @@
         <state relative-caret-position="-116" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImage+YunAdd.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImage+YunAdd.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="557" column="63" selection-start-line="557" selection-start-column="63" selection-end-line="557" selection-end-column="63" />
-          <folding>
-            <element signature="e#87#113#0" expanded="true" />
-            <element signature="e#313#425#0" />
-            <element signature="e#427#564#0" />
-            <element signature="e#566#1118#0" />
-            <element signature="e#1120#1414#0" />
-            <element signature="e#1439#2200#0" />
-            <element signature="e#2202#3033#0" />
-            <element signature="e#3218#3479#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/YunKits/Macro/YunConfig.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
+        <state relative-caret-position="2071">
           <caret line="109" column="4" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/YunKits/Macro/YunConfig.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="71" column="25" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
+        <state relative-caret-position="607">
+          <caret line="65" column="37" lean-forward="true" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImage+YunAdd.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="242" column="19" selection-start-line="242" selection-start-column="19" selection-end-line="242" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#87#113#0" expanded="true" />
+            <element signature="e#2169#3000#0" />
+            <element signature="e#4036#4139#0" />
+            <element signature="e#4141#4639#0" />
+            <element signature="e#4641#5803#0" />
+            <element signature="e#5805#6230#0" />
+            <element signature="e#6232#6557#0" />
+            <element signature="e#6573#6672#0" />
+            <element signature="e#6674#7602#0" />
+            <element signature="e#7604#7782#0" />
+            <element signature="e#7784#9399#0" />
+            <element signature="e#9401#10309#0" />
+            <element signature="e#10311#11557#0" />
+            <element signature="e#11559#12559#0" />
+            <element signature="e#12584#12681#0" />
+            <element signature="e#12683#12785#0" />
+            <element signature="e#12787#12922#0" />
+            <element signature="e#12924#13061#0" />
+            <element signature="e#13063#13117#0" />
+            <element signature="e#13119#13393#0" />
+            <element signature="e#13395#13438#0" />
+            <element signature="e#13440#13479#0" />
+            <element signature="e#13505#13580#0" />
+            <element signature="e#13582#13968#0" />
+            <element signature="e#13970#14297#0" />
+            <element signature="e#14299#14739#0" />
+            <element signature="e#14741#15576#0" />
+            <element signature="e#15578#15715#0" />
+            <element signature="e#15717#16142#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImage+YunAdd.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
