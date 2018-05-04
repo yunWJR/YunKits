@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="444f5441-0da2-4a5f-a4ae-da46d754ad90" name="Default" comment="">
+    <list default="true" id="444f5441-0da2-4a5f-a4ae-da46d754ad90" name="Default" comment="add img cmp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImage+YunAdd.h" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImage+YunAdd.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImage+YunAdd.m" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImage+YunAdd.m" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,14 +13,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_12206484e7323519acc20b4c31043a0b582e05a1" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+    <leaf>
       <file leaf-file-name="UIImage+YunAdd.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImage+YunAdd.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="190">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -27,39 +28,47 @@
       <file leaf-file-name="UIImage+YunAdd.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImage+YunAdd.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="242" column="19" selection-start-line="242" selection-start-column="19" selection-end-line="242" selection-end-column="19" />
+            <state relative-caret-position="133">
+              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
               <folding>
                 <element signature="e#0#2#0" />
-                <element signature="e#87#113#0" expanded="true" />
-                <element signature="e#2169#3000#0" />
-                <element signature="e#4036#4139#0" />
-                <element signature="e#4141#4639#0" />
-                <element signature="e#4641#5803#0" />
-                <element signature="e#5805#6230#0" />
-                <element signature="e#6232#6557#0" />
-                <element signature="e#6573#6672#0" />
-                <element signature="e#6674#7602#0" />
-                <element signature="e#7604#7782#0" />
-                <element signature="e#7784#9399#0" />
-                <element signature="e#9401#10309#0" />
-                <element signature="e#10311#11557#0" />
-                <element signature="e#11559#12559#0" />
-                <element signature="e#12584#12681#0" />
-                <element signature="e#12683#12785#0" />
-                <element signature="e#12787#12922#0" />
-                <element signature="e#12924#13061#0" />
-                <element signature="e#13063#13117#0" />
-                <element signature="e#13119#13393#0" />
-                <element signature="e#13395#13438#0" />
-                <element signature="e#13440#13479#0" />
-                <element signature="e#13505#13580#0" />
-                <element signature="e#13582#13968#0" />
-                <element signature="e#13970#14297#0" />
-                <element signature="e#14299#14739#0" />
-                <element signature="e#14741#15576#0" />
-                <element signature="e#15578#15715#0" />
-                <element signature="e#15717#16142#0" />
+                <element signature="e#252#364#0" />
+                <element signature="e#366#503#0" />
+                <element signature="e#505#1057#0" />
+                <element signature="e#1059#1353#0" />
+                <element signature="e#1378#2139#0" />
+                <element signature="e#2141#2972#0" />
+                <element signature="e#2974#3155#0" />
+                <element signature="e#3157#3418#0" />
+                <element signature="e#3420#3628#0" />
+                <element signature="e#3630#3985#0" />
+                <element signature="e#4008#4111#0" />
+                <element signature="e#4113#4611#0" />
+                <element signature="e#4613#5775#0" />
+                <element signature="e#5777#6202#0" />
+                <element signature="e#6204#6529#0" />
+                <element signature="e#6545#6644#0" />
+                <element signature="e#6646#7574#0" />
+                <element signature="e#7576#7754#0" />
+                <element signature="e#7756#9371#0" />
+                <element signature="e#9373#10281#0" />
+                <element signature="e#10283#11529#0" />
+                <element signature="e#11531#12531#0" />
+                <element signature="e#12556#12653#0" />
+                <element signature="e#12655#12757#0" />
+                <element signature="e#12759#12894#0" />
+                <element signature="e#12896#13033#0" />
+                <element signature="e#13035#13089#0" />
+                <element signature="e#13091#13365#0" />
+                <element signature="e#13367#13410#0" />
+                <element signature="e#13412#13451#0" />
+                <element signature="e#13477#13552#0" />
+                <element signature="e#13554#13918#0" />
+                <element signature="e#13920#14225#0" />
+                <element signature="e#14227#14631#0" />
+                <element signature="e#14633#15468#0" />
+                <element signature="e#15470#15607#0" />
+                <element signature="e#15609#16034#0" />
               </folding>
             </state>
           </provider>
@@ -192,7 +201,7 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="140" />
+    <option name="x" value="53" />
     <option name="y" value="23" />
     <option name="width" value="1780" />
     <option name="height" value="983" />
@@ -218,6 +227,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,12 +239,29 @@
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="YunKits" type="1d218c8b:XcodeProjectNode" />
             </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="YunKits" type="1d218c8b:XcodeProjectNode" />
+              <item name="YunKits" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="YunKits" type="1d218c8b:XcodeProjectNode" />
+              <item name="YunKits" type="fcab9f18:XcodeViewNode" />
+              <item name="Categories" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="YunKits" type="1d218c8b:XcodeProjectNode" />
+              <item name="YunKits" type="fcab9f18:XcodeViewNode" />
+              <item name="Categories" type="fcab9f18:XcodeViewNode" />
+              <item name="UIView_Ctg" type="fcab9f18:XcodeViewNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -479,7 +506,8 @@
       <workItem from="1524819681120" duration="42000" />
       <workItem from="1525334417607" duration="1083000" />
       <workItem from="1525339954691" duration="145000" />
-      <workItem from="1525410673349" duration="140000" />
+      <workItem from="1525410673349" duration="453000" />
+      <workItem from="1525419023736" duration="99000" />
     </task>
     <task id="LOCAL-00046" summary="add api">
       <created>1506072789708</created>
@@ -828,7 +856,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137753000" />
+    <option name="totallyTimeSpent" value="138165000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -840,31 +868,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="140" y="23" width="1780" height="983" extended-state="0" />
+    <frame x="53" y="23" width="1780" height="983" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16353276" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16353276" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.497669" weight="0.32993197" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.56011397" visible="true" weight="0.046242774" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5287749" side_tool="true" weight="0.30867052" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.8165242" weight="0.33410406" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.8165242" visible="true" weight="0.13063584" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.2193087" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49067983" weight="0.3283237" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Code comment" order="12" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="DB Browser" order="3" weight="0.32927573" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="DB Browser" order="3" weight="0.32927573" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.47122508" visible="true" weight="0.20578034" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.56011397" weight="0.046242774" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1259,47 +1287,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImage+YunAdd.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="242" column="19" selection-start-line="242" selection-start-column="19" selection-end-line="242" selection-end-column="19" />
+        <state relative-caret-position="133">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
           <folding>
             <element signature="e#0#2#0" />
-            <element signature="e#87#113#0" expanded="true" />
-            <element signature="e#2169#3000#0" />
-            <element signature="e#4036#4139#0" />
-            <element signature="e#4141#4639#0" />
-            <element signature="e#4641#5803#0" />
-            <element signature="e#5805#6230#0" />
-            <element signature="e#6232#6557#0" />
-            <element signature="e#6573#6672#0" />
-            <element signature="e#6674#7602#0" />
-            <element signature="e#7604#7782#0" />
-            <element signature="e#7784#9399#0" />
-            <element signature="e#9401#10309#0" />
-            <element signature="e#10311#11557#0" />
-            <element signature="e#11559#12559#0" />
-            <element signature="e#12584#12681#0" />
-            <element signature="e#12683#12785#0" />
-            <element signature="e#12787#12922#0" />
-            <element signature="e#12924#13061#0" />
-            <element signature="e#13063#13117#0" />
-            <element signature="e#13119#13393#0" />
-            <element signature="e#13395#13438#0" />
-            <element signature="e#13440#13479#0" />
-            <element signature="e#13505#13580#0" />
-            <element signature="e#13582#13968#0" />
-            <element signature="e#13970#14297#0" />
-            <element signature="e#14299#14739#0" />
-            <element signature="e#14741#15576#0" />
-            <element signature="e#15578#15715#0" />
-            <element signature="e#15717#16142#0" />
+            <element signature="e#252#364#0" />
+            <element signature="e#366#503#0" />
+            <element signature="e#505#1057#0" />
+            <element signature="e#1059#1353#0" />
+            <element signature="e#1378#2139#0" />
+            <element signature="e#2141#2972#0" />
+            <element signature="e#2974#3155#0" />
+            <element signature="e#3157#3418#0" />
+            <element signature="e#3420#3628#0" />
+            <element signature="e#3630#3985#0" />
+            <element signature="e#4008#4111#0" />
+            <element signature="e#4113#4611#0" />
+            <element signature="e#4613#5775#0" />
+            <element signature="e#5777#6202#0" />
+            <element signature="e#6204#6529#0" />
+            <element signature="e#6545#6644#0" />
+            <element signature="e#6646#7574#0" />
+            <element signature="e#7576#7754#0" />
+            <element signature="e#7756#9371#0" />
+            <element signature="e#9373#10281#0" />
+            <element signature="e#10283#11529#0" />
+            <element signature="e#11531#12531#0" />
+            <element signature="e#12556#12653#0" />
+            <element signature="e#12655#12757#0" />
+            <element signature="e#12759#12894#0" />
+            <element signature="e#12896#13033#0" />
+            <element signature="e#13035#13089#0" />
+            <element signature="e#13091#13365#0" />
+            <element signature="e#13367#13410#0" />
+            <element signature="e#13412#13451#0" />
+            <element signature="e#13477#13552#0" />
+            <element signature="e#13554#13918#0" />
+            <element signature="e#13920#14225#0" />
+            <element signature="e#14227#14631#0" />
+            <element signature="e#14633#15468#0" />
+            <element signature="e#15470#15607#0" />
+            <element signature="e#15609#16034#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UIImage+YunAdd.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="190">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
