@@ -61,4 +61,6 @@
 
 - (void)updateNagHideState;
 
+- (CGFloat)twoSideOff;
+
 @end

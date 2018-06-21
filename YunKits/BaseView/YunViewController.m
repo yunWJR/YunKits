@@ -203,6 +203,10 @@
     return btnItem;
 }
 
+- (CGFloat)twoSideOff {
+    return 2 * self.sideOff;
+}
+
 #pragma mark - setter getter
 
 - (void)setHideNagBarBtmLine:(BOOL)hideNagBarBtmLine {
