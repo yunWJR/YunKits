@@ -165,7 +165,10 @@
 }
 
 - (UIBarButtonItem *)createBarItemByImg:(NSString *)img action:(nullable SEL)action {
-    UIBarButtonItem *btnItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:img]
+    UIImage *image = [UIImage imageNamed:img];
+    UIImage *orgImage = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]; // 原色图片，不然会改变图颜色
+
+    UIBarButtonItem *btnItem = [[UIBarButtonItem alloc] initWithImage:orgImage
                                                                 style:UIBarButtonItemStylePlain
                                                                target:self
                                                                action:action];
