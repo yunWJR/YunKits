@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		167A9CDB297CD94C12CE7A43 /* YunKits.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 167A9E4232DADA6CAE3142DC /* YunKits.podspec */; };
 		1D4D2038FE8F2DDAF957B0FB /* YunURLHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D240504ABB75A9FE3E546 /* YunURLHelper.h */; };
+		1D4D203F6C7BDC02C81CAF46 /* YunTypeDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D2DD1D79E092B68A945F2 /* YunTypeDefine.m */; };
 		1D4D20C8BBC2E27998231E55 /* YunDownLoadHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D2AE6C86AA495614284C6 /* YunDownLoadHelper.h */; };
+		1D4D20F29FAF90544E0991FA /* YunTypeDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D2B37AAD5BE79694ED6F0 /* YunTypeDefine.h */; };
 		1D4D210B006F21B6BCC58850 /* YunKeyBoardHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D28449046C0A07FFE9FF3 /* YunKeyBoardHelper.m */; };
 		1D4D21671C2D624905407F3E /* YunSystemHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4D2F23CAFD3BE073D78F56 /* YunSystemHelper.h */; };
 		1D4D21DCDCE3E2C6D72C6036 /* YunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D2B1DB011C7103A128854 /* YunViewController.m */; };
@@ -169,12 +171,14 @@
 		1D4D2AE4A0D1409D50C7B10D /* YunVersionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunVersionHelper.h; sourceTree = "<group>"; };
 		1D4D2AE6C86AA495614284C6 /* YunDownLoadHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunDownLoadHelper.h; sourceTree = "<group>"; };
 		1D4D2B1DB011C7103A128854 /* YunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunViewController.m; sourceTree = "<group>"; };
+		1D4D2B37AAD5BE79694ED6F0 /* YunTypeDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunTypeDefine.h; sourceTree = "<group>"; };
 		1D4D2B495659FCDB351B5DAA /* YunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunViewController.h; sourceTree = "<group>"; };
 		1D4D2C28E081EE8EBF4F9E2A /* YunConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunConfig.m; sourceTree = "<group>"; };
 		1D4D2C95E59F8FD4C390CAFF /* UIImage+YunAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YunAdd.m"; sourceTree = "<group>"; };
 		1D4D2CABB7AA47CC5BA752A1 /* YunAppItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunAppItem.h; sourceTree = "<group>"; };
 		1D4D2CB8B1654A9D3ED074DD /* UIColor+YunAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YunAdd.h"; sourceTree = "<group>"; };
 		1D4D2D468B4E6BEE05E4879C /* UIViewController+Nag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Nag.h"; sourceTree = "<group>"; };
+		1D4D2DD1D79E092B68A945F2 /* YunTypeDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunTypeDefine.m; sourceTree = "<group>"; };
 		1D4D2E8BD3FA3150D3713108 /* YunUITextFieldFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunUITextFieldFactory.h; sourceTree = "<group>"; };
 		1D4D2EFFC28A57964FBF0417 /* YunRgxHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunRgxHelper.h; sourceTree = "<group>"; };
 		1D4D2F23CAFD3BE073D78F56 /* YunSystemHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunSystemHelper.h; sourceTree = "<group>"; };
@@ -489,6 +493,8 @@
 				1D4D25A12224DEBF93754CCE /* YunBase64Helper.h */,
 				1D4D28D824636361197C3B85 /* YunUUIDHelper.m */,
 				1D4D2581D33D1BD4E2C5508A /* YunUUIDHelper.h */,
+				1D4D2DD1D79E092B68A945F2 /* YunTypeDefine.m */,
+				1D4D2B37AAD5BE79694ED6F0 /* YunTypeDefine.h */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -580,6 +586,7 @@
 				1D4D20C8BBC2E27998231E55 /* YunDownLoadHelper.h in Headers */,
 				1D4D2CD9E96EC147B6DD27D1 /* YunBase64Helper.h in Headers */,
 				1D4D24CD5E9403FDEA153772 /* YunUUIDHelper.h in Headers */,
+				1D4D20F29FAF90544E0991FA /* YunTypeDefine.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -748,6 +755,7 @@
 				1D4D27030E6DE88F8841A5A8 /* YunDownLoadHelper.m in Sources */,
 				1D4D2902CDCEF256FB7AD66B /* YunBase64Helper.m in Sources */,
 				1D4D26BDD3195B339718F0E6 /* YunUUIDHelper.m in Sources */,
+				1D4D203F6C7BDC02C81CAF46 /* YunTypeDefine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

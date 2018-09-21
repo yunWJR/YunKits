@@ -32,6 +32,10 @@
 // 手机型号
 + (NSString *)getDeviceInfo;
 
++ (UIViewController *)getRootViewController;
+
++ (UIViewController *)getCurrentViewController;
+
 // 获取当前正在显示的控制器
 + (UIViewController *)getVisibleVcFrom:(UIViewController *)vc;
 
