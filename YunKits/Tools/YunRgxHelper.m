@@ -7,6 +7,16 @@
 
 @implementation YunRgxHelper
 
++ (BOOL)checkRgxByPredicate:(NSString *)rgx ctn:(NSString *)ctn {
+    if (rgx == nil || ctn == nil) {
+        return NO;
+    }
+
+    NSPredicate *card = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", rgx];
+
+    return [card evaluateWithObject:ctn];
+}
+
 + (BOOL)matchRgx:(NSString *)rgx ctn:(NSString *)ctn {
     NSError *error;
     // 创建NSRegularExpression对象并指定正则表达式

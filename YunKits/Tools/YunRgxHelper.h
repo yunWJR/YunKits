@@ -7,6 +7,8 @@
 
 @interface YunRgxHelper : NSObject
 
++ (BOOL)checkRgxByPredicate:(NSString *)rgx ctn:(NSString *)ctn;
+
 + (BOOL)matchRgx:(NSString *)rgx ctn:(NSString *)ctn;
 
 + (NSString *)matchedCtnByRgx:(NSString *)rgx ctn:(NSString *)ctn;
