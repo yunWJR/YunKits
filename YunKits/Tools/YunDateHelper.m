@@ -133,6 +133,16 @@
     return -1;
 }
 
+#pragma mark - time Interval
+
++ (NSTimeInterval)timeIntervaltoDate:(NSDate *)date from:(NSDate *)from {
+    return [from timeIntervalSinceDate:date];
+}
+
++ (NSTimeInterval)timeIntervaltoDateFromNow:(NSDate *)date {
+    return [NSDate.date timeIntervalSinceDate:date];
+}
+
 #pragma mark - date verify
 
 + (BOOL)isToday:(NSDate *)date {

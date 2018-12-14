@@ -39,6 +39,12 @@
 
 + (long long)unixIntervalByYMDHMStr:(NSString *)ymdHm;
 
+#pragma mark - time Interval
+
++ (NSTimeInterval)timeIntervaltoDate:(NSDate *)date from:(NSDate *)from;
+
++ (NSTimeInterval)timeIntervaltoDateFromNow:(NSDate *)date;
+
 #pragma mark - date verify
 
 + (BOOL)isToday:(NSDate *)date;
