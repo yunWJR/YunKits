@@ -12,6 +12,9 @@
 /// 1.0.0
 + (NSString *)appVersion;
 
+/// 1.0.0(1)-DEV
++ (NSString *)appVersionByMode;
+
 /// 100
 + (NSString *)appVersionStr;
 

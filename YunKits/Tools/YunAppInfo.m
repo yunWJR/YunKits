@@ -5,6 +5,8 @@
 
 #import "YunAppInfo.h"
 #import "YunValueVerifier.h"
+#import "YunGlobalDefine.h"
+#import "YunConfig.h"
 
 @implementation YunAppInfo {
 }
@@ -13,6 +15,10 @@
 
 + (NSString *)appVersion {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+}
+
++ (NSString *)appVersionByMode {
+    return FORMAT(@"%@(%@)%@", self.appVersion, self.bundleVersion, YunConfig.instance.isDebugMode ? @"-DEV" : @"");
 }
 
 + (NSString *)appVersionStr {
