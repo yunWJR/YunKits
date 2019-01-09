@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YunKits"
-  s.version      = "0.0.50"
+  s.version      = "1.0.0"
   s.summary      = "yun's kits for iOS."
 
   # This description is used to generate tags and improve search results.
