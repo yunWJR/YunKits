@@ -9,6 +9,7 @@
 #import "YunConfig.h"
 #import "YunValueVerifier.h"
 #import "NSURL+YunAdd.h"
+#import "UIImage+YunAdd.h"
 
 @implementation UIImageView (YunAdd)
 
@@ -93,6 +94,14 @@
     }
 
     return NO;
+}
+
+- (CGFloat)ratioWidthToHeight {
+    return self.image.ratioWidthToHeight;
+}
+
+- (CGFloat)ratioHeightToWidth {
+    return self.image.ratioHeightToWidth;
 }
 
 @end

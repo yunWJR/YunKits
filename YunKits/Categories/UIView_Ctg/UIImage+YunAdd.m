@@ -616,4 +616,22 @@ void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWidth, fl
     return newImage;
 }
 
+#pragma mark - ratio
+
+- (CGFloat)ratioWidthToHeight {
+    if (self.size.height == 0) {
+        return 0;
+    }
+
+    return self.size.width / self.size.height;
+}
+
+- (CGFloat)ratioHeightToWidth {
+    if (self.size.width == 0) {
+        return 0;
+    }
+
+    return self.size.height / self.size.width;
+}
+
 @end

@@ -67,4 +67,10 @@ __deprecated_msg("已过期, 请使用compressByMaxLength");
 - (UIImage *)resizeWithMaxSize:(NSInteger)size
 __deprecated_msg("已过期, 请使用compressByMaxLength");
 
+#pragma mark - ratio
+
+- (CGFloat)ratioWidthToHeight;
+
+- (CGFloat)ratioHeightToWidth;
+
 @end

@@ -19,4 +19,8 @@
                size:(CGFloat)size
               color:(UIColor *)color;
 
+- (CGFloat)ratioWidthToHeight;
+
+- (CGFloat)ratioHeightToWidth;
+
 @end
