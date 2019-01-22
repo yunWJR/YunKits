@@ -15,4 +15,6 @@
                          classItem:(Class _Nullable)cellClass
                                ids:(NSArray *_Nullable)ids;
 
++ (void)setTvc:(UITableView *)tvc estimated:(BOOL)estimated;
+
 @end

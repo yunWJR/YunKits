@@ -21,6 +21,8 @@
     tvc.separatorStyle = UITableViewCellSeparatorStyleNone;
     // tvc.estimatedRowHeight = 40; // 防止数据过多加载缓慢 但是会造成刷新乱跳
 
+    [self setTvc:tvc estimated:YES];
+
     for (int i = 0; i < classes.count; ++i) {
         [tvc registerClass:classes[i] forCellReuseIdentifier:ids[i]];
     }
@@ -38,11 +40,22 @@
     tvc.separatorStyle = UITableViewCellSeparatorStyleNone;
     // tvc.estimatedRowHeight = 40; // 防止数据过多加载缓慢 但是会造成刷新乱跳
 
+    [self setTvc:tvc estimated:YES];
+
     for (int i = 0; i < ids.count; ++i) {
         [tvc registerClass:cellClass forCellReuseIdentifier:ids[i]];
     }
 
     return tvc;
+}
+
++ (void)setTvc:(UITableView *)tvc estimated:(BOOL)estimated {
+    // iOS 11后，默认开启Self-Sizing，可能引起乱跳
+    // 设置为0，关闭Self-Sizing
+    // 如果想禁止，请设置为UITableViewAutomaticDimension
+    tvc.estimatedRowHeight = estimated ? 0 : UITableViewAutomaticDimension;
+    tvc.estimatedSectionHeaderHeight = estimated ? 0 : UITableViewAutomaticDimension;
+    tvc.estimatedSectionFooterHeight = estimated ? 0 : UITableViewAutomaticDimension;
 }
 
 @end
