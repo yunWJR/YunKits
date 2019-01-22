@@ -16,7 +16,7 @@ NSString *const yun_error_custom_msg_key = @"yun_error_custom_msg_key";
 }
 
 + (instancetype)errorWithCustomMsg:(NSString *)msg andCode:(NSInteger)code andDomain:(NSString *)domain {
-    if (msg == nil) {msg = @"no_error_msg";}
+    if (msg == nil) {msg = @"出错了，请重试";}
     if (domain == nil) {domain = @"yun_error_custom";}
 
     return [[NSError alloc] initWithDomain:domain code:code userInfo:@{yun_error_custom_msg_key : msg}];
