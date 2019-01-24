@@ -72,4 +72,6 @@
 
 + (UIButton *_Nonnull)setDefHlColor:(UIButton *_Nonnull)btn;
 
++ (void)setBtnIcon:(UIButton *)btn img:(UIImage *)img;
+
 @end

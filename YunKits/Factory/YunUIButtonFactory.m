@@ -10,6 +10,8 @@
 #import "YunConfig.h"
 #import "UIImage+YunAdd.h"
 
+#define imgTag 9999
+
 @implementation YunUIButtonFactory
 
 #pragma mark button
@@ -56,6 +58,7 @@
     UIButton *btn = [self btnWithTarget:target action:action];
 
     UIImageView *imgView = [YunUIImageViewFactory imgViewWithImgName:bgImg mode:mode];
+    imgView.tag = imgTag;
     [btn addSubview:imgView];
 
     [imgView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -227,6 +230,12 @@
     }
 
     return btn;
+}
+
++ (void)setBtnIcon:(UIButton *)btn img:(UIImage *)img {
+    UIImageView *imgView = [btn viewWithTag:imgTag];
+
+    imgView.image = img;
 }
 
 @end

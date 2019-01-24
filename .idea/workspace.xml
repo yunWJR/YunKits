@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="444f5441-0da2-4a5f-a4ae-da46d754ad90" name="Default" comment="change error msg">
+    <list default="true" id="444f5441-0da2-4a5f-a4ae-da46d754ad90" name="Default" comment="UITableView 增加 estimatedheigt 防止跳动">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YunKits/Factory/YunUITableViewFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/Factory/YunUITableViewFactory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YunKits/Factory/YunUITableViewFactory.m" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/Factory/YunUITableViewFactory.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YunKits/Factory/YunUIButtonFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/Factory/YunUIButtonFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YunKits/Factory/YunUIButtonFactory.m" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/Factory/YunUIButtonFactory.m" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +64,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/YunKits/Factory/YunUIButtonFactory.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1103">
+              <caret line="74" column="13" lean-forward="true" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/YunKits/Factory/YunUIButtonFactory.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#85#112#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/YunKits/Factory/YunUITableViewFactory.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
@@ -72,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/YunKits/Factory/YunUITableViewFactory.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="437">
+              <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -151,7 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/YunKits/Macro/YunConfig.h" />
         <option value="$PROJECT_DIR$/YunKits/Tools/YunLineHelper.m" />
         <option value="$PROJECT_DIR$/YunKits/Tools/YunLineHelper.h" />
         <option value="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSObject+YunAdd.h" />
@@ -162,7 +182,6 @@
         <option value="$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UILabel+YunAdd.h" />
         <option value="$PROJECT_DIR$/YunKits/Factory/YunAttributedStringFactory.h" />
         <option value="$PROJECT_DIR$/YunKits/Factory/YunAttributedStringFactory.m" />
-        <option value="$PROJECT_DIR$/YunKits/Factory/YunUIButtonFactory.m" />
         <option value="$PROJECT_DIR$/YunKits/Tools/YunAppItem.h" />
         <option value="$PROJECT_DIR$/YunKits/Tools/YunCalTime.m" />
         <option value="$PROJECT_DIR$/YunKits/Tools/YunIdCardHelper.h" />
@@ -202,15 +221,17 @@
         <option value="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSError+YunAdd.m" />
         <option value="$PROJECT_DIR$/YunKits/Factory/YunUITableViewFactory.m" />
         <option value="$PROJECT_DIR$/YunKits/Factory/YunUITableViewFactory.h" />
+        <option value="$PROJECT_DIR$/YunKits/Factory/YunUIButtonFactory.h" />
+        <option value="$PROJECT_DIR$/YunKits/Factory/YunUIButtonFactory.m" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1440" />
-    <option name="y" value="516" />
-    <option name="width" value="1024" />
-    <option name="height" value="1293" />
+    <option name="x" value="-1334" />
+    <option name="y" value="-155" />
+    <option name="width" value="1245" />
+    <option name="height" value="1583" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -526,14 +547,8 @@
       <workItem from="1547775667433" duration="708000" />
       <workItem from="1548137553006" duration="1186000" />
       <workItem from="1548139413436" duration="65000" />
-      <workItem from="1548140576560" duration="49000" />
-    </task>
-    <task id="LOCAL-00070" summary="add api">
-      <created>1516677271986</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1516677271986</updated>
+      <workItem from="1548140576560" duration="254000" />
+      <workItem from="1548321663414" duration="637000" />
     </task>
     <task id="LOCAL-00071" summary="change api">
       <created>1516700814239</created>
@@ -871,11 +886,18 @@
       <option name="project" value="LOCAL" />
       <updated>1548139444883</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="UITableView 增加 estimatedheigt 防止跳动">
+      <created>1548140662737</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1548140662737</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169671000" />
+    <option name="totallyTimeSpent" value="170513000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -887,10 +909,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="516" width="1024" height="1293" extended-state="0" />
+    <frame x="-1334" y="-155" width="1245" height="1583" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24537988" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29707113" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.2193087" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -904,8 +926,8 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.497669" weight="0.32993197" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49067983" weight="0.3283237" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.1899384" side_tool="true" visible="true" weight="0.15046492" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.8100616" visible="true" weight="0.15046492" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.19079497" side_tool="true" visible="true" weight="0.0964019" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.809205" visible="true" weight="0.0964019" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.56011397" weight="0.046242774" />
       <window_info anchor="bottom" id="Code comment" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
@@ -962,7 +984,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add lost img" />
     <MESSAGE value="add NSTimer+YunAdd" />
     <MESSAGE value="0.0.45" />
     <MESSAGE value="add img cmp" />
@@ -987,23 +1008,10 @@
     <MESSAGE value="add NSData category" />
     <MESSAGE value="add helper" />
     <MESSAGE value="change error msg" />
-    <option name="LAST_COMMIT_MESSAGE" value="change error msg" />
+    <MESSAGE value="UITableView 增加 estimatedheigt 防止跳动" />
+    <option name="LAST_COMMIT_MESSAGE" value="UITableView 增加 estimatedheigt 防止跳动" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/YunKits/Tools/YunTheme.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YunKits/Tools/YunTypeDefine.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/YunKits/Tools/YunTypeDefine.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -1410,8 +1418,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/YunKits/Factory/YunUITableViewFactory.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="437">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YunKits/Factory/YunUIButtonFactory.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1103">
+          <caret line="74" column="13" lean-forward="true" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YunKits/Factory/YunUIButtonFactory.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#85#112#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
