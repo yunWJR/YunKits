@@ -4,6 +4,7 @@
 //
 
 #import "YunSystemMediaHelper.h"
+#import "NSURL+YunAdd.h"
 #import <UIKit/UIKit.h>
 
 @implementation YunSystemMediaHelper {
@@ -31,12 +32,12 @@
 }
 
 + (BOOL)canOpenURL:(NSString *__nonnull)url {
-    return [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:url]];
+    return [[UIApplication sharedApplication] canOpenURL:[NSURL urlWithStr:url]];
 }
 
 + (void)openScheme:(NSString *)scheme cmp:(void (^ __nullable)(BOOL success))cmp {
     UIApplication *application = [UIApplication sharedApplication];
-    NSURL *URL = [NSURL URLWithString:scheme];
+    NSURL *URL = [NSURL urlWithStr:scheme];
 
     if ([application respondsToSelector:@selector(openURL:options:completionHandler:)]) {
         [application openURL:URL options:@{}

@@ -4,6 +4,7 @@
 //
 
 #import "YunDownLoadHelper.h"
+#import "NSURL+YunAdd.h"
 #import <AFNetworking/AFHTTPSessionManager.h>
 
 @interface YunDownLoadHelper () {
@@ -16,7 +17,7 @@
 - (void)downLoadFile:(NSString *)urlStr result:(void (^)(NSURL *path))rst {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
 
-    NSURL *url = [NSURL URLWithString:urlStr];
+    NSURL *url = [NSURL urlWithStr:urlStr];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
 
     NSURLSessionDownloadTask *downTask =
