@@ -18,8 +18,10 @@
 }
 
 + (NSString *)appVersionByMode {
-    return FORMAT(@"%@(%@)%@", self.appVersion,
-                  YunConfig.instance.isDebugMode ? self.bundleVersion : @"",
+    NSString *bdVer = YunConfig.instance.isDebugMode ? FORMAT(@"(%@)", self.bundleVersion) : @"";
+
+    return FORMAT(@"%@%@%@", self.appVersion,
+                  bdVer,
                   YunConfig.instance.isDebugMode ? @"-DEV" : @"");
 }
 
