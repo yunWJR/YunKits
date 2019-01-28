@@ -13,6 +13,13 @@
     return [url absoluteString];
 }
 
++ (NSString *)strWithDefSet:(NSString *)urlStr {
+    id set = [NSCharacterSet URLQueryAllowedCharacterSet];
+    NSString *newUrl = [urlStr stringByAddingPercentEncodingWithAllowedCharacters:set];
+
+    return newUrl;
+}
+
 + (NSURL *)urlWithStr:(NSString *)urlStr {
     NSURL *url = [self urlWithStr:urlStr set:[NSCharacterSet URLQueryAllowedCharacterSet]];
 
