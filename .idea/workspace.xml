@@ -3,21 +3,119 @@
   <component name="ChangeListManager">
     <list default="true" id="444f5441-0da2-4a5f-a4ae-da46d754ad90" name="Default" comment="reset urlWithStr to URLWithString">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFURLSessionManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFURLSessionManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFURLSessionManager.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFURLSessionManager.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/UIImageView+AFNetworking.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/UIImageView+AFNetworking.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/SDWebImage/NSImage+WebCache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/SDWebImage/SDWebImageCoder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/SDWebImage/SDWebImageCoderHelper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/SDWebImage/SDWebImageCodersManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/SDWebImage/SDWebImageFrame.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/SDWebImage/SDWebImageGIFCoder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/SDWebImage/SDWebImageImageIOCoder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/SDWebImage/NSImage+WebCache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/SDWebImage/SDWebImageCoder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/SDWebImage/SDWebImageCoderHelper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/SDWebImage/SDWebImageCodersManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/SDWebImage/SDWebImageFrame.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/SDWebImage/SDWebImageGIFCoder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/SDWebImage/SDWebImageImageIOCoder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/NSButton+WebCache.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/NSButton+WebCache.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/NSButton+WebCache.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/NSButton+WebCache.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/NSData+ImageContentType.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/NSData+ImageContentType.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/NSData+ImageContentType.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/NSData+ImageContentType.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/NSImage+WebCache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/NSImage+WebCache.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDAnimatedImageRep.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDAnimatedImageRep.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDAnimatedImageRep.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDAnimatedImageRep.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDImageCache.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDImageCache.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDImageCache.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDImageCache.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDImageCacheConfig.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDImageCacheConfig.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDImageCacheConfig.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDImageCacheConfig.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageCoder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageCoder.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageCoderHelper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageCoderHelper.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageCodersManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageCodersManager.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageCompat.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageCompat.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageCompat.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageCompat.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageDownloader.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageDownloader.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageDownloader.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageDownloader.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageDownloaderOperation.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageDownloaderOperation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageDownloaderOperation.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageDownloaderOperation.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageFrame.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageFrame.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageGIFCoder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageGIFCoder.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageImageIOCoder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageImageIOCoder.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageManager.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageManager.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageOperation.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageOperation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImagePrefetcher.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImagePrefetcher.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImagePrefetcher.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImagePrefetcher.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageTransition.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageTransition.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageTransition.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/SDWebImageTransition.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIButton+WebCache.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIButton+WebCache.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIButton+WebCache.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIButton+WebCache.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIImage+ForceDecode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIImage+ForceDecode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIImage+ForceDecode.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIImage+ForceDecode.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIImage+GIF.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIImage+GIF.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIImage+GIF.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIImage+GIF.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIImage+MultiFormat.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIImage+MultiFormat.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIImage+MultiFormat.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIImage+MultiFormat.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIImageView+HighlightedWebCache.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIImageView+HighlightedWebCache.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIImageView+HighlightedWebCache.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIImageView+HighlightedWebCache.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIImageView+WebCache.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIImageView+WebCache.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIImageView+WebCache.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIImageView+WebCache.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIView+WebCache.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIView+WebCache.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIView+WebCache.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIView+WebCache.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIView+WebCacheOperation.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIView+WebCacheOperation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIView+WebCacheOperation.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/UIView+WebCacheOperation.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/AFNetworking/AFNetworking.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/AFNetworking/AFNetworking.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Masonry/Masonry.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Masonry/Masonry.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-YunKits/Pods-YunKits-acknowledgements.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-YunKits/Pods-YunKits-acknowledgements.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-YunKits/Pods-YunKits-acknowledgements.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-YunKits/Pods-YunKits-acknowledgements.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-YunKits/Pods-YunKits.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-YunKits/Pods-YunKits.debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-YunKits/Pods-YunKits.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-YunKits/Pods-YunKits.release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDWebImage/SDWebImage.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/SDWebImage/SDWebImage.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YunKits.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits.podspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YunKits.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YunKits/Tools/YunAppItem.m" beforeDir="false" afterPath="$PROJECT_DIR$/YunKits/Tools/YunAppItem.m" afterDir="false" />
     </list>
+    <ignored path="$USER_HOME$/Library/Caches/AppCode2019.1/DerivedData/YunKits-gghrjsxtlyzcafgkywdyjwwftnwe/Build/Intermediates.noindex/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_1D6B8DDF-B3D9-4866-966F-1410A79A1082" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_12206484e7323519acc20b4c31043a0b582e05a1" />
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Podfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" selection-start-line="12" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="209">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/YunKits/Tools/YunAppItem.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="39">
+              <caret line="55" column="46" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -26,7 +124,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>//  Created by 王健 on 16/9/18.</find>
       <find>//  Created by 王健 on 16/5/26.</find>
       <find>//  Created by yun on</find>
       <find>//  Created by WangJianrong on</find>
@@ -56,6 +153,7 @@
       <find>deprecated</find>
       <find>URLWithString</find>
       <find>urlWithStr</find>
+      <find>NSUInteger imageCacheSize = [[SDImageCache sharedImageCache] getSize];</find>
     </findStrings>
     <replaceStrings>
       <replace>YMD_Form</replace>
@@ -92,7 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSString+YunAdd.h" />
         <option value="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSString+YunAdd.m" />
         <option value="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSTimer+YunAdd.h" />
         <option value="$PROJECT_DIR$/YunKits/Categories/UIView_Ctg/UILabel+Style.h" />
@@ -143,15 +240,16 @@
         <option value="$PROJECT_DIR$/YunKits/Tools/YunSystemMediaHelper.m" />
         <option value="$PROJECT_DIR$/YunKits/Tools/YunVideoHelper.m" />
         <option value="$PROJECT_DIR$/YunKits/Categories/NSObject_Ctg/NSURL+YunAdd.m" />
+        <option value="$PROJECT_DIR$/YunKits/Tools/YunAppItem.m" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1350" />
-    <option name="y" value="-152" />
-    <option name="width" value="1330" />
-    <option name="height" value="1583" />
+    <option name="x" value="166" />
+    <option name="y" value="303" />
+    <option name="width" value="1920" />
+    <option name="height" value="1010" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -188,15 +286,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Cidr.FilesView" />
       <pane id="Scope" />
+      <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="Pods" type="1d218c8b:XcodeProjectNode" />
-            </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="YunKits" type="1d218c8b:XcodeProjectNode" />
@@ -240,6 +334,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="YunKits" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -257,7 +352,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="YunKits" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="YunKits" TARGET_NAME="YunKits" CONFIG_NAME="Debug" SCHEME_NAME="YunKits" IS_LOCATION_SIMULATION_ALLOWED="true" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+    <configuration name="YunKits" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="YunKits" TARGET_NAME="YunKits" CONFIG_NAME="Debug" SCHEME_NAME="YunKits" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
       </EXTENSION>
@@ -489,6 +584,7 @@
       <workItem from="1548667249481" duration="327000" />
       <workItem from="1548745713785" duration="235000" />
       <workItem from="1548746060859" duration="278000" />
+      <workItem from="1558668182912" duration="192000" />
     </task>
     <task id="LOCAL-00076" summary="reform categories">
       <created>1522308488859</created>
@@ -837,7 +933,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172336000" />
+    <option name="totallyTimeSpent" value="172528000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -849,10 +945,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1350" y="-152" width="1330" height="1583" extended-state="0" />
+    <frame x="166" y="303" width="1920" height="1010" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2921875" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29572192" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.2193087" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -866,8 +962,8 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.497669" weight="0.32993197" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49067983" weight="0.3283237" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.196875" side_tool="true" visible="true" weight="0.36456212" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.803125" visible="true" weight="0.36456212" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.1973262" side_tool="true" visible="true" weight="0.15222222" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="10" sideWeight="0.8026738" visible="true" weight="0.15222222" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.56011397" weight="0.046242774" />
       <window_info anchor="bottom" id="Code comment" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
@@ -1043,13 +1139,6 @@
             <element signature="e#10620#12611#0" />
             <element signature="e#12613#15428#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YunKits/Tools/YunAppItem.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
@@ -1377,8 +1466,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Podfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" selection-start-line="12" selection-end-line="14" selection-end-column="18" />
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YunKits/Tools/YunAppItem.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="55" column="46" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="46" />
         </state>
       </provider>
     </entry>

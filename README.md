@@ -12,7 +12,7 @@
 
 - SDWebImage
 
-## 主要模块
+## 主要功能
 
 ### BaseView 
 

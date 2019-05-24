@@ -53,7 +53,7 @@
 }
 
 + (CGFloat)getCacheSize {
-    NSUInteger imageCacheSize = [[SDImageCache sharedImageCache] getSize];
+    NSUInteger imageCacheSize = [[SDImageCache sharedImageCache] totalDiskSize];
     //获取自定义缓存大小
     //用枚举器遍历 一个文件夹的内容
     //1.获取 文件夹枚举器
