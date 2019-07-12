@@ -18,22 +18,22 @@
 
 - (instancetype)init {
     self = [super init];
-
+    
     if (self) {
         _hideNagBar = NO;
         _hideNagBarBtmLine = NO;
         _hideNagBarBackItem = NO;
-
+        
         _hideBottomBar = YES;
-
+        
         _sideOff = 0;
         _topOff = 0;
-
+        
         _isAppear = NO;
-
+        
         self.hidesBottomBarWhenPushed = _hideBottomBar;
     }
-
+    
     return self;
 }
 
@@ -43,15 +43,15 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-
+    
     [self updateNagHideState];
-
+    
     if (!_hideNagBar) {
         if (_hideNagBarBackItem) {
             if (_noneLeftItem == nil) {
                 _noneLeftItem = [[UIBarButtonItem alloc] initWithCustomView:[UIButton new]];
             }
-
+            
             self.leftNagItem = _noneLeftItem;
             self.navigationItem.leftBarButtonItem = _noneLeftItem;
         }
@@ -59,22 +59,22 @@
             [self.navigationItem.backBarButtonItem setTarget:self];
             [self.navigationItem.backBarButtonItem setAction:@selector(didClickNagLeftItem)];
         }
-
+        
         [self updateNagBtmLineState];
     }
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-
+    
     _isAppear = YES;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-
+    
     [self updateNagHideState];
-
+    
     if (!_hideNagBar) {
         //[self updateNagBtmLineState];
     }
@@ -82,7 +82,7 @@
 
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
-
+    
     _isAppear = NO;
 }
 
@@ -97,7 +97,7 @@
         [self dismissViewControllerAnimated:YES completion:nil]; // completion
         return;
     }
-
+    
     if (_backVC) {
         [self.navigationController popToViewController:_backVC animated:YES];
         _backVC = nil;
@@ -114,9 +114,9 @@
 
 - (void)setRightBarItemByImg:(NSString *)img {
     UIBarButtonItem *rBtnItem = [self createBarItemByImg:img action:@selector(didClickNagRightItem)];
-
+    
     self.navigationItem.rightBarButtonItem = rBtnItem;
-
+    
     self.rightNagItem = rBtnItem;
 }
 
@@ -124,28 +124,28 @@
     if ([YunValueVerifier isInvalidStr:name]) {
         return;
     }
-
+    
     UIBarButtonItem *rBtnItem = [self createBarItemByName:name
                                                      font:font
                                                     color:color
                                                    action:@selector(didClickNagRightItem)];
-
+    
     self.navigationItem.rightBarButtonItem = rBtnItem;
-
+    
     self.rightNagItem = rBtnItem;
 }
 
 - (void)setRightBarItem:(UIBarButtonItem *)item {
     self.navigationItem.rightBarButtonItem = item;
-
+    
     self.rightNagItem = item;
 }
 
 - (void)setLeftBarItemByImg:(NSString *)img {
     UIBarButtonItem *lBtnItem = [self createBarItemByImg:img action:@selector(didClickNagLeftItem)];
-
+    
     self.navigationItem.leftBarButtonItem = lBtnItem;
-
+    
     self.leftNagItem = lBtnItem;
 }
 
@@ -153,26 +153,26 @@
     if ([YunValueVerifier isInvalidStr:name]) {
         return;
     }
-
+    
     UIBarButtonItem *lBtnItem = [self createBarItemByName:name
                                                      font:font
                                                     color:color
                                                    action:@selector(didClickNagLeftItem)];
-
+    
     self.navigationItem.leftBarButtonItem = lBtnItem;
-
+    
     self.leftNagItem = lBtnItem;
 }
 
 - (UIBarButtonItem *)createBarItemByImg:(NSString *)img action:(nullable SEL)action {
     UIImage *image = [UIImage imageNamed:img];
     UIImage *orgImage = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]; // 原色图片，不然会改变图颜色
-
+    
     UIBarButtonItem *btnItem = [[UIBarButtonItem alloc] initWithImage:orgImage
                                                                 style:UIBarButtonItemStylePlain
                                                                target:self
                                                                action:action];
-
+    
     return btnItem;
 }
 
@@ -187,22 +187,21 @@
     //UIBarButtonItemStylePlain        默认按钮风格；按下时会闪动
     //UIBarButtonItemStyleBordered     与UIBarButtonItemStylePlain相同，但显示的按钮有边框(已废弃)
     //UIBarButtonItemStyleDone         显示一个蓝色按钮，提醒用户编辑完毕时应该点触（tap）该按钮。
-
+    
     [btnItem setTitleTextAttributes:
-                     @{
-                             NSFontAttributeName            : font,
-                             NSForegroundColorAttributeName : color
-                     }
+     @{
+       NSFontAttributeName            : font,
+       NSForegroundColorAttributeName : color
+       }
                            forState:UIControlStateNormal];
-
+    
     // 防止按下变色
     [btnItem setTitleTextAttributes:
-                     @{
-                             NSFontAttributeName            : font,
-                             NSForegroundColorAttributeName : color
-                     }
+     @{
+       NSFontAttributeName            : font,
+       NSForegroundColorAttributeName : color
+       }
                            forState:UIControlStateHighlighted];
-
     return btnItem;
 }
 
@@ -214,13 +213,13 @@
 
 - (void)setHideNagBarBtmLine:(BOOL)hideNagBarBtmLine {
     _hideNagBarBtmLine = hideNagBarBtmLine;
-
+    
     [self updateNagBtmLineState];
 }
 
 - (void)setHideBottomBar:(BOOL)hideBottomBar {
     _hideBottomBar = hideBottomBar;
-
+    
     self.hidesBottomBarWhenPushed = _hideBottomBar;
 }
 
@@ -233,7 +232,7 @@
             return nil;
         }
     }
-
+    
     return nil;
 }
 
@@ -244,17 +243,23 @@
 }
 
 - (void)setNagBottomLineHideStatus:(BOOL)hide {
-    if (_nagBtmLine == nil) {
-        _nagBtmLine = [self findNagBtmLine:self.navigationController.navigationBar];
+    if (hide) {
+        self.navigationController.navigationBar.shadowImage = UIImage.new;
+    } else {
+        self.navigationController.navigationBar.shadowImage = [UIImage imageNamed:@"nav_bottom_shadow"];
     }
-
-    if (_nagBtmLine) {
-        _nagBtmLine.hidden = hide;
-    }
+    //    if (_nagBtmLine == nil) {
+    //        _nagBtmLine = [self findNagBtmLine:self.navigationController.navigationBar];
+    //    }
+    //
+    //    if (_nagBtmLine) {
+    //        _nagBtmLine.hidden = hide;
+    //    }
 }
 
 - (UIImageView *)findNagBtmLine:(UIView *)view {
-    if ([view isKindOfClass:UIImageView.class] && view.bounds.size.height <= 1.0) {
+    //    if ([view isKindOfClass:UIImageView.class] && view.bounds.size.height <= 1.0) {
+    if ([view isKindOfClass:UIImageView.class]) {
         return (UIImageView *) view;
     }
     for (UIView *subview in view.subviews) {

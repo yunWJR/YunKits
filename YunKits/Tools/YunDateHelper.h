@@ -85,4 +85,12 @@
 
 + (NSInteger)weekNumForYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day;
 
+
+#pragma mark - date month
+
++ (BOOL)date:(NSDate *)dateA isTheSameMonthThan:(NSDate *)dateB;
+
++ (BOOL)date:(NSDate *)dateA isSmallerYearMonthThan:(NSDate *)dateB;
+
+
 @end

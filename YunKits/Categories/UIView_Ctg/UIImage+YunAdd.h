@@ -73,4 +73,17 @@ __deprecated_msg("已过期, 请使用compressByMaxLength");
 
 - (CGFloat)ratioHeightToWidth;
 
+#pragma mark - Stretchable
+/**
+ *  生成一个中心拉伸的图片
+ *
+ *  @param name 图片资源名字
+ *
+ *  @return UIImage
+ */
++ (instancetype)imageStretchableCenterNamed:(NSString *)name;
+
+/// 基于self，生成一个中心拉伸的图片
+- (UIImage *)imageStretchableCenter;
+
 @end
