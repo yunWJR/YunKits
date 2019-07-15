@@ -17,7 +17,10 @@
 
 + (BOOL)isNilOrEmptyOrSpaceStr:(NSString *)str;
 
-// 不是nil，空，全空格
+//去除首位空格后是否超出length长度
++ (BOOL) isValidOutLength:(NSInteger) length string:(NSString *) str;
+
+// 不是nil，空，全空格，换行
 + (BOOL)isValidStr:(NSString *)str;
 
 + (BOOL)isInvalidStr:(NSString *)str;

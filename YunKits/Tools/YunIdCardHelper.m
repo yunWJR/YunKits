@@ -70,19 +70,22 @@
 - (BOOL)checkCode:(NSString *)code {
     NSInteger sum = 0;
     for (NSInteger i = 0; i < self.validateCode.count; i++) {
+        if (i >= code.length) {
+            break;
+        }
         sum +=
-                ((NSNumber *) self.validateCode[i]).integerValue *
-                [code substringWithRange:NSMakeRange(i, 1)].integerValue;
+        ((NSNumber *) self.validateCode[i]).integerValue *
+        [code substringWithRange:NSMakeRange(i, 1)].integerValue;
     }
     int remainder = (int) fmod(sum, 11);
-
+    
     NSString *last = [code substringFromIndex:code.length - 1];
-
+    
     if ([[last lowercaseString] isEqual:@"x"]) {
         last = @"10";
     }
     NSInteger lastNum = last.integerValue;
-
+    
     return ((NSNumber *) self.digits[remainder]).integerValue == lastNum;
 }
 
@@ -90,16 +93,16 @@
     NSMutableString *result = [NSMutableString stringWithCapacity:0];
     NSString *year = nil;
     NSString *month = nil;
-
+    
     BOOL isAllNumber = YES;
     NSString *day = nil;
     if ([idCard length] < 14) {
         return result;
     }
-
+    
     //**截取前14位
     NSString *fontNumer = [idCard substringWithRange:NSMakeRange(0, 13)];
-
+    
     //**检测前14位否全都是数字;
     const char *str = [fontNumer UTF8String];
     const char *p = str;
@@ -112,11 +115,11 @@
     if (!isAllNumber) {
         return result;
     }
-
+    
     year = [idCard substringWithRange:NSMakeRange(6, 4)];
     month = [idCard substringWithRange:NSMakeRange(10, 2)];
     day = [idCard substringWithRange:NSMakeRange(12, 2)];
-
+    
     [result appendString:year];
     [result appendString:@"-"];
     [result appendString:month];
@@ -128,9 +131,9 @@
 //根据身份证号性别
 + (NSInteger)getIdCardSex:(NSString *)idCard {
     if ([YunValueVerifier isInvalidStr:idCard]) {return 0;}
-
+    
     int sexInt = [[idCard substringWithRange:NSMakeRange(16, 1)] intValue];
-
+    
     if (sexInt % 2 != 0) {
         return 1;
     }
@@ -142,16 +145,16 @@
 //根据省份证号获取年龄
 + (NSString *)getIdCardAge:(NSString *)idCard {
     if ([YunValueVerifier isInvalidStr:idCard]) {return @"";}
-
+    
     NSDateFormatter *formatterTow = [[NSDateFormatter alloc] init];
     [formatterTow setDateFormat:@"yyyy-MM-dd"];
     NSString *dateStr = [self birthdayStrFromIdentityCard:idCard];
     NSDate *bsyDate = [formatterTow dateFromString:dateStr];
-
+    
     NSTimeInterval dateDiff = [bsyDate timeIntervalSinceNow];
-
+    
     int age = (int) (trunc(dateDiff / (60 * 60 * 24)) / 365);
-
+    
     return [NSString stringWithFormat:@"%d", -age];
 }
 

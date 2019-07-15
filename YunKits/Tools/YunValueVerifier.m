@@ -11,19 +11,19 @@
 + (BOOL)isSameStr:(NSString *)str1 str2:(NSString *)str2 {
     if (str1 == nil) {str1 = @"";}
     if (str2 == nil) {str2 = @"";}
-
+    
     return [str1 isEqualToString:str2];
 }
 
 + (BOOL)isSameFloat:(CGFloat)value1 value2:(CGFloat)value2 {
     CGFloat delta = value1 - value2;
-
+    
     return delta > -0.0001 && delta < 0.0001;
 }
 
 + (BOOL)isSameDouble:(double)value1 value2:(double)value2 {
     double delta = value1 - value2;
-
+    
     return delta > -0.0001 && delta < 0.0001;
 }
 
@@ -31,7 +31,7 @@
     if (str == nil) {
         return YES;
     }
-
+    
     return [str isEqualToString:@""];
 }
 
@@ -39,11 +39,25 @@
     if (str == nil) {
         return YES;
     }
-
+    
     NSString *ctn = [YunValueHelper strWithoutSpace:str];
-
+    
     return [ctn isEqualToString:@""];
 }
+
+//
+//去除首位空格后是否超出length长度
++ (BOOL) isValidOutLength:(NSInteger) length string:(NSString *) str {
+    if (str == nil) {
+        return NO;
+    }
+    
+    NSString *ctn = [YunValueHelper strWithoutSpace:str];
+    
+    return ctn.length > length;
+}
+
+//
 
 + (BOOL)isValidStr:(NSString *)str {
     return ![self isNilOrEmptyOrSpaceStr:str];
@@ -57,12 +71,12 @@
     if (model == nil) {
         return YES;
     }
-
+    
     if ([model isKindOfClass:[NSDictionary class]]) {
         NSDictionary *dic = model;
         return dic.allKeys.count == 0;
     }
-
+    
     return YES;
 }
 
@@ -70,7 +84,7 @@
     if (array == nil) {
         return YES;
     }
-
+    
     return array.count == 0;
 }
 
@@ -89,13 +103,13 @@
     if ([obj isKindOfClass:NSNumber.class]) {
         return YES;
     }
-
+    
     if ([obj isKindOfClass:NSString.class]) {
         NSString *objStr = obj;
-
+        
         return [self isPureInt:objStr];
     }
-
+    
     return NO;
 }
 
