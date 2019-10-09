@@ -22,4 +22,8 @@
 
 - (void)setBg:(UIColor *)color height:(CGFloat)height fieldImg:(NSString *)img;
 
+- (UITextField *)lz_GetSearchTextFiled;
+
+- (UIButton *)lz_GetSearchCancleButton;
+
 @end

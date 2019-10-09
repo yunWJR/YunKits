@@ -5,6 +5,7 @@
 
 #import "UITextField+YunAdd.h"
 #import "UIView+YunAdd.h"
+#import <objc/runtime.h>
 
 @implementation UITextField (YunAdd)
 
@@ -22,11 +23,19 @@
 
 - (void)setPhColor:(UIColor *)phColor phFont:(UIFont *)phFont {
     if (phColor) {
-        [self setValue:phColor forKeyPath:@"_placeholderLabel.textColor"];
+//        [self setValue:phColor forKeyPath:@"_placeholderLabel.textColor"];
+        
+        Ivar ivar =  class_getInstanceVariable([UITextField class], "_placeholderLabel");
+        UILabel *placeholderLabel = object_getIvar(self, ivar);
+        placeholderLabel.textColor = phColor;
     }
 
     if (phFont) {
-        [self setValue:phFont forKeyPath:@"_placeholderLabel.font"];
+//        [self setValue:phFont forKeyPath:@"_placeholderLabel.font"];
+        
+        Ivar ivar =  class_getInstanceVariable([UITextField class], "_placeholderLabel");
+        UILabel *placeholderLabel = object_getIvar(self, ivar);
+        placeholderLabel.font = phFont;
     }
 }
 
