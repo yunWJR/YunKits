@@ -21,7 +21,7 @@
           bgColor:(UIColor *)bgColor
       borderColor:(UIColor *)borderColor
       borderWidth:(CGFloat)borderWidth {
-    UITextField *searchField = [self valueForKey:@"searchField"];
+    UITextField *searchField = [self lz_GetSearchTextFiled];
 
     if (searchField) {
         [searchField setBackgroundColor:bgColor];
@@ -59,40 +59,19 @@
     }
 }
 
-- (UIView *)schBgView {
-    UIView *backgroundView = [self valueForKey:@"_background"];
-    if (backgroundView) {
-        return backgroundView;
+- (UITextField *)lz_GetSearchTextFiled {
+    if ([[[UIDevice currentDevice]systemVersion] floatValue] >= 13.0) {
+        return self.searchTextField;
+    } else {
+        UITextField *searchTextField =  [self valueForKey:@"_searchField"];
+        return searchTextField;
     }
-
-    for (UIView *v1 in self.subviews) {
-        for (id v2 in v1.subviews) {
-            if ([v2 isKindOfClass:UIView.class] && ![v2 isKindOfClass:UITextField.class]) {
-                UIView *bg = v2;
-                return bg;
-            }
-        }
-    }
-
-    return nil;
 }
 
-- (UITextField *)schTfView {
-    UITextField *searchField = [self valueForKey:@"_searchField"];
-    if (searchField) {
-        return searchField;
-    }
-
-    for (UIView *v1 in self.subviews) {
-        for (id v2 in v1.subviews) {
-            if ([v2 isKindOfClass:UITextField.class]) {
-                UITextField *tf = v2;
-                return tf;
-            }
-        }
-    }
-
-    return nil;
+- (UIButton *)lz_GetSearchCancleButton {
+    UITextField * tf = [self lz_GetSearchTextFiled];
+    UIButton * btn = [tf valueForKey:@"_clearButton"];
+    return btn;
 }
 
 @end
